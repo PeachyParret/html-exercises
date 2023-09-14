@@ -10,9 +10,10 @@
     <link rel="shortcut icon" href="assets/images/wheatx.png">
     <header>
       <img 
-      srcset="assets/images/banner_D1.jpg, assets/images/banner_D1_half.jpg" 
-      sizes="1519px, 760px" 
-      src="assets/images/banner_D1.jpg"
+      srcset="assets/images/banner_D1.jpg 1519w, 
+              assets/images/banner_D1_half.jpg 750w" 
+              sizes="(min-width: 1519px) 1519px,
+              (min-width: 760px) 750px"
       alt="Your guide to Gluten Free Cooking" 
       style="margin: 0px -100px;">
       <h1>
@@ -20,10 +21,15 @@
       </h1>
       <nav>
         <a href="./index.html">
-          <img src="assets/images/home_big.jpg" alt="Homepage" style="padding-right: 2px" height="50" width="100"/>
+          <img src="assets/images/home_big.jpg" 
+          alt="Homepage" 
+          style="padding-right: 2px" 
+          height="50" width="100"/>
         </a>
         <a href="./recipes.html">
-            <img src="assets/images/recipes_big.jpg" alt="Recipes" height="50" width="100"/>
+            <img src="assets/images/recipes_big.jpg" 
+            alt="Recipes" 
+            height="50" width="100"/>
           </a>
       </nav>
     </header>
