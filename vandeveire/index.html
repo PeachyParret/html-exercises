@@ -1,56 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images">
-    <title>Virginia Tech Mens Volleyball - HOME</title>
-</head>
-<body>
-    <header>
-        <h1> Virginia Tech Men's Volleyball </h1>
-        <h1> <img src = "C:\Users\matth\OneDrive - Virginia Tech\Desktop\VT Volleybal\Team graphic smaller.png"
-            width="420" height="400"> </h1>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <link rel = "icon" href = "favicon/vballicon.ico" type = "image/x-icon">
+    <title> Virginia Tech Mens Volleyball - HOME </title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+        .title-background {
+        /* Set the background image */
+        background-image: url("images/vtheader.jpg");
+        /* Set background to cover the entire title */
+        background-size: cover;
+        /* Background image position */
+        background-position: center center;
+        /* Set the background to not repeat */
+        background-repeat: no-repeat;
+        /* Picture covers all the content */
+        display: inline-block;
+        /* Spacing around the title and logos */
+        padding: 30px; 
+        /* Rounded corners */
+        border-radius: 25px; /* Optional: to give rounded corners */
+        }
         
-        // List item 1: About/Announcements
-		<li id="pg1" class="wsite-menu-item-wrap">
-			<a href="/about-our-club-and-announcements.html" class="wsite-menu-item">
-				About Our Club and Announcements
-			</a>
-			
-		</li>
+        /* Set the text color on header to white */
+        .title-background h1, .title-background .material-symbols-outlined, .title-background code { color: #ffffff; }
+        
+        /* Spacing inbetween list items */
+        .listlinks { margin-bottom: 15px; }
 
-		// List item 2: Schedule/Results
-		<li id="pg2" class="wsite-menu-item-wrap">
-			<a href="/schedule-and-results.html" class="wsite-menu-item">
-				Schedule and Results
-			</a>
-			
-		</li>
+    </style>
+</head>
 
-		// List item 3: Roster/Officers
-		<li id="pg3" class="wsite-menu-item-wrap">
-			<a href="/roster-and-officers.html" class="wsite-menu-item">
-				Roster and Officers
-			</a>
-		</li>
+<body>
 
-		// List item 4: Prospective Players Page
-		<li id="pg4" class="wsite-menu-item-wrap">
-			<a href="/prospective-player-page.html" class="wsite-menu-item">
-				Prospective Player Page
-			</a>
-		</li>
+    <header>
+        <div class = "title-background">
+            <h1>
+                <span class = "material-symbols-outlined"> sports_volleyball </span> 
+                <strong> <code> Virginia Tech Men's Volleyball </code></strong>
+                <span class = "material-symbols-outlined"> sports_volleyball </span>
+                <strong> <code> </code></strong>
+            </h1>
+        </div> 
 
-		// List item 5: Pics/Film
-		<li id="pg5" class="wsite-menu-item-wrap">
-			<a href="/pics-and-film.html" class="wsite-menu-item">
-				Pics and Film
-			</a>
-		</li>
+        <div style = "display: flex; align-items: start; gap: 20px; margin-top: 30px;">
+            <img
+                src = "images/vtmvbpic.jpg"
+                alt = "The VTMVB logo"
+                width = "200"
+                height = "200" 
+                padding = "30"
+            />
+
+        <div style = "margin-top: 30px;">
+
+            <!-- List item 1: About/Announcements -->
+            <li id = "bullet1" class = "listlinks">
+                <a href = "/about-our-club-and-announcements.html" class = "wsite-menu-item">
+                    About Our Club and Announcements
+                </a>
+                
+            </li>
+
+            <!-- List item 2: Schedule/Results -->
+            <li id = "bullet2" class = "listlinks">
+                <a href = "/schedule-and-results.html" class = "wsite-menu-item">
+                    Schedule and Results
+                </a>
+            </li>
+
+            <!-- List item 3: Roster/Officers -->
+            <li id = "bullet3" class = "listlinks">
+                <a href = "/roster-and-officers.html" class = "wsite-menu-item">
+                    Roster and Officers
+                </a>
+            </li>
+
+            <!-- List item 4: Prospective Players Page -->
+            <li id = "bullet4" class = "listlinks">
+                <a href = "/prospective-player-page.html" class = "wsite-menu-item">
+                    Prospective Player Page
+                </a>
+            </li>
+
+            <!-- List item 5: Pics/Film -->
+            <li id = "bullet5" class = "listlinks">
+                <a href = "/pics-and-film.html" class = "wsite-menu-item">
+                    Pics and Film
+                </a>
+            </li>
+        </div>
     </header>
-
-    <img src = "C:\Users\matth\OneDrive - Virginia Tech\Documents\vtwebsite\vtmvbpic.jpg"
-    width="50" height="50">
 </body>
+
 </html>
