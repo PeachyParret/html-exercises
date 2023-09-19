@@ -8,16 +8,16 @@
 
     <!-- Resources -->
     <link rel="shortcut icon" href="assets/images/wheatx.png">
-    <header>
+    <header role="banner" aria-labelledby="a11y-title">
       <img
         srcset="assets/images/banner_D1.jpg 1519w" 
         sizes="(min-width: 1519px) 1519px"
         alt="Your guide to Gluten Free Cooking" 
-        style="margin: 0px -100px;">
-      <h1>
+        style="margin: 0px -100px;"></header>
+      <h1 id="a11y-title">
           Intro to Gluten Free Cooking
       </h1>
-      <nav style="background-color: #00c65c; text-align: center;">
+      <nav role="navigation" aria-label="Main Navigation" style="background-color: #00c65c; text-align: center;">
         <ul style="list-style: none; margin: 0; padding: 0;">
           <li style="display: inline; margin-right: 20px;">
               <a href="index.html" style="text-decoration: none; color: #fff;"><strong>Home</strong></a>
@@ -28,11 +28,13 @@
           <li style="display: inline; margin-right: 20px;">
             <a href="sampler.html" style="text-decoration: none; color: #fff;"><strong>Test</strong></a>
           </li>
+        </ul>
       </nav>
     </header>
 </head>
-<body style="margin: 0px 100px;">
-  <main>
+<body style="margin: 0vw 100px;">
+  <a href="#main" class="skip-to-link" style="text-decoration: none; color: inherit;">Skip to Content</a>
+  <main id="main">
         <h2> 
              Overview
         </h2>
@@ -40,9 +42,9 @@
             This site is designed to show you all the ways that you can make your family's cooking <strong>without</strong> compromising taste. Soon, you'll be able to make your delicious family meals able to be enjoyed by everybody at the table.
         </p>
       <section id="Nav">
-            <nav> 
+            <nav role="navigation" aria-labelledby="a11y-menu"> 
               <ul>
-                <h3>
+                <h3 id="a11y-menu">
                   The Menu:
                 </h3>
                   <a href="#Bread" style="text-decoration: none; color: inherit"><strong>Bread</strong></a> - Learn about the GF bread options and ways to sub bread out in your daily life.
@@ -96,7 +98,6 @@
           <br>
           <br>
           <br>
-        
           Pasta
         </h3>
         <img align="right" style="margin-right: 10px;" src="assets/images/vodka2_small.jpg" height="300">
