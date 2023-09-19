@@ -8,58 +8,67 @@
     <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>  
-    <header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header role="banner" aria-labelledby="a11y-title">
         <h1>Yana's Skincare Website</h1>
         <h2>Welcome! If you're new here, this is the place to get the easiest info on taking care of your skin!</h2>
     </header>
-    <img src="images/skincarepic#1.jpeg" alt="colorful bottles of skincare essentials" width="1080px" height="812px" >
+    <img src="images/skincarepic-1.jpeg" alt="colorful bottles of skincare essentials" width="1080" height="812">
     
     <!-- Side navigation -->
-    <div class="sidebar">
-        <a class="active" href="#home">Home</a>
-        <a class="active" href="types of products">Types of Products</a>
-        <a class="active" href="how to use">How to Use</a>
-        <a class="active" href="what type of skin do you have"> What type of skin do you have?</a>
-        <a class="active" href="my current routine">My Current Routine</a>
-        <a class="active" href="q&a">Q&A</a>
-        <a class="active" href="best places to get affordable skincare"> Best Places to get Affordable Skincare</a>
+    <nav role="navigation" aria-describedby="nav-description">  
+        <div class="sidebar">
+            <a class="active" href="#home">Home</a>
+            <a class="active" href="types-of-products">Types of Products</a>
+            <a class="active" href="how-to-use">How to Use</a>
+            <a class="active" href="what-type-of-skin-do-you-have">What type of skin do you have?</a>
+            <a class="active" href="my-current-routine">My Current Routine</a>
+            <a class="active" href="q-and-a">Q&A</a>
+            <a class="active" href="best-places-to-get-affordable-skincare">Best Places to get Affordable Skincare</a>
+        </div>
+    </nav>
 
-    <nav>
-  
     <!-- Page content -->
-      <div class="main">
+    <main id="main-content" aria-hidden="false">
         <section id="types">
             <h3>Types of Skincare Products</h3>
             <p>
-                Cleanser: Arguably the most important step to any skincare routine is finding a cleanser that works best for you. When deciding on a cleanser to purchase, ensure that the product mainly incorporates natural, non-abrasive ingredients, includes at least one active ingredient that is safe for daily use (i.e. niacinamide, hyaluronic acid, tranxemic acid, etc.), and that you complete a patch test on the inside of your wrist before applying it to the face.
+                Cleanser: Arguably the most important step to any skincare routine is finding a cleanser that works best for you. When deciding on a cleanser to purchase, ensure that the product mainly incorporates natural, non-abrasive ingredients, includes at least one active ingredient that is safe for daily use (i.e. niacinamide, hyaluronic acid, tranexamic acid, etc.), and that you complete a patch test on the inside of your wrist before applying it to the face.
             </p>
             <p>
-                Moisturizer: A good cleanser and a moisturizer go hand in hand in even the simplest of routines. Your ideal moisturizer should provide consistent hydration to your skin without stripping it down, or in other cases, making it too oily. A general rule of thumb when choosing a moisturizer is to watch how your skin naturally acts in the day versus the night, and in the winter versus the summer. If you find yourself feeling oily in the day or in the summer heat, you may need a gel moisturizer. Contrastingly, if you find yourself having drier skin in the night and during the winter, you may need a cream-based moisturizer. Some people also have combination skill, which we will get into more detail later.
+                Moisturizer: A good cleanser and a moisturizer go hand in hand in even the simplest of routines. Your ideal moisturizer should provide consistent hydration to your skin without stripping it down, or in other cases, making it too oily. A general rule of thumb when choosing a moisturizer is to watch how your skin naturally acts in the day versus the night, and in the winter versus the summer. If you find yourself feeling oily in the day or in the summer heat, you may need a gel moisturizer. Contrastingly, if you find yourself having drier skin in the night and during the winter, you may need a cream-based moisturizer. Some people also have combination skin, which we will get into more detail later.
             </p>
             <p>
-                Sunscreen: You may be under the impression that you only need suncreen on those hot days lying by the beach or pool. Unfortunately, that is simply not the truth. EVERYONE, no matter your age, requires daily sunscreen application in order to avoid serious skin issues down the road. Using an SPF of 50 or more provides your skin barrier with enough protection to withstand the sun's rays, even on those cloudy days. When choosing a daily sunscreen, ensure it does not include zinc oxide, as that ingredient can have harmful side affects.
+                Sunscreen: You may be under the impression that you only need sunscreen on those hot days lying by the beach or pool. Unfortunately, that is simply not the truth. EVERYONE, no matter your age, requires daily sunscreen application in order to avoid serious skin issues down the road. Using an SPF of 50 or more provides your skin barrier with enough protection to withstand the sun's rays, even on those cloudy days. When choosing a daily sunscreen, ensure it does not include zinc oxide, as that ingredient can have harmful side effects.
             </p>
         </section>
         
         <section id="howto">
             <h3>How to Use Skincare Products</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quo repudiandae velit similique totam veritatis at accusantium temporibus magnam. Sunt nulla ex, in accusantium dignissimos mollitia non earum dolorem repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. A quibusdam ad laudantium molestias necessitatibus, totam debitis ipsa pariatur eius ipsam rem excepturi sunt accusamus distinctio voluptas dolorem voluptate assumenda. At.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         </section>
         
         <section id="skintype">
             <h3>Determine Your Skin Type</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil asperiores veritatis provident iste maiores ducimus a nemo sit cum commodi itaque aliquid fuga, deserunt dolores? Temporibus hic ut deleniti numquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur harum nam dolore, explicabo sapiente quam modi culpa iusto a maiores odit, provident, hic ipsa! Veniam dicta accusamus ipsum. Dolorem, magnam.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         </section>
-    </nav>
-       <figure>
-        <img src="images/skincare pic #2.png" alt="fall pastel sketch of skincare products" width="640px" height="384px">
+    </main>
+
+    <figure>
+        <img src="images/skincarepic-2.png" alt="fall pastel sketch of skincare products" width="640" height="384">
         <figcaption>Embrace the Beauty: Rejuvenate Your Skin with Skincare Essentials</figcaption>
-       </figure>
+    </figure>
     </div>
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
+        <div class="contact-info">
+            <h3>Contact Me</h3>
+            <p>Email: <a href="mailto:yananarora@vt.edu">yananarora@vt.edu</a></p>
+            <p>Phone: <a href="tel:+17032972758">+1 (703) 297-2758</a></p>
+        </div>
         <!-- Add contact information or social media links here -->
     </footer>
 </body>
 </html>
+
