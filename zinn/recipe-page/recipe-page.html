@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bread History</title>
+    <title>Bread Recipes</title>
     <meta charset="utf-8" />        <link rel="icon" href="../assets/images/favicon.ico.png" type="image/x-icon" />
 </head>
 <body>
+    <a href="#recipe-page" class="skip-to-link">Skip to Content</a>
     <nav>
         <nav role="navigation" aria-label="Main navigation">
         <ul>
@@ -13,5 +14,36 @@
             <li><a href="recipe-page.html">Recipes</a></li>
         </ul>    
     </nav>
+    <main id="main" role="main" aria-labelledby="recipe-page">
+        <h2 id="recipe-page">A Collection of Recipes</h2>
+        <p>
+            This page contains a variety of recipes from around the web, ranging from simple, no-knead breads to the more complicated flaky danishes.
+        </p>
+        <nav role="navigation" aria-label="recipe navigation">
+            <p><a href="#beginner-recipes">Beginner Recipes</a></p>
+            <p><a href="#intermediate-recipes">Intermediate Recipes</a></p>
+            <p><a href="#advanced-recipes">Advanced Recipes</a></p>
+        </nav>
+        <section id="starter-recipes" role="region" aria-labelledby="beginner-recipes">
+            <h3 id="beginner-recipes">Beginner Recipes</h3>
+            <h4>For those who might not know their way around the kitchen just yet.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </section>
+        <section role="region" aria-labelledby="intermediate-recipes">
+            <h3 id="intermediate-recipes">Intermediate Recipes</h3>
+            <h4>For those who have some experience baking.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </section>
+        <section role="region" aria-labelledby="advanced-recipes">
+            <h3 id="advanced-recipes">Advanced Recipes</h3>
+            <h4>For those who have a lot of experience, or have a lot of time on their hands and want to reach for the stars.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </section>
+        <section role="region" aria-labelledby="breads-with-stuff">
+            <h3 id="breads-with-stuff">Breads with Stuff</h3>
+            <h4>Some might say these breads are closer to cakes. This section contains recipes for breads with add-ins, such as banana bread, pumpkin chocolate chip loaves, and more.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </section>
+    </main>
 </body>    
 </html>
