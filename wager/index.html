@@ -3,29 +3,48 @@
   <head>
     <meta charset=ISO-8859-1>
     <meta name="viewport" content="width=device-width">
-    <title>&lt;title&gt; element</title>
+    <title> Brooke Wager's Pets </title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
   </head>
   <body style="background-color:blanchedalmond;">
-    <main> 
-      <header> <h1> My Pets!</h1> </header> 
-      <section> Leo and Tito</section>
-      <section>
-        <h1> My current Family Dogs </h1>
-          <p> This will be about Leo and Tito</p>
-      </section>
-      <section>
-        <h2> Maybe, the Cat</h2>
+      <header role="banner" aria-labelledby="Brooke's Pets">
+        <a href="#main" class="skip-to-link"> Skip To Main Content</a> 
+        <h1 id="Brooke's Pets"> My Pets! </h1>
+        <nav class="menu" id="navigation menu" aria-labelledby="navigation menu">
+          <ul>
+            <li><a href="otherdogs.html">Other Cute Pets</a></li>
+            <li><a href="https://www.mcfacc.org/volunteer" target="_blank">Learn More About Fostering</a></li>
+          </ul>
+        </nav>
+          <img src="assets/images/leo-tito-3024-4032.jpg" 
+          alt="Two Dogs Sitting on a Couch while one looks at the Other"
+          width="756" height="1008">
+        </div>
+      </header>
+      <main id="main" aria-labelledby="main">  
+        <section role="region">
+          <h2> Leo and Tito - My Dogs</h2>
+            <figure>
+              <img src="assets/images/leo-couch-lounging-910-1700.JPG" 
+              alt="Black Dog Sitting On The Couch Similar to How a Human Would"
+              width="450" height="850">
+             <figcaption>Leo Sitting on a Couch. </figcaption>
+            </figure> 
+            <p> This will be about Leo and Tito</p>
+        </section>
+        <section role="region">
+          <h2> Maybe, the Cat</h2>
+            <img src="assets/images/maybe-medium-computer-414w-538h.jpg" 
+            alt="White Cat Sitting on Computer"
+            srcset="maybe-medium-computer-414w-538h 414px, maybe-small-cat-207w-269h 207px, maybe-large-cat-828w-1077h 828px"
+            sizes="(max-width: 600px) 414px, 828px"/>
           <p> Lorem ipsum dolor </p> 
-      </section>
-      <section>
-        <h2> More about their breeds</h2>
-          <p> Lorem ipsum dolor </p>
-      </section>
-      <section>
-        <h2> Special mentions </h2>
-          <p> This will be about all other dogs I've had/foster animals</p>
-      </section>
-    </main>
+        </section>
+        <section role="region">
+          <h3> More about their breeds and personalities</h3>
+              <p> Lorem ipsum dolor </p>
+        </section>
+      </main>
   </body>
-  <footer> I will put citation and more info down here</footer>
+  <footer role="contentinfo" id="additional info" aria-labelledby="additional info"> I will put citation and more info down here</footer>
 </html>
