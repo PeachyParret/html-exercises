@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add a favicon? And other metadata, such as author at least?-->
+
     <title>Skincare 101: How to Get Started</title>
     <!-- Add a link to your CSS file if you have one -->
     <!-- <link rel="stylesheet" href="styles.css"> -->
@@ -17,7 +19,15 @@
     
     <!-- Side navigation -->
     <nav role="navigation" aria-describedby="nav-description">  
+        <!--
+            This code looks a little adrift from best practices, so be careful about taking code from elsewhere; especially when you are not sure what it is and how to works. For example, the <div> is a generic block element that you use when no other more semantic element is available. In this case, you've already contained the links in a <nav>, so the div is extra, if you will. Additionally, it's typically best practice to adhere to the following structure within for nav element:
+                nav
+                    ul
+                        li
+                            a
+        -->
         <div class="sidebar">
+            <!-- again these class names tell me that you got this from an external source, b/c we haven't covered classes in detail yet. As a common design pattern, the "active" class isn't repeated, since it helps you targe the active page's link in the nav menu to style it with emphasis as a means to signal what page you're on.  -->
             <a class="active" href="#home">Home</a>
             <a class="active" href="types-of-products">Types of Products</a>
             <a class="active" href="how-to-use">How to Use</a>
@@ -29,7 +39,9 @@
     </nav>
 
     <!-- Page content -->
+    <!-- the aria-hidden isn't necessary and not required for our projects in the class. It's something we haven't covered. -->
     <main id="main-content" aria-hidden="false">
+        <!-- Be sure to use roles and labelledbys for these sections -->
         <section id="types">
             <h3>Types of Skincare Products</h3>
             <p>
@@ -54,14 +66,20 @@
         </section>
     </main>
 
+    <!--
+        What's the plan for this figure? Right now, it seems a little detached from the site.
+     -->
     <figure>
+        <!-- Be sure to review the filenaming reading, as well as use srcset. -->
         <img src="images/skincarepic-2.png" alt="fall pastel sketch of skincare products" width="640" height="384">
         <figcaption>Embrace the Beauty: Rejuvenate Your Skin with Skincare Essentials</figcaption>
     </figure>
     </div>
 
     <!-- Footer -->
+    <!-- Label? -->
     <footer role="contentinfo">
+        <!-- Consider why use this div here? IF you don't have plans for more content inside the footer, then it's merely an extraneous block container for those three elements inside the div. However, if you plan to include more content units in the footer, this is a good way to help you define those units and later target them with CSS. -->
         <div class="contact-info">
             <h3>Contact Me</h3>
             <p>Email: <a href="mailto:yananarora@vt.edu">yananarora@vt.edu</a></p>
