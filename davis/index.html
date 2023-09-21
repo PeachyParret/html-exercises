@@ -6,12 +6,16 @@
     <title>Aspiring Journalists</title>
 </head>
 <body>
-    <header>
+  <a href="main" class="skip-to-link">Skip to Content</a>
+    <header role="banner">
         <h1>Aspiring Journalists</h1>
     </header>
-    <main>
-      <section> <!--Homepage-->
-        <h2>Mission Statement</h2>
+    <main role="main">
+      <!--Homepage-->
+      <section role="region" aria-labelledby="section-one-title"> 
+        <h2 id="section-one-title">
+          Mission Statement
+        </h2>
           <p>
             We are a student run organization that supports journalism in all its forms and wants to help students gain experience, build their resume, and network.
           </p>
@@ -21,23 +25,31 @@
                        assets/images/aj-logo-image-500x770.png 500w, 
                        assets/images/aj-logo-250x387.png 250w"/>
       </section>
-      <section> <!--Second Page?-->
-        <h2>History of the Club</h2>
+      <!--Second Page?-->
+      <section role="region" aria-labelledby="section-two-title"> 
+        <h2 id="section-two-title">
+          History of the Club
+        </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fuga quisquam corrupti provident facere expedita recusandae perspiciatis nulla blanditiis, voluptate, culpa magnam, quas cum distinctio quasi unde ut. Labore, quaerat!
           </p>
       </section>
-      <section> <!--Third Page?-->
-        <h2>What's Next</h2>
+      <!--Third Page?-->
+      <section role="region" aria-labelledby="section-three-title"> 
+        <h2 id="section-three-title">
+          What's Next
+        </h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod delectus dolore accusamus ratione veritatis iusto repellendus laborum ea aut facere ullam eius eos maiores temporibus aliquam, iure nemo, qui repellat.
             <img src="assets/images/aj-gobblerfest-image-1000x750.JPG" alt="Image of our booth at Gobblerfest" />
           </p>
           <figure>
-            <img src="assets/images/aj-gobblerfest-image-500x375.JPG" alt="Image of our booth at Gobblerfest" />
+            <img src="assets/images/aj-gobblerfest-image-500x375.JPG"          alt="Image of our booth at Gobblerfest" />
             <figcaption>Booth at Gobblerfest</figcaption>
           </figure>
       </section>
     </main>
 </body>
+<footer role="contentinfo" aria-label="Footer">
+</footer>
 </html>
