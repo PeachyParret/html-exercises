@@ -2,8 +2,11 @@
 <html lang="en-us">
 <head>
     <Title>Swim School</Title>
-    <nav>
+    <nav role="navigation" aria-label="Main Navigation">
         <ul>
+            <li>
+                <a href="./index.html"> Home</a>
+            </li>
             <li>
                 <a href="./instructors.html">About the Instructors</a>
             </li>
@@ -17,16 +20,18 @@
     </nav> 
 </head>
 <body style="background-color: aqua;">
-    <section>
+    <section id="schedule" role="region" aria-labelledby="schedule">
         <h1>Scheduling</h1>
         <!--Ask how to insert a calender system or maybe just image for starters-->
-        <img src="./assets/images/tv-stock.jpeg" alt="This a screen to schedule your lessons." srcset="./assets/images/tv-stock 200w, ./assets/images/tv-stock 400w, ./assets/images/tv-stock 800w">
+        <img src="./assets/images/tv-stock.jpeg" 
+             alt="This a screen to schedule your lessons." 
+             srcset="./assets/images/tv-stock.jpeg 200w, ./assets/images/tv-stock.jpeg 400w, ./assets/images/tv-stock.jpeg 800w">
     </section>
 </main>
 </body>
-<Footer>
+<Footer id="resources" role="contentinfo" aria-labelledby="swim-resources">
     <!--Find additional resources and links to put here, and which statistics I would like to include-->
-    <H1>Importance of Water Safety</H1>
+    <H1 id="swim-resources">Importance of Water Safety </H1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis dolorem quia enim reiciendis, asperiores ipsa culpa, expedita, voluptates fugiat magnam possimus odit sint! Vel dicta reprehenderit ut aliquam est?</p>
 </Footer>
 </html>
