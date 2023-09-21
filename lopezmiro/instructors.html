@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <Title>Swim School</Title>
-    <nav>
+    <Title role="banner" aria-labelledby="swim-banner">Swim School</Title>
+    <nav role="navigation" aria-label="Main Navigation">
         <ul>
+            <li>
+                <a href="./index.html"> Home</a>
+            </li>
             <li>
                 <a href="./instructors.html">About the Instructors</a>
             </li>
@@ -19,17 +22,19 @@
 <body style="background-color: aqua;">
 
 <main>
-    <section>
-        <h1>About the Instructors</h1>
+    <section id="instructors" role="region" aria-labelledby="instructors">
+        <h1 id="instructors">About the Instructors</h1>
         <p> Joseph: Joseph is the founder of our Swim School, and he acts as a subsititute for any emergencies. Joseph founded the school because as a child he nearly drowned at a friends birthday party, and the next week he was placed into swim lessons by his parents. It started a life long love of the water, where he eventually became a national champion in college and figured the best way to continue his passion would be to share it qwith others.</p>
         <p> Dylan: Dylan was a college swimmer who wanted to be able to stay involved in the sport, and enjoys working with kids, so that lead him to us. He loves watching the children learn and develop a healthy relationship with the water.</p>
         <p>Lauren: Lauren was also a college swimmer, who majored in early development. She worked at a local hosipital for a few years, but ended up missing the water, and teaching children is the best of both worlds.</p>
-        <img src="./assets/images/girl-stock.jpeg" alt="This is our instructor Lauren." srcset="./assets/images/girl-stock.jpeg 200w, ./assets/images/girl-stock.jpeg 400w, ./assets/images/girl-stock.jpeg 800w">
+        <img src="./assets/images/girl-stock.jpeg" 
+             alt="This is our instructor Lauren." 
+             srcset="./assets/images/girl-stock.jpeg 200w, ./assets/images/girl-stock.jpeg 400w, ./assets/images/girl-stock.jpeg 800w">
     </section>
 
-<Footer>
-    <!--Find additional resources and links to put here, and which statistics I would like to include-->
-    <H1>Importance of Water Safety</H1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis dolorem quia enim reiciendis, asperiores ipsa culpa, expedita, voluptates fugiat magnam possimus odit sint! Vel dicta reprehenderit ut aliquam est?</p>
+<Footer id="resources" role="contentinfo" aria-labelledby="swim-resources">
+        <!--Find additional resources and links to put here, and which statistics I would like to include-->
+        <H1 id="swim-resources">Importance of Water Safety </H1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis dolorem quia enim reiciendis, asperiores ipsa culpa, expedita, voluptates fugiat magnam possimus odit sint! Vel dicta reprehenderit ut aliquam est?</p>
 </Footer>
 </html>
