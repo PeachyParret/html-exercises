@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aspiring Journalists</title>
+    <!-- Be sure to add a favicon with <link>, and a few more metadata tags (author, description, etc.) -->
 </head>
 <body>
   <a href="main" class="skip-to-link">Skip to Content</a>
@@ -16,9 +17,14 @@
         <h2 id="section-one-title">
           Mission Statement
         </h2>
+        <!--
+          The <p> and img> are both siblings of the h2, which are all children of the section. So, those siblings should all be indented the same.
+          While some folks like to indent based on the implicit structure, I recommend not doing so. It helps to reserve your indentations for actual parent-child relationships, due to spacing in your editor's window.
+        -->
           <p>
             We are a student run organization that supports journalism in all its forms and wants to help students gain experience, build their resume, and network.
           </p>
+          <!-- Be sure to correct the fallback src attribute. If a user is on a browser that doesn't support srcset, the image will not load. -->
           <img src="aj-logo-1294x2000.png"
                alt="Aspiring Journalists Logo"
                srcset="assets/images/aj-logo-1294x2000.png 1294w, 
@@ -26,6 +32,8 @@
                        assets/images/aj-logo-250x387.png 250w"/>
       </section>
       <!--Second Page?-->
+
+      <!-- Be sure to use more meaningful ID values pertinent to the section, because it can be difficult later when faced with a larger site and more elements to keep track of. Numbered sections won't be as useful as something like "section-history-club" -->
       <section role="region" aria-labelledby="section-two-title"> 
         <h2 id="section-two-title">
           History of the Club
@@ -44,12 +52,14 @@
             <img src="assets/images/aj-gobblerfest-image-1000x750.JPG" alt="Image of our booth at Gobblerfest" />
           </p>
           <figure>
+            <!-- mind the spacing inside elements here. -->
             <img src="assets/images/aj-gobblerfest-image-500x375.JPG"          alt="Image of our booth at Gobblerfest" />
             <figcaption>Booth at Gobblerfest</figcaption>
           </figure>
       </section>
     </main>
 </body>
+<!-- The footer is content, so it should be contained by the <body>. Also, be sure to revise the label to something more meanginful once you add some content/purpose to the footer. -->
 <footer role="contentinfo" aria-label="Footer">
 </footer>
 </html>
