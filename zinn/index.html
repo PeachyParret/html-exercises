@@ -4,6 +4,7 @@
     <title>Bread!</title>
     <meta charset="utf-8" />
     <link rel="icon" href="assets/images/favicon.ico.png" type="image/x-icon" />
+    <!-- Consider 2-3 more metadata options below, e.g., author, description, etc. -->
 </head>
 <body>  
     <a href="#main" class="skip-to-link">Skip to Content</a>  
@@ -23,13 +24,22 @@
     </nav>
 <br>
     <main id="main" role="main" aria-labelledby="home-page">
+        <!--
+            1. Consider formatting your srcset this way for readability
+            2. Be sure to include width and height (of the src) to reserve the loading space. Don't worry. Your CSS will help you make it flexible later.
+        -->
         <img 
-            srcset="assets/images/bread-assorted-pile1280x853.jpg 1280w, assets/images/bread-assorted/pile800x533.jpg 800w, assets/images/bread-assorted-pile400x267.jpg 400w"
+            srcset="assets/images/bread-assorted-pile1280x853.jpg 1280w,
+                    assets/images/bread-assorted/pile800x533.jpg 800w,
+                    assets/images/bread-assorted-pile400x267.jpg 400w"
             src="assets/images/bread-assorted-pile1280x853.jpg" 
             alt="pile of bread">
         <section id="info" role="region" aria-labelledby="fun-facts">
             <h2 id="fun-facts">Fun Facts About Bread</h2>
             <p>
+                <!--
+                    That <br> is unnecessary, as are most of them, since CSS will help you manage spacing across your site.
+                -->
                 Here are some things about bread that you probably didn't know!<br>
                 <ol>
                     <li>Bread used to be so important in Egypt that it was used as money!</li>
@@ -64,7 +74,12 @@
                 </ul>
             </p>
         </section>
+        <!-- We're going to learn why we should avoid inline styles very soon, as well as better techniques and design patterns to consider. -->
         <figure style="text-align: center;">
+            <!--
+                'size' isn't an attributes, whereas 'sizes' is and has a specific syntax that you can lookup, if you're interested.
+                For now, be sure to use width and height, and add srcset later.
+            -->
             <img
                 src="assets/images/sourdough-bread-sliced1280x960.jpg"
                 alt="sliced sourdough bread"

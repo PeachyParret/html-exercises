@@ -1,10 +1,16 @@
+<!--
+    Note about the folder/filenaming: Consider how the '-page' is not adding much to the name, since it's assumed. So, I would remove it from your folders and files. And, perhaps, consider 'recipes' plural, since it includes multiple recipes.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Bread Recipes</title>
-    <meta charset="utf-8" />        <link rel="icon" href="../assets/images/favicon.ico.png" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <!-- Bumped this down a line -->
+    <link rel="icon" href="../assets/images/favicon.ico.png" type="image/x-icon" />
 </head>
 <body>
+    <!-- again, consider just changing it to "recipes" -->
     <a href="#recipe-page" class="skip-to-link">Skip to Content</a>
     <nav>
         <nav role="navigation" aria-label="Main navigation">
@@ -20,19 +26,74 @@
             This page contains a variety of recipes from around the web, ranging from simple, no-knead breads to the more complicated flaky danishes.
         </p>
         <nav role="navigation" aria-label="recipe navigation">
+            <!-- This should still use the ul > li pattern -->
             <p><a href="#beginner-recipes">Beginner Recipes</a></p>
             <p><a href="#intermediate-recipes">Intermediate Recipes</a></p>
             <p><a href="#advanced-recipes">Advanced Recipes</a></p>
         </nav>
-        <section id="starter-recipes" role="region" aria-labelledby="beginner-recipes">
-            <h3 id="beginner-recipes">Beginner Recipes</h3>
+        <!-- For consistency, consider this revision of the ID: beginner-recipes-container -->
+        <section id="starter-recipes" role="region" aria-describedby="beginner-recipes" aria-labelledby="beginner-recipes">
+            <!--
+                These h4 elements feel like subtitles that extend the h3s, rather than define a new subsection(s).
+
+                Consider the following structure that retains the label for the section, but joins the heading with the subheading without suggesting that there's another subsection. Take or leave it—just a thought. :-)
+            -->
+            <h3 id="beginner-recipes">
+                Beginner Recipes
+                <p class="subheading">For those who might not know their way around the kitchen just yet.</p>
+            </h3>
+            <!-- <h3 id="beginner-recipes">Beginner Recipes</h3>
             <h4>For those who might not know their way around the kitchen just yet.</h4>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p> -->
         </section>
         <section role="region" aria-labelledby="intermediate-recipes">
             <h3 id="intermediate-recipes">Intermediate Recipes</h3>
             <h4>For those who have some experience baking.</h4>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <!--
+                Will you include ALL of the recipes on this one page? Or, are you considering some example recipe pages to keep this page shorter? I might suggest the latter, which you can add later.
+                That way, you can create a common card pattern below that could be something like "Featured Intermediate Favorites"
+            -->
+            <!-- recipe preview cards container -->
+            <ul>
+                <!-- li as container for each card -->
+                <li>
+                    <!--
+                        two units to create typical card: image + title and description. Each with scope defined by those two divs
+                        now, later with CSS, you can easily target these two children with each card to create a cool design. That anchor tag could be a CTA button
+                    -->
+                    <div><img src="" alt="" srcset=""></div>
+                    <div>
+                        <h4>Lorem ipsum dolor sit.</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, labore.</p>
+                        <a href="./breadname.html">Bake a Breadname Loaf!</a>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="" alt="" srcset=""></div>
+                    <div>
+                        <h4>Officia non autem quia!</h4>
+                        <p>Cupiditate dolores at voluptatibus et! Sequi neque voluptates dolores debitis?</p>
+                        <a href="./breadname.html">Bake a Breadname Loaf!</a>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="" alt="" srcset=""></div>
+                    <div>
+                        <h4>Eaque soluta inventore sit.</h4>
+                        <p>Sunt architecto mollitia quod. Nam quisquam beatae odio debitis modi?</p>
+                        <a href="./breadname.html">Bake a Breadname Loaf!</a>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="" alt="" srcset=""></div>
+                    <div>
+                        <h4>Minima cupiditate placeat minus?</h4>
+                        <p>Neque totam consequuntur vero dolor, modi magnam non enim velit!</p>
+                        <a href="./breadname.html">Bake a Breadname Loaf!</a>
+                    </div>
+                </li>
+            </ul>
         </section>
         <section role="region" aria-labelledby="advanced-recipes">
             <h3 id="advanced-recipes">Advanced Recipes</h3>
