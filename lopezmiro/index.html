@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <!-- Resolve all of the capitalization issues for your tags throughout. They should all be lowercase. So, in this case, just below: <title> not <Title> -->
     <Title>Swim School</Title>
+    <!-- be sure to add a favicon with link and 2-3 metatags -->
 </head>
+<!-- All content needs to be a child of the <body> -->
 <Header role="banner" aria-labelledby="swim-banner" >
     <h1>Swim School</h1>
 </Header> <!--Find image I want for banner, and then fill out img-->
+    <!-- Note how this nav is not a child of header, so it should be at the same indentation, when you resolve how these are both in the head, rather than thte body -->
     <nav role="navigation" aria-label="Main Navigation"> 
         <ul>
             <li>
@@ -20,9 +24,12 @@
         </ul>
     </nav> 
 
+<!-- Refrain from styles write not. We'll learn why inline styles like this are too be avoided. -->
 <body style="background-color: aqua;">
+<!-- Again, note your indentation throughout. Show me that you know what elements are contained by others. -->
 <section id="school-information" role="region" aria-labelledby="school-information">
    <h1 id="school-information">About the Swim School</h1> 
+        <!-- There is no p1 tag, only p. And, again, note the indentation -->
         <p1>The Swim School was created in order to foster a love for the water and raise awareness about the risks of water safety in the community.
         We aim to achieve this goal by creating a safe, and caring atmosphere where parents and children can begin to become comfortable with the water.
         </p1>
@@ -30,6 +37,7 @@
         
 </section>
 </body>
+<!-- Note how the footer is positioned outside of the body. Be sure that all content is contained by the body element. -->
 <Footer id="resources" role="contentinfo" aria-labelledby="swim-resources">
     <!--Find additional resources and links to put here, and which statistics I would like to include-->
     <H1 id="swim-resources">Importance of Water Safety </H1>
