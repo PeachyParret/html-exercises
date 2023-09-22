@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Digital Frontier of Indie Fiction</title>
+  <!-- Be sure to add 2-3 more metadata tags, as well as your favicon with <link> -->
 </head>
 
+<!--
+  This header should be contained by the <body>
+  Also, review your indentation scheme throughout. There are a few places where it is inconsistent and not representative of the parent-child/descendant relationships. But, overall, it looks pretty good! :-)
+  - Obviously your site needs the aria roles and labels, so be sure to incorporate those throughout the site.
+-->
 <header>
+    <!-- I rec. formatting the srcset as shown in class for better readability -->
     <img alt="Book Laptop"
           src="book-laptop-fusion-mitchell.jpg"
           srcset="assets/images/book-laptop-fusion-mitchell-large-1200x630.jpg 1200w, assets/images/book-laptop-fusion-mitchell-medium-600x315.jpg 600w, asset/images/book-laptop-fusion-mitchell-small-300x158.jpg 300w">
@@ -15,9 +22,11 @@
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima doloremque officia, quis ipsam minus libero, enim nam doloribus tenetur sed iure architecto esse beatae? Aliquam, dolor voluptate! Alias, expedita quas.
   </p>
   <nav>
+    <!-- Nav menus typically don't have a headings, and if it did, this one should be h2, since h1 is typically used as the title for the page -->
     <h1>Navigation</h1>
     <ol>
       <li>
+        <!-- Remember that IDs should never use whitespaces, use dashes or underscores in lieu of spaces, and should only use lowercase. -->
         <a href="#Defining Webserial">Defining Webserial</a>
       </li>
       <li>
@@ -34,6 +43,7 @@
 </header>
 
 <body>
+<!-- the main is a child of the body, so make sure to indent it. Usually it's ok to leave the head and body at the same indentation as the html root however. -->
 <main>
   <section id="Defining Webserial">
     <h2>Defining Webserial</h2>
@@ -46,6 +56,8 @@
     </p>
   </section>
 
+  <!-- Why article here? Seems like it's another section of the main. -->
+
   <article id="Current State of Serialization">
     <h2>Current State of Serialization</h2>
     <p>
@@ -54,6 +66,7 @@
   </article>
 
   <aside id="List of Websites">
+    <!-- Try to be more actionable and descriptive with your headings. What kind of sites? What's the goal/purpose of the list for your audience? -->
     <h2>List of Websites</h2>
       <h3>Royalroad</h3>
         <p>
@@ -75,6 +88,7 @@
 </main>
 </body>
 
+<!-- the footer should be in the body, since it's content. -->
 <footer id="Links to Sites">
   <h2>Links to Sites</h2>
   <ul>
