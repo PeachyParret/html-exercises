@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Add a favicon? And other metadata, such as author at least?-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"
+    <meta name="author" content="Yana Arora"
 
     <title>Skincare 101: How to Get Started</title>
     <!-- Add a link to your CSS file if you have one -->
@@ -15,35 +16,25 @@
         <h1>Yana's Skincare Website</h1>
         <h2>Welcome! If you're new here, this is the place to get the easiest info on taking care of your skin!</h2>
     </header>
-    <img src="images/skincarepic-1.jpeg" alt="colorful bottles of skincare essentials" width="1080" height="812">
-    
-    <!-- Side navigation -->
-    <nav role="navigation" aria-describedby="nav-description">  
-        <!--
-            This code looks a little adrift from best practices, so be careful about taking code from elsewhere; especially when you are not sure what it is and how to works. For example, the <div> is a generic block element that you use when no other more semantic element is available. In this case, you've already contained the links in a <nav>, so the div is extra, if you will. Additionally, it's typically best practice to adhere to the following structure within for nav element:
-                nav
-                    ul
-                        li
-                            a
-        -->
-        <div class="sidebar">
-            <!-- again these class names tell me that you got this from an external source, b/c we haven't covered classes in detail yet. As a common design pattern, the "active" class isn't repeated, since it helps you targe the active page's link in the nav menu to style it with emphasis as a means to signal what page you're on.  -->
-            <a class="active" href="#home">Home</a>
-            <a class="active" href="types-of-products">Types of Products</a>
-            <a class="active" href="how-to-use">How to Use</a>
-            <a class="active" href="what-type-of-skin-do-you-have">What type of skin do you have?</a>
-            <a class="active" href="my-current-routine">My Current Routine</a>
-            <a class="active" href="q-and-a">Q&A</a>
-            <a class="active" href="best-places-to-get-affordable-skincare">Best Places to get Affordable Skincare</a>
-        </div>
-    </nav>
-
+    <img src="images/skincarepic-1.jpeg" alt="colorful bottles of skincare essentials" width="1080" height="812"> 
+        <!-- Side navigation -->
+<nav role="navigation" aria-describedby="nav-description">  
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="types-of-products">Types of Products</a></li>
+        <li><a href="how-to-use">How to Use</a></li>
+        <li><a href="what-type-of-skin-do-you-have">What type of skin do you have?</a></li>
+        <li><a href="my-current-routine">My Current Routine</a></li>
+        <li><a href="q-and-a">Q&A</a></li>
+        <li><a href="best-places-to-get-affordable-skincare">Best Places to get Affordable Skincare</a></li>
+        <!-- Add any additional navigation links here -->
+    </ul>
+</nav>
     <!-- Page content -->
-    <!-- the aria-hidden isn't necessary and not required for our projects in the class. It's something we haven't covered. -->
-    <main id="main-content" aria-hidden="false">
+    <main id="main-content"
         <!-- Be sure to use roles and labelledbys for these sections -->
-        <section id="types">
-            <h3>Types of Skincare Products</h3>
+        <section id="types"> role="region" aria-labelledby="types-heading">
+            <h3 id="types-heading">Types of Skincare Products</h3>
             <p>
                 Cleanser: Arguably the most important step to any skincare routine is finding a cleanser that works best for you. When deciding on a cleanser to purchase, ensure that the product mainly incorporates natural, non-abrasive ingredients, includes at least one active ingredient that is safe for daily use (i.e. niacinamide, hyaluronic acid, tranexamic acid, etc.), and that you complete a patch test on the inside of your wrist before applying it to the face.
             </p>
@@ -55,12 +46,12 @@
             </p>
         </section>
         
-        <section id="howto">
-            <h3>How to Use Skincare Products</h3>
+        <section id="howto"role="region" aria-labelledby="howto-heading">
+            <h3 id="howto-heading">How to Use Skincare Products</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         </section>
         
-        <section id="skintype">
+        <section id="skintype" role="region" aria-labelledby="skintype-heading">
             <h3>Determine Your Skin Type</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         </section>
@@ -71,21 +62,25 @@
      -->
     <figure>
         <!-- Be sure to review the filenaming reading, as well as use srcset. -->
-        <img src="images/skincarepic-2.png" alt="fall pastel sketch of skincare products" width="640" height="384">
+        <img
+    src="images/skincarepic-1.jpeg"
+    srcset="
+        images/skincarepic-1.jpg 1920w,
+        images/skincare-pic-medium.jpg 1280w,
+        images/skincare-pic-small.jpg 640w"
+    alt="colorful bottles of skincare essentials"
+    sizes="(max-width: 640px) 100vw, 50vw"
+    width="1080"
+    height="812"
         <figcaption>Embrace the Beauty: Rejuvenate Your Skin with Skincare Essentials</figcaption>
     </figure>
     </div>
-
     <!-- Footer -->
     <!-- Label? -->
     <footer role="contentinfo">
-        <!-- Consider why use this div here? IF you don't have plans for more content inside the footer, then it's merely an extraneous block container for those three elements inside the div. However, if you plan to include more content units in the footer, this is a good way to help you define those units and later target them with CSS. -->
-        <div class="contact-info">
             <h3>Contact Me</h3>
             <p>Email: <a href="mailto:yananarora@vt.edu">yananarora@vt.edu</a></p>
             <p>Phone: <a href="tel:+17032972758">+1 (703) 297-2758</a></p>
-        </div>
-        <!-- Add contact information or social media links here -->
     </footer>
 </body>
 </html>
