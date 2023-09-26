@@ -1,12 +1,27 @@
     <!DOCTYPE html>
+    <!--
+        Some high-level items:
+        - all filenames should adhere to the conventions noted in class: all lowercase, no whitespaces but use hyphens, etc.
+
+        Really, really, really take the time to focus on your HTML work right now, as there are numerous items to revise:
+            - Avoid most styling tags, like <center>, which is deprecated anyways. We will learn how to style them with CSS very very soon. These tags can make it difficult for you later. Definitely remove the center tag. Most of the em and strong are fine though.
+            - Same comment with regards to inline CSS styles. You will need to remove them evenetually, and we will discuss why inlines styles are to be typically avoided.
+            - Spot all of the red or off-colored tags, which indicate an error. Some element isn't closed, so it's breaking your relationships. Many of the section opening tags do not include the ">"
+            - I noticed that you may have copy-pasted code from my demo. That is ok to a degree. Many of the revisions noted here are due to dropping in some code without knowing what is doing or if it should even be there: abbr tags, lots of redundancies like doubling up on the h2 tags, etc.
+            - Indentation needs lots of attention throughout. Needs to be more consistent and rep the hierarchical relationships.
+            - Remove all of the white spaces when you open and close tags, such as "<h2> <strong> Welcome to Pelican Town! </strong> </h2>" In this case, the strong isn't necessary either, as it's something you can apply with CSS, so you need not repeat yourself everywhere in your HTML, so I'd just write it as <h2>Welcome to Pelican Town!</h2>
+     -->
     <html lang="en">
     <head>
+    <!-- children of the head need to be indented to rep that relationship -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stardew Valley Beginner's Guide</title>
+    <!-- be sure to include 2-3 more metatags like author, description, etc. -->
     <link rel="shortcut icon" type="image/png" href="assets/img/android-chrome-512x512.png">
     </head>
     <body style="background-color: rgb(123, 214, 126);"
+    <!-- header? nav? main? -->
     
     <!-- Title and general info-->
 
@@ -42,7 +57,15 @@
      <h2 id="The-Do's"
         Landmark 1: <abbr title="The-Do's"> <h2> <strong> The Do's </strong> </h2> </abbr> </h2>
      
-    
+        <!--
+            The identation is incorrect here and there is unwrapped content, such as "Mayor Lewis gifts ..." I see how you were thinking an ul here. It works, and you can definitely run with it, but all content should be wrapped.
+            Also, since there is content per "do", you could use a <div> with an h3 per suggestion, like so:
+
+            - div
+                - h3
+                - p
+            - rinse and repeat
+        -->
         <ul>
             <li> <strong> Plant seeds immediately!! </strong>  </li> 
             Mayor Lewis gifts you 15 parsnips seeds your first day. Using your hoe and watering can, plant them as soon as you walk outside. When you get more money, immediately go buy more seeds at Pierre's.
@@ -92,6 +115,7 @@
     </ul>
 
     </body>
+    <!-- Another body? one per page -->
     <body>
 
     <!-- Section 2-->
