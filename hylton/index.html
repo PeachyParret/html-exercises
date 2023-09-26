@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just One More</title>
+    <!-- Be sure to include 2-3 more metatags here, such as author, description, etc. -->
 
     <!-- Resources -->
     <link rel="shortcut icon" href="./assets/images/flower-book.png">
 
 </head>
 <body>
+    <!--
+        Spot the indentaiton and opening-closing issues throughout, such as below with the div.container that is never closed, its children: header, then another opened div inside the header, which isn't defining/distinguishing another unit of content from another, so the header is sufficient.
+
+        You can check your structure/hierarchies with the breadcrumb menu at the top of your editor. It will list out the structure for you to orient yourself and spot any unwanted structural relationships.
+
+        ALso, be sure to know what you're copy-pasting, as the div with that class tells me that you may have found something to draw from initially. That practice will trip up anyone who's new to the practice, since it can be hard to know why or if that code should actually be there.
+
+        I rec. the following:
+
+        header
+            - h1
+            - p
+
+        If you add more to you page's header later, you can totally use <div>s to distinguish let's say an image(s) from textual content.
+    -->
     <div class="container">
         <header>
             <div class="wrapper">
@@ -17,13 +33,17 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim eligendi rem, dolores nihil porro natus repudiandae voluptas dicta? A reiciendis dolores libero laudantium recusandae porro eos saepe unde similique.</p>
     </div>
         </header>
+
+    <!-- Good to use aria-label here, since there's no content to be labelledby. BUT, remember that label is regular prose, if you will, so you shouldn't use hyphens like you would for ID or class names. -->
     <nav role="navigation" aria-label="main-navigation">
         <a href="./rec.html">Recommendation Page</a>
         <a href="./genres.html">Overall Genre Recommendations</a>
     </nav>
     <main role="main" aria-label="main-content">
+        <!-- looks like your images need to use width, height, and srcset still -->
         <img src="./assets/images/medium-stack of books.jpg" alt="an open book on a stack of books"/>
         <section>
+            <!-- Be sure to at least use placeholders to develop your structure. Or, if these are cards with CTAs to different prioritized parts of the site, then will you also be including images and a CTA <a> link? -->
             <h2>Recommendations</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequuntur perferendis voluptatem quisquam cum nesciunt facilis. Consequatur, earum? Quia explicabo accusamus quo odit ea sapiente aperiam aut suscipit. Accusantium, similique.</p>
         </section>
