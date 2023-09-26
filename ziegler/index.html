@@ -6,9 +6,36 @@
         <title>
             Chloe's Cool Jams!
         </title>
+        <!--
+            This image isn't in your project yet, which you probably know. :-) Once you do, scale it to something like 50 or 75 pixels and save it as an .ico file. This will help your page performance too.
+            Also, be sure to use a relative path. For this file, './assets/images/flower.ico'
+        -->
         <link rel="site icon" href="/ziegler/assets/images/flower.png">
     </head>
+    <!--
+        I really do love the experimentation with styles throughout, but just know that you will need to remove/transfer them later. We will learn why to avoid inline CSS, as well as deprecated HTML elements, such as <center>. Also, the <font> tag isn't best used in this manner. You'll be able to do all of this in CSS files, so you can keep your structure separate from your styles, i.e., separation of concerns for easier development of your project. Additionally, you'll see how CSS approaches to typography and all styles makes it so much easier with less repetition, since you instead think of the design patterns to style in relationship to the structural patterns created by your HTML.
+    -->
     <body style="background-color:#F995C5;">
+        <!-- Be sure to include those a11y roles and labels throughout. That's paramount right now. -->
+
+        <!--
+            A few comments and suggestions:
+
+            1. Fewer <figures>: I'm gonna repeat the case for less figures. The overuse of some of these elements that stray a bit from their more specific uses starts to make those semantics less meaningful. So, sometimes an image doesn't need to be contained by a figure, since it is not an image that requires referencing within a longer unit of content with lots of other content.
+
+            Consider my suggested revision of your heade below. Note how the children <div>s offer generic containers to separate your units of content: img + text. That first <div> helps you to not suggest that the image is a figure for later reference on the page. Also, this structure will help you target those two units of content later in your CSS to design them in relation to each other within the scope of that header.
+        -->
+        <header>
+            <!-- Container for image(s) -->
+            <div>
+                <img src="" alt="" srcset="">
+            </div>
+            <!-- Container for text -->
+            <div>
+                <h1>Lorem ipsum dolor sit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, repellendus.</p>
+            </div>
+        </header>
         <header>
             <figure>
                 <a href="index.html">
@@ -31,8 +58,13 @@
                     </center>  
                 </p>
         </header>
+
+        <!--
+            I highly recommend replacing the figures in the <main> to mirror something like the structure in the header. It seems like a very similar design pattern. Also, all of those inline styles. I promise you're gonna learn how to design your site to your liking. :-)
+         -->
         <main>
                 <figure align="left">
+                    <!-- This form of linking can be tricky for a11y. Consider using a link as the sole CTA button, since it makes it a better experience for screenreader users and those who are not visually impaired. For exmaple, this repeating link approach will list out all of the links twice in the rotor menu. -->
                     <a href="albumreviews.html">
                         <img src="/ziegler/assets/images/homepage/albumreviewssmall.jpg" width="480px" height="480px" 
                         alt="album reviews art with cat">
