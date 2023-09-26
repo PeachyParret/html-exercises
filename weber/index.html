@@ -1,63 +1,82 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8" />
-        <title>Don't know yet</title>
-        <header>Blacksburg on a Budget</header>
-         role="banner"
-    </head>
-    <body>
-        <nav>
-            <h1>Main</h1>
-            <h1>Food</h1>
-            <h1>Housing</h1>
-            <h1>Transportation</h1>
-        </nav>
-        <main>
-         role="main"
-            <section>
-            <aria-label>Food</aria-label>
-             <h1>Food</h1> 
-             <aria-labelledby>Food</aria-labelledby>
-                <p>idk yet</p>
-                <figure>
-                 <img src="assets/images/dinner-food-meal-lunch-853.jpg" 
-                 alt="Tacos al pastor"
-                 srcset="assets/images/dinner-food-meal-lunch-853.jpg 853w, /images/dinner-food-meal-lunch-427.jpg 427w, assets/images/dinner-food-meal-lunch-327.jpg 327w"
-                 sizes="(min-width: 427px) 427px, (min-width: 853px) 853px"
-                 figcaption="Image by SallyMeza via Pixabay"
-                 />
-                </figure>
-            </section>
+<!-- bumped your head and body (and closing html) tags back at the same column as the html. That's the one place where it's more typical to not indent to rep the hierarchical relationships. -->
+<head>
+    <meta charset="utf-8" />
+    <!-- Be sure to add a favicon with <link> and 2-3 more metadata tags (author, description, etc.) -->
+    
+</head>
+<body>
+    <title>Don't know yet</title>
+     <header>Blacksburg on a Budget</header>
+        <header role="banner"></header>
+    <!-- Be sure to incorporate those ARIA roles and labels throughout -->
+    <nav>
+       <ul>
+        <li>Home</li>
+        <li>Food</li>
+        <li>Housing</h2>
+        <li>Transportation</li>
+       </ul>
+    </nav>
+    <!-- doubled up on main elements here. -->
+    <main>
+        <main role="main">
+        <!--
+            Review your code throughout the page and see how you've opened up lots of sections and have closed sections where you might have over looked it.
+            If you need help seeing those hierarchies, click on a line and look at the breadcrumb menu at the top of your editor's window. It will actually show you the relationships all the way back to your project folder even!
+        -->
+        <section> <!-- opened -->
+        <section role="region"> <!-- opened and closed -->
+            <h3>Food</h3>
+            <p>idk yet</p>
+            <figure>
+                <!-- Note how I changed your indentation for srcset. When I did, I spotted the error with one of your paths -->
+                <img src="assets/images/dinner-food-meal-lunch-853.jpg"
+                     alt="Tacos al pastor"
+                     srcset="assets/images/dinner-food-meal-lunch-853.jpg 853w,
+                             assets/images/dinner-food-meal-lunch-427.jpg 427w,
+                             assets/images/dinner-food-meal-lunch-327.jpg 327w"
+                     sizes="(min-width: 427px) 427px, (min-width: 853px) 853px"
+                />
+                <figcaption>Image by SallyMeza via Pixabay</figcaption>
+            </figure>
+        </section> <!-- closed section -->
 
-            <section>
-            <aria-label>region</aria-label>
-             <h1>Housing</h1>
-             <aria-labelledby>Housing</aria-labelledby>
-              <p>idk yet</p>
-               <figure>
-                 <img src="assets/images/apartments-balconies-homes-windows-1920.jpg" 
-                 alt="Apartments with blue window frames"
-                 srcset="assets/images/apartments-balconies-homes-windows-1920.jpg 1920w, assets/images/apartments-balconies-homes-windows-1280.jpg 1280w, assets/images/apartments-balconies-homes-windows-640.img 640w"
-                 sizes="(min-width: 1280px) 1280px, (min-width: 1920px) 1920px"
-                 figcaption= "Image by Pexels via Pixabay"
-                 />
-             </figure>
-            </section>
+        <section>
+        <section role="region">
+            <h3>Housing</h3>
+            <p>idk yet</p>
+            <figure>
+               
+                <img src="assets/images/apartments-balconies-homes-windows-1920.jpg"
+                     alt="Apartments with blue window frames"
+                     srcset="assets/images/apartments-balconies-homes-windows-1920.jpg 1920w,
+                             assets/images/apartments-balconies-homes-windows-1280.jpg 1280w,
+                             assets/images/apartments-balconies-homes-windows-640.img 640w"
+                     sizes="(min-width: 1280px) 1280px, (min-width: 1920px) 1920px"
+                />
+                <figcaption>Image by Pexels via Pixabay</figcaption>
+            </figure>
+        </section>
 
-            <section>
-            <arialabel>region</arialabel>
-             <h1>Transportation</h1>
-             <aria-labelledby>Housing</aria-labelledby>
-              <p>idk yet</p>
-                <figure>
-                  <img src="bus-transportation-travel-transit-1920.jpg"
-                   alt="Blue bus"
-                   srcset="assets/images/bus-transportation-travel-transit-1920 1920w, assets/images/bus-transportation-travel-transit-1280.jpg 1280w"
-                  figcaption= "Image by EPr-666 via Pixabay"
-                  />
-                </figure>
-            </section>
-        </main>
-    </body>
-    </html>
+        <section>
+        <section role="region">
+            <h3>Transportation</h3>
+            <!-- aria-labelledby isn't an element; it's an attribute to place in the opening tag of the landmark element -->
+            <p>idk yet</p>
+            <figure>
+
+                <img src="assets/images/bus-transportation-travel-transit-1920.jpg"
+                     alt="Blue bus"
+                     srcset="assets/images/bus-transportation-travel-transit-1920.jpg 1920w,
+                             assets/images/bus-transportation-travel-transit-1280.jpg 1280w,
+                             assets/images/bus-transportation-travel-transit-640.jpg 640w"
+                     sizes="(min-width: 1280px) 1280px, (min-width: 1920px) 1920px"
+                />
+                <figcaption>Image by EPr-666 via Pixabay</figcaption>
+            </figure>
+        </section>
+    </main>
+</body>
+</html>
