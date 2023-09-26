@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--
+        NOTE: The head and body can be indented at the same level as the html root, so you can save some horizontal real estate.
+        Also, be sure that you review your code throughout, as it needs revision with regards to representing the hierarchical relationships.
+    -->
     <head>
         <meta charset="UTF-8">
+        <!-- Note the use of uppercase here -->
         <Title>Swolenomics 101</Title>
     </head> 
     <body>
+    <!--
+        No header/banner or nav for the page
+
+        I notice that you're using header more than you should be, based on your structure. Consider the following:
+
+        CURRENT STRUCTURE
+        main
+            - header > h1
+            - img
+            - p*2
+            - header > h1
+            - img
+            - p*2
+            - aside
+                - header > h1
+                - p*2
+            - header > h1
+            - p
+            - ul > li
+            - ul > li
+            - ul > li
+
+        ONE SUGGESTED STRUCTURE STARTING WITHIN THE <body>
+        There are lots of combinations to consider, but you will need to revise with more semantically appropriate tags and structure.
+
+        header > h1 (for the page with an h1 which is reserved for the title of the page)
+        main
+            /*
+                Repeat this structure below for those units of content about particular topics regarding "Swolenomics 101"
+                Are these meant to be like introductory cards, where people can navigate to a dedicated page about that topic? If so, consider content that calls the audience to action to click on a provided link to that page, which I will add in the suggestion below.
+            */
+            - section
+                - header > h2
+                - div > img
+                - div
+                    - paragraphs/textual content
+                    - CTA <a>
+
+
+    -->
+
+    <!-- main is a child of the body, so make sure this is indented to represent that relationship. -->
     <main>
+        <!--
+            I'm trying to parse your element uses here in the main. Right now
+        -->
         <header role="banner" aria-labelledby="form-is-key">
             <h1>Form is KEY</h1>
         </header>
@@ -41,6 +91,7 @@
             <header role="complementary" aria-labelledby="excersize-frequency">
                 <h1>Excersize frequency</h1>
             </header>
+            <!-- paragraphs should be on the same level as the head in this case. Also, consider a <div> to wrap up these paragraphs, if they are a unit of content. -->
                 <p>
                     this is how many days a week, how many sets per excersize,how many reps per set, how much rest between. blah blah blah boring blah
                 </p>
@@ -55,6 +106,17 @@
                     take shelter and rest here before proceeding to more advanced topics. remember rest is important
                 </p>
 
+                <!--
+                    I like the idea here, but you definitely want to semantically define these as a cohesive unit of the FAQ. Consider the following, which will tell screenreaders that there is an unordered list, which you can define as a region BTW with a label:
+
+                    ul (container for all FAQs)
+                        - li (Q/A pair)
+                            - p (for Question)
+                            - p (for Answer)
+                        - rinse and repeat that li structure
+
+                    Also, I would suggest creating a separate page for this content. These can get long and not everyone will use it as a priority, so you can just keep it handy in your navigation menu.
+                -->
                 <ul>
                     <li>Q: some question pertaining to weight lifting</li>
                     <li>A: some answer pertaining to the question</li>
