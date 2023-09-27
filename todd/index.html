@@ -2,17 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0"
+    <!-- closed up the meta -->
+    <meta content="width=device-width, initial-scale=1.0">
+    <!-- add your page's title -->
     <title></title>
+    <!-- all content goes inside the body -->
     <h1 id="top_of_page" aria-labelledby="Jewelry Creators' Workshop">Jewelry Creators' Workshop</h1>
 </head>
+<!-- need the body tag, which will contain all of the content of the page. -->
 <header>
+    <!-- h1 in here, since it's the header of the page -->
 </header>
 <main>
+    <!--
+        Overarching Comments
+        - Review and resolve your indentation issues, so it represents the hierarchies of the elements, i.e., what is contained by what?
+        - Your use of aria labels (aria-label and aria-labelledby are not correct yet). BLater below, I provide a comment about your need to wrap up your implicit content structure defined by your heading levels with landmark sectioning elements, such as <section>, <article>, or perhaps additional and future content landmarks, such as <footer> or <aside>
+    -->
+        <!-- h1 is reserved for the title of the page, so the next level to use is h2. -->
         <h1 id="Introduction" aria-labelledby="Introduction"> Introduction</h1>
-        <p> Although jewelry making can become complex as you learn more about the different mediums and techniques, getting started is easy with our simple guide. 
-            We offer content that covers the essentials for creating new, unique, and fabulous pieces. 
-            We also provide tips for selling your jewelry pieces and sources for inspiration. </p>
+        <!-- turn on your editor's "Word Wrap" feature so that you do not need to add return carriages to longer content. Also, I reformatted the p below as a model to apply throughout. When you're done working on a paragraph, you can then close it, so you can simplify what you're looking at. -->
+        <p>
+            Although jewelry making can become complex as you learn more about the different mediums and techniques, getting started is easy with our simple guide. We offer content that covers the essentials for creating new, unique, and fabulous pieces. We also provide tips for selling your jewelry pieces and sources for inspiration.
+        </p>
+        <!-- consider parsing out this content on this page, so it won't get lengthy. You obviously don't need to develop ALL of the content, but pick at least one more page to develop in addition to the home page. -->
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="#top_of_page">Top of the page</a></li>
@@ -24,10 +37,39 @@
                     </ul>
             </ul>
         </nav>
+        <!--
+            With the *section* content below, you could/should be using other landmark elements to distinguish meaningful parts of the page. So, the <section> element is one such possibility with a role="region" and applied label.
+
+            Consider the following pattern:
+
+            section
+                - header
+                    - h2 (section heading)
+                    - h3 (subheading)
+                - div
+                    - img
+                    - img
+                - div
+                    - paragraphs/other textual content. (You could also, depending on your design goals later, move the headings inside of this div instead of the header suggestion above.)
+        -->
+        <!-- should be h2 -->
         <h1 id="Where_to_get_started_on_your_jewelry_making_journey" aria-labelledby="Where to get started on your jewelery making journey">Where to get started on your jewelry making journey</h1>
+        <!-- when you change the above to h2, you now follow the correct sequencing of headings -->
         <h3>Materials and supplies</h3>
-        <img alt="jewelry findings"
-        srcset="assets/images/Jewellery_findings_287x447.jpg , assets/images/Jewellery_findings_574x894.jpg , assets/images/Jewellery_findings_861x1341.jpg " >
+        <!--
+            - image elements need the following: src, alt, width, height, and srcset
+            - I provide a revised version as a model for revision
+            - Be sure to choose what metric and value to provide each src in the srcset. They're blank right now. Here's an example with the "w" metric that gives the browser the "intrinsic width" of the image.
+                srcset="assets/images/Jewellery_findings_287x447.jpg 287w,
+                        assets/images/Jewellery_findings_574x894.jpg 574w,
+                        assets/images/Jewellery_findings_861x1341.jpg 861w"
+        -->
+        <img src=""
+             alt="jewelry findings"
+             srcset="assets/images/Jewellery_findings_287x447.jpg ,
+                     assets/images/Jewellery_findings_574x894.jpg ,
+                     assets/images/Jewellery_findings_861x1341.jpg "
+        >
         <img alt="jewelry tools"
         srcset="assets/images/tools_585x474.jpg, assets/images/tools_780x633.jpg, assets/images/tools_1170x949.jpg">
         <p>To get started making jewelry you’ll need a few basic supplies. Firstly, you’ll want to invest in jewelry making pliers. There are several different types that you can usually buy in sets. You’ll want flat nose, wide flat nose, chain nose, bent chain nose, round nose, and wire cutters. Additionally, you should pick out some beads you like. Bead type isn’t important for basic jewelry, but if you’re wanting to make more intricate pieces look into our sources for what kind of beads you’ll need for those projects. Lastly, you’ll want to buy some findings, chains, string, and wires. Findings are things like clasps, jump rings, link connectors, headpins and eye pins, and crimps.</p>
