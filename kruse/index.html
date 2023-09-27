@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>How to make modular desktops in Canva</title>
-    </head>
+<!-- It's ok to leave the head and body in the same column/indentation level as the html root. Save some horizontal real estate. ;-) -->
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cal Kruse"/>
+    <meta name="description" content="This step-by-step how-to guide will help you create your very own modular desktop to help you organize your to-do lists, files, and more!"/>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon"/>
+    <title>How to make modular desktops in Canva</title>
+    <!-- be sure to add some more meta tags, such as name and description, as well as add a favicon with link -->
+</head>
+<body>
+    <a href="#main-content">Skip to main content</a>
+    <!-- header needs a role, and optionally a label for this one -->
+    <!-- nav menu? -->
+    <nav>
 
+    </nav>
+    <header>
+        <h1>How to make modular desktops in Canva</h1>
+    </header>
 
-    <body>
-        <header>
-            <h1>How to make modular desktops in Canva</h1>
-        </header>
-
-        <main>
-            <section ID="Introduction">
-                <h2>Introduction</h2>
-                <p>Are you looking to keep your workspace more organized? Do you feel overwhelmed by multiple to-do lists?</p>
-            </section>
-            <section id="Getting Started">
-                <h2>Getting Started </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nemo laudantium! Distinctio eligendi commodi expedita ad ipsa provident natus voluptates recusandae excepturi quae quisquam, architecto maiores deserunt asperiores laudantium omnis.</p>
-            </section>
-            <section id="Choosing Your Template">
-                <h2>Choosing Your Template </h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed sit accusantium obcaecati eum dicta quas odio excepturi inventore repellat fugiat quia distinctio id, magni quibusdam architecto consequuntur consectetur laudantium?</p>
-            </section>
-            <section id="Sections to Consider">
-                <h2>Sections to Consider</h2>
+    <main id="main-content">
+        <!--
+            So far a simple pattern below. Needs attention to some issues:
+            - Will this page include much of the content in those sections, or will there be dedicated pages and these are CTAs for those pages? That will dictate what elements you might consider using instead of section here on the home page.
+            - Need roles and labels throughout.
+            - footer? aside?
+            - all attributes should be lowercase
+            - "id" attributes should be lowercase and never have whitespaces. Use hyphens between words, e.g., "Getting Started" can be "getting-started"
+            - Need some images with src, alt, width, height, srcset
+        -->
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <!-- Recommend the below indentation for paragraphs, so you can close them up when you're done with them. -->
+            <p>
+                Are you looking to keep your workspace more organized? Do you feel overwhelmed by multiple to-do lists?
+            </p>
+        </section>
+        <section id="getting-started">
+            <h2>Getting Started </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nemo laudantium! Distinctio eligendi commodi expedita ad ipsa provident natus voluptates recusandae excepturi quae quisquam, architecto maiores deserunt asperiores laudantium omnis.</p>
+        </section>
+        <section id="choosing-your-template">
+            <h2>Choosing Your Template </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed sit accusantium obcaecati eum dicta quas odio excepturi inventore repellat fugiat quia distinctio id, magni quibusdam architecto consequuntur consectetur laudantium?</p>
+        </section>
+        <section id="sections-to-consider">
+            <h2>Sections to Consider</h2>
+            <ul>
+                <li>To-do lists</li>
                 <ul>
                     <li>To-do lists</li>    
                     <ul>
@@ -38,13 +61,19 @@
                     <li>Calendar</li>
                     <li>Space for important documents</li>
                 </ul>
-            </section>
-            <section id="Tips and Tricks">
-                <h2>Tips and Tricks</h2>
-            </section>
-            <section id="Examples">
-                <h2>Examples</h2>
-            </section>
+                <li>Affirmations</li>
+                <li>Project timelines</li>
+                <li>Calendar</li>
+                <li>Space for important documents</li>
+            </ul>
+        </section>
+        <section id="tips-and-tricks">
+            <h2>Tips and Tricks</h2>
+        </section>
+        <section id="examples">
+            <h2>Examples</h2>
+        </section>
+    <!-- Mind these empty spacings, since these should be consistent throughout the pages. -->
 
 
         </main>
