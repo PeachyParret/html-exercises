@@ -11,8 +11,10 @@
 <body style="margin: 0vw 100px;">
   <header role="banner" aria-labelledby="a11y-title">
     <img
-      srcset="assets/images/banner_D1.jpg 1519w" 
-      sizes="(min-width: 1519px) 1519px"
+      srcset="assets/images/banner_D1_1519.jpg 1519w,
+      assets/images/banner_D1_760.jpg 760w,
+      assets/images/banner_D1_380.jpg 380w" 
+      width="1519px"
       alt="Your guide to Gluten Free Cooking" 
       style="margin: 0px -100px;"
       >
@@ -23,12 +25,12 @@
     <h1 id="a11y-title">
         Intro to Gluten Free Cooking
     </h1>
-    <nav role="navigation" aria-label="Main Navigation" style="background-color: #00c65c; text-align: center;">
+    <nav role="navigation" aria-label="Main Navigation" style="background-color: #00c65c; text-align: center">
       <ul style="list-style: none; margin: 0; padding: 0;">
-        <li style="display: inline; margin-right: 20px;">
+        <li style="display: inline; margin: 20px;" aria-label="Home">
           <a href="index.html" style="text-decoration: none; color: #fff;"><strong>Home</strong></a>
         </li>
-        <li style="display: inline; margin-right: 20px;">
+        <li style="display: inline; margin: 20px;" aria-label="Recipes">
           <a href="recipes.html" style="text-decoration: none; color: #fff;">
             <strong>Recipes</strong>
           </a>
@@ -36,7 +38,7 @@
       </ul>
     </nav>
   </header>
-  <main id="main">
+  <main id="main" role="main" aria-label="Main">
         <h2> 
              Overview
         </h2>
@@ -73,7 +75,7 @@
               </ul>
             </nav>
       </section>
-      <section id="Bread">
+      <section id="Bread" role="region" aria-label="Bread">
         <h3>
           <hr>
           <br>
@@ -82,7 +84,13 @@
         </h3>
         <h4> Sandwiches</h4>
         <p>
-          <img align="right" style="margin-left: 10px;" src="assets/images/sandwich_big.jpg" height="400" width="275"> <br>
+          <img 
+          srcset="assets/images/sandwich_650.jpg 650w,
+          assets/images/sandwich_325.jpg 325w,
+          assets/images/sandwich_163 163w" 
+          sizes="(max-width: 200px) 650px, 325px, 163px" 
+          align="right" alt="Sandwich" style="margin-left: 10px;" height="300">
+          <br>
           Bread is the first thing everybody thinks about when having a GF diet. There really isn't anything that will compare to regular whitebread. GF bread is drier, crumblier, and more expensive, so don't expect to be relying on the sandwich bread to be the best part of the sandwich. In my 8 years of experience, it is the thing I miss most, but there are a lot of solid options out there for you. 
           <br> <br>
            Lots of large grocery stores have gluten free bread options, and my top two are <a href="https://canyonglutenfree.com/" target="_blank">Canyonhouse</a> and <a href="https://shop.schar.com/" target="blank">Schar</a>; however, <a href="https://www.udisglutenfree.com/" target="_blank">Udi's</a> has been around for a while and they've been improving. In terms of sandwich shops, Jersey Mike's and Firehouse use Udi's and Schar respectively, and they both have processess in place to reduce as much cross-contamination as they can. <em>No restaurant will be able to reduce all gluten.</em> Make sure, no matter what restaurant that you go to, that you tell them that you have a GF allergy.
@@ -90,7 +98,7 @@
            Now, you may be thinking that making your own bread may be a great alternative. I want to encourage anybody to try making their own bread at least once, just to understand the challenges of using GF flour and understanding its limitations.
         </p>
       </section>
-      <section id="Pasta">
+      <section id="Pasta" role="region" aria-label="Pasta">
         <h3 align="center">
           <hr>
           <br>
@@ -99,7 +107,13 @@
           <br>
           Pasta
         </h3>
-        <img align="left" style="margin-right: 10px;" src="assets/images/vodka2_small.jpg" height="300">
+        <img 
+        srcset="assets/images/vodka2_3024.jpg 3024w,
+                assets/images/vodka2_1512.jpg 1512w,
+                assets/images/vodka2_605 605w"
+        width="250px"
+        alt="Vodka Pasta" align="left" style="margin-right: 10px;"
+        >
         <h4> Lorem </h4>
         <p>
          <br>
@@ -108,7 +122,7 @@
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero fugit esse dolorem repellendus, ipsa modi tempore. Assumenda voluptatum ea, perspiciatis, facilis et, adipisci dicta at saepe ipsa quam sit consectetur velit repudiandae laboriosam nihil eveniet ab nulla aliquam minima! Cumque, dicta mollitia magni nam sit architecto provident magnam sint quas quod dolor minus maxime veritatis omnis nulla vitae consequuntur vero ut illum cum. Tempora impedit reprehenderit iusto totam itaque consequuntur odio est maxime voluptas laudantium?
         </p>
       </section>
-      <section id="Meat">
+      <section id="Meat" role="region" aria-label="Meat">
         <h3 align="center">
           <hr>
           <br>
@@ -116,7 +130,10 @@
           <br>     
           Meat
         </h3>
-        <img align="left" style="margin-right: 10px;" src="assets/images/bbqwsides_big.jpg" height="300">
+        <img srcset="assets/images/bbqwsides_4032.jpg 4032w,
+        assets/images/bbqwsides_2016.jpg 2016w,
+        assets/images/bbqwsides_806.jpg 806w"
+        alt="Plate of Barbeque with sides" align="left" style="margin-right: 10px;"  height="300">
         <h4>
           Basics
         </h4>
@@ -130,7 +147,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officiis provident repellendus ipsa fugiat sit temporibus unde aperiam, mollitia modi minima! Fugiat ratione incidunt a! Minus placeat explicabo consequatur sit suscipit dolore commodi vitae aliquam eos est dolores culpa numquam accusamus, eaque consectetur optio ratione ducimus similique fugit quas. Eum itaque modi perferendis, omnis deleniti voluptatibus ex minima ab, corporis amet id! Cum voluptatum obcaecati, quasi magnam vitae, voluptates aperiam sint aut non quia quae similique nostrum delectus officia eaque optio impedit fugit. Eligendi voluptas molestiae debitis ab esse est sit expedita ullam tenetur.
         </p>
       </section>
-      <section id="Breakfast">
+      <section id="Breakfast" role="region" aria-label="Breakfast">
         <h3 align="center">
           <hr>
           <br>
@@ -138,15 +155,63 @@
           Breakfast
         </h3>
         <img
+            srcset="assets/images/breakfast_1200.jpg 1200w,
+            assets/images/breakfast_600.jpg 600w,
+            assets/images/breakfast_300.jpg 300w" 
+            alt="Breakfast Platter"
             align="right" 
             style="margin-left: 10px;"
-            src="assets/images/breakfast_small.jpg" 
             height="300"
             >
             <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus dicta quibusdam molestias dolorem, debitis deleniti maxime. Nam ipsum aliquam doloribus qui consectetur minima iure amet quo quasi fugiat! Rerum exercitationem magnam veniam.
+              <br>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero sit earum repudiandae distinctio ea voluptates suscipit harum aut corporis debitis. Quas distinctio recusandae molestias, odit consectetur commodi quod rerum id saepe excepturi molestiae earum animi itaque, dolore sed sapiente velit. Ipsa aspernatur incidunt sapiente, ipsam, debitis eum voluptates sint quis explicabo dolorum voluptatum suscipit iusto hic eaque cupiditate obcaecati tempora est ducimus rerum magni. Id quod dolorum ipsa illum atque dolorem similique est qui excepturi magnam. Itaque fuga accusamus accusantium eum dolore voluptatum laborum ipsum perspiciatis odio, cupiditate alias rem exercitationem harum voluptatem voluptate? Expedita rem magnam corporis aperiam dolor?
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda libero animi consequatur ratione, veritatis, repellendus atque rem ad officiis ex sit! Hic, sequi! Impedit, perspiciatis non saepe accusamus, placeat a iure et tempora vitae consequatur hic ipsam. Placeat rerum ad deserunt quos maiores in a inventore distinctio, dolores tempore! Iusto tenetur esse quo quisquam quibusdam aliquam at obcaecati placeat, harum suscipit, reiciendis iure corrupti porro molestias recusandae? Praesentium soluta dignissimos necessitatibus quia aspernatur maxime error cum nam natus. Sed aliquam ipsa fugit. Quam odio cum rerum placeat ducimus delectus hic nesciunt?
+            </p>
+      </section>
+      <section id="Dessert" role="region" aria-label="Dessert">
+        <h3 align="center">
+          <hr>
+          <br>
+          <br>
+          Dessert
+        </h3>
+        <img
+            srcset="assets/images/cookies_730.jpg 730w,
+            assets/images/cookies_365.jpg 365w,
+            assets/images/cookies_183.jpg 183w"
+            alt="Chocolate Chip Cookies"
+            align="left" 
+            style="margin-right: 10px;" 
+            height="250"
+            
+            >
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero sit earum repudiandae distinctio ea voluptates suscipit harum aut corporis debitis. Quas distinctio recusandae molestias, odit consectetur commodi quod rerum id saepe excepturi molestiae earum animi itaque, dolore sed sapiente velit. Ipsa aspernatur incidunt sapiente, ipsam, debitis eum voluptates sint quis explicabo dolorum voluptatum suscipit iusto hic eaque cupiditate obcaecati tempora est ducimus rerum magni. Id quod dolorum ipsa illum atque dolorem similique est qui excepturi magnam. Itaque fuga accusamus accusantium eum dolore voluptatum laborum ipsum perspiciatis odio, cupiditate alias rem exercitationem harum voluptatem voluptate? Expedita rem magnam corporis aperiam dolor?
+              <br><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod obcaecati cumque harum quaerat, accusantium odio nostrum praesentium officia, accusamus itaque id, impedit sint soluta culpa consequuntur! Qui distinctio non est quaerat vitae sint illum, similique possimus atque aspernatur consectetur quam vel. Consectetur id eaque voluptate eligendi provident quasi explicabo sed cupiditate reprehenderit corrupti, autem sapiente non assumenda sint cumque, distinctio officia a doloremque quaerat ipsum dolorem totam placeat? Sit repellat tempore iure consequuntur saepe a excepturi sunt cum, quis rem sequi ipsam accusamus nesciunt, non nemo vero asperiores laborum doloribus, perspiciatis quidem. Doloremque.
             </p>
       </section>
   </main>
+  <footer style="background-color: #00c65c; text-align: center; height: 15vh; margin-top: 10vh; margin-bottom: 2vh;">
+    <p>
+      <br>
+      By: Christopher Shiflett
+    </p>
+    <nav role="navigation">
+      <ul style="list-style: none; margin: 0; padding: 0;">
+        <li style="display: inline; margin: 20px;">
+          <a href="index.html" style="text-decoration: none; color: #fff;"><strong>Home</strong></a>
+        </li>
+        <li style="display: inline; margin: 20px;">
+          <a href="recipes.html" style="text-decoration: none; color: #fff;">
+            <strong>Recipes</strong>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>
