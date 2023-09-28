@@ -3,17 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <title>Switching to a Sustainable Household</title>
+  <!-- be sure to add 2-3 more meta tags (name, descriptions, etc.), as well as a favicon with the <link>. -->
 
+  <!-- This header is content, so it should ne contained by the <body>. Only metadata and resources should be inside the <head>. -->
   <header>
     <h1>Want to Go Sustainable?</h1>
-      <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tempora ullam tenetur? Non mollitia fugit consectetur atque nemo, ea asperiores ratione eveniet debitis, officiis obcaecati ad soluta inventore laboriosam dignissimos!
-      </p>
+    <!--
+      1. The p element is on the same level as the h1, so they should be indented to represent that relationship.
+      2. I also revised the indentation of the content with best practices in mind.
+    -->
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tempora ullam tenetur? Non mollitia fugit consectetur atque nemo, ea asperiores ratione eveniet debitis, officiis obcaecati ad soluta inventore laboriosam dignissimos!
+    </p>
   </header>
 </head>
-
 <body>
+  <!-- Add the skip link -->
+  <!-- nav? -->
+
+  <!-- Be sure to wrap the main content in a <main> element -->
   <section>
+    <!--
+      Overall Comments/Suggestions
+
+      - Need to define roles and labels for each landmark on the page
+      - Mind your indentation throughout your site.
+      - The h1 is reserved for the title/main heading of the page. It should typically only be used once. Be sure to revise the levels throughout, starting with h2
+      - RE: the overall structure
+        - It seems like your home page here is goign to include 2 sections with their own sub-content.
+        - If the above's true, then I would create other pages dedicated to that content, rather than a very long one-pager.
+        - If you add more pages, then the home page becomes a way to prioritize and guide users through your content. They can choose which content they want to explore essentially.
+        - If you revise with that functionality in mind, then you could create a design pattern for the two sections and their parts to operate as shorter, informative, and guiding calls to action (CTA). Here's a suggested pattern:
+          main
+            - section
+              - h2
+              - div (container for the subcontent CTA elements)
+                - div (CTA element container)
+                  - img
+                  - div (container for textual elements)
+                    - h3
+                    - p
+                    - a (CTA link to page about that subject)
+                - rinse and repeat this CTA pattern
+            - rinse and repeat this section pattern
+
+    -->
       <h1>
       Why your household habits are killing the planet
       </h1>
@@ -198,5 +232,7 @@
           </ul>
     </article>
   </section>
+
+  <!-- aside? footer? -->
 </body>
 </html>
