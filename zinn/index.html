@@ -17,7 +17,7 @@
             Everything you need to know about bread!
         </p>
     </header>
-    <nav role="navigation" aria-label="Main navigation">
+    <nav role="navigation" aria-label="main-navigation">
         <ul>
             <li><a href="./history/history.html">In-Depth History of Bread</a></li>
             <li><a href="./recipes/recipes.html">Recipes</a></li>
@@ -70,8 +70,10 @@
             </p>
         </section>
             <img
+                srcset="assets/images/sourdough-bread-sliced1280x960.jpg 1280w, assets/images/sourdough-bread-sliced800x600.jpg 800w, assets/images/sourdough-bred-sliced400x300.jpg 400w"
                 src="assets/images/sourdough-bread-sliced1280x960.jpg"
                 alt="sliced sourdough bread"
+                sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1280px) 1280px"
                 width="1280"
                 height="960">
             <figcaption>Img. 2 - Sourdough bread, sliced.</figcaption>    
@@ -87,5 +89,8 @@
             </p>
         </section>
     </main>
+    <footer role="contentinfo" aria-label="copyright-info">
+        <p>Copyright 2023 Kat Zinn</p>
+    </footer>
 </body>
 </html>

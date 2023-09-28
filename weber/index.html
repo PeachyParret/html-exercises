@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!-- bumped your head and body (and closing html) tags back at the same column as the html. That's the one place where it's more typical to not indent to rep the hierarchical relationships. -->
-<head>
-    <meta charset="utf-8" />
-    <!-- Be sure to add a favicon with <link> and 2-3 more metadata tags (author, description, etc.) -->
-    
-</head>
-<body>
+ <head>
+    <meta charset="utf-8">
+    <meta name="description" content="A guide to living in Blacksburg without completely draining your bank account">
+    <meta name="author" content="Victoria Weber">
+    <link rel="icon" type="image/x-icon" href="assets/images/faviconimage.jpg">
+ 
+ </head>
+
+ <body>
     <title>Blacksburg on a Budget</title>
-     <header>Blacksburg on a Budget</header>
-        <header role="banner"></header>
-    <!-- Be sure to incorporate those ARIA roles and labels throughout -->
-    <nav>
+     <header role="banner" aria-labelledby="website name">
+        <h1 id="website name">Blacksburg on a Budget</h1>
+     </header>
+
+     <nav role="navigation" aria-label="navigation-menu">
        <ul>
         <li>Home</li>
         <li>Food</li>
-        <li>Housing</h2>
+        <li>Housing</li>
         <li>Transportation</li>
        </ul>
-    </nav>
-    <main>
-        <main role="main">
-        
-        <section>
-            <section role="region">
-                <h3>Food</h3>
+     </nav>
+     <main role="main">
+      <a href="#main" class="skip">Skip to main content</a>
+        <section role="region" aria-labelledby="cheap-food">
+                <h2 id="cheap-food">Food</h2>
                 <p>One of the perks of Blacksburg is that because it's quite rural, there's a few more cheap food options than say, closer to Roanoke. Check out the following places for a solid meal:</p>
                 <figure>
                     <img src="assets/images/dinner-food-meal-lunch-853.jpg"
@@ -38,14 +39,15 @@
                 </figure>
         </section>
 
-        <section>
-        <section role="region">
-            <h3>Housing</h3>
+        <section role="region" aria-labelledby="cheap-housing">
+            <h2 id="cheap-housing">Housing</h2>
             <p>Housing in Blacksburg is getting pretty close to an oxymoron. Still, there's some relatively inexpensive options out there for you. Something to keep in mind is that the further away from Blacksburg you get, the cheaper it is, but that might translate to higher transportation costs if it means you need to drive to get to campus.</p>
             <figure>
                
                 <img src="assets/images/apartments-balconies-homes-windows-1920.jpg"
                      alt="Apartments with blue window frames"
+                     width="640"
+                     height="425"
                      srcset="assets/images/apartments-balconies-homes-windows-1920.jpg 1920w,
                              assets/images/apartments-balconies-homes-windows-1280.jpg 1280w,
                              assets/images/apartments-balconies-homes-windows-640.img 640w"
@@ -55,15 +57,14 @@
             </figure>
         </section>
 
-        <section>
-        <section role="region">
-            <h3>Transportation</h3>
-            <!-- aria-labelledby isn't an element; it's an attribute to place in the opening tag of the landmark element -->
-            <p>Transportation in Blacksburg is by no means perfect, but there's definitely some options to wor with. Blacksburg Transit is by and large what most of the population uses to get around campus and its neighboring housing areas. However, if you're looking to get further than that, you'll likely need to own a car, or know someone who does. If you aren't inclined to purchase an entire vehicle, there's a couple Virginia Tech carpooling Facebook groups, and you can always poke around on the Virginia Tech Reddit thread to see if anyone can help you out. That said, be prepared to chip in for gas.</p>
+        <section role="region" aria-labelledby="how-to-get-around">
+            <h2 id="how-to-get-around">Transportation</h2>
+            <p>Transportation in Blacksburg is by no means perfect, but there's definitely some options to work with. Blacksburg Transit is by and large what most of the population uses to get around campus and its neighboring housing areas. However, if you're looking to get further than that, you'll likely need to own a car, or know someone who does. If you aren't inclined to purchase an entire vehicle, there's a couple Virginia Tech carpooling Facebook groups, and you can always poke around on the Virginia Tech Reddit thread to see if anyone can help you out. That said, be prepared to chip in for gas.</p>
             <figure>
-
                 <img src="assets/images/bus-transportation-travel-transit-1920.jpg"
                      alt="Blue bus"
+                     width="640"
+                     height="425"
                      srcset="assets/images/bus-transportation-travel-transit-1920.jpg 1920w,
                              assets/images/bus-transportation-travel-transit-1280.jpg 1280w,
                              assets/images/bus-transportation-travel-transit-640.jpg 640w"
@@ -72,6 +73,9 @@
                 <figcaption>Image by EPr-666 via Pixabay</figcaption>
             </figure>
         </section>
-    </main>
+      </main>
+      <footer role="contentinfo" aria-labelledby="copyright-info">
+        <p id="copyright-info">Copyright 2023</p>
+      </footer>
 </body>
 </html>
