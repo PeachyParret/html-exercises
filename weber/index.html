@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!-- bumped your head and body (and closing html) tags back at the same column as the html. That's the one place where it's more typical to not indent to rep the hierarchical relationships. -->
 <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="insertimagenamehere"
     <!-- Be sure to add a favicon with <link> and 2-3 more metadata tags (author, description, etc.) -->
     
 </head>
 <body>
-    <title>Don't know yet</title>
+    <title>Blacksburg on a Budget</title>
      <header>Blacksburg on a Budget</header>
         <header role="banner"></header>
     <!-- Be sure to incorporate those ARIA roles and labels throughout -->
@@ -19,34 +19,29 @@
         <li>Transportation</li>
        </ul>
     </nav>
-    <!-- doubled up on main elements here. -->
     <main>
         <main role="main">
-        <!--
-            Review your code throughout the page and see how you've opened up lots of sections and have closed sections where you might have over looked it.
-            If you need help seeing those hierarchies, click on a line and look at the breadcrumb menu at the top of your editor's window. It will actually show you the relationships all the way back to your project folder even!
-        -->
-        <section> <!-- opened -->
-        <section role="region"> <!-- opened and closed -->
-            <h3>Food</h3>
-            <p>idk yet</p>
-            <figure>
-                <!-- Note how I changed your indentation for srcset. When I did, I spotted the error with one of your paths -->
-                <img src="assets/images/dinner-food-meal-lunch-853.jpg"
-                     alt="Tacos al pastor"
-                     srcset="assets/images/dinner-food-meal-lunch-853.jpg 853w,
-                             assets/images/dinner-food-meal-lunch-427.jpg 427w,
-                             assets/images/dinner-food-meal-lunch-327.jpg 327w"
-                     sizes="(min-width: 427px) 427px, (min-width: 853px) 853px"
-                />
-                <figcaption>Image by SallyMeza via Pixabay</figcaption>
-            </figure>
-        </section> <!-- closed section -->
+        
+        <section>
+            <section role="region">
+                <h3>Food</h3>
+                <p>One of the perks of Blacksburg is that because it's quite rural, there's a few more cheap food options than say, closer to Roanoke. Check out the following places for a solid meal:</p>
+                <figure>
+                    <img src="assets/images/dinner-food-meal-lunch-853.jpg"
+                        alt="Tacos al pastor"
+                        srcset="assets/images/dinner-food-meal-lunch-853.jpg 853w,
+                                assets/images/dinner-food-meal-lunch-427.jpg 427w,
+                                assets/images/dinner-food-meal-lunch-327.jpg 327w"
+                        sizes="(min-width: 427px) 427px, (min-width: 853px) 853px"
+                    />
+                    <figcaption>Image by SallyMeza via Pixabay</figcaption>
+                </figure>
+        </section>
 
         <section>
         <section role="region">
             <h3>Housing</h3>
-            <p>idk yet</p>
+            <p>Housing in Blacksburg is getting pretty close to an oxymoron. Still, there's some relatively inexpensive options out there for you. Something to keep in mind is that the further away from Blacksburg you get, the cheaper it is, but that might translate to higher transportation costs if it means you need to drive to get to campus.</p>
             <figure>
                
                 <img src="assets/images/apartments-balconies-homes-windows-1920.jpg"
@@ -63,8 +58,7 @@
         <section>
         <section role="region">
             <h3>Transportation</h3>
-            <!-- aria-labelledby isn't an element; it's an attribute to place in the opening tag of the landmark element -->
-            <p>idk yet</p>
+            <p>Transportation in Blacksburg is by no means perfect, but there's definitely some options to work with. Blacksburg Transit is by and large what most of the population uses to get around campus and its neighboring housing areas. However, if you're looking to get further than that, you'll likely need to own a car, or know someone who does. If you aren't inclined to purchase an entire vehicle, there's a couple Virginia Tech carpooling Facebook groups, and you can always poke around on the Virginia Tech Reddit thread to see if anyone can help you out. That said, be prepared to chip in for gas.</p>
             <figure>
 
                 <img src="assets/images/bus-transportation-travel-transit-1920.jpg"

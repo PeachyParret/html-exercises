@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <Title>Swim School</Title>
+    <title role="banner" aria-labelledby="swim-banner">Swim School</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="#schedule-information">Skip to Schedule Information</a>
+</head>
+<body>
+    <header style="background-color: aqua;" role="banner" aria-labelledby="swim-banner" >
+        <h1 style="text-align: center;">Swim School</h1>
+    </header>   
     <nav role="navigation" aria-label="Main Navigation">
         <ul>
             <li>
@@ -18,20 +26,24 @@
             </li>
         </ul>
     </nav> 
-</head>
-<body style="background-color: aqua;">
-    <section id="schedule" role="region" aria-labelledby="schedule">
-        <h1>Scheduling</h1>
-        <!--Ask how to insert a calender system or maybe just image for starters-->
-        <img src="./assets/images/tv-stock.jpeg" 
-             alt="This a screen to schedule your lessons." 
-             srcset="./assets/images/tv-stock.jpeg 200w, ./assets/images/tv-stock.jpeg 400w, ./assets/images/tv-stock.jpeg 800w">
-    </section>
-</main>
-</body>
-<Footer id="resources" role="contentinfo" aria-labelledby="swim-resources">
-    <!--Find additional resources and links to put here, and which statistics I would like to include-->
-    <H1 id="swim-resources">Importance of Water Safety </H1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis dolorem quia enim reiciendis, asperiores ipsa culpa, expedita, voluptates fugiat magnam possimus odit sint! Vel dicta reprehenderit ut aliquam est?</p>
-</Footer>
-</html>
+    <body>
+        <main>
+            <section id="schedule" role="region" aria-labelledby="schedule">
+                <h1>Scheduling</h1>
+                <!--Ask how to insert a calender system or maybe just image for starters-->
+                <img src="./assets/images/tv-stock.jpeg" 
+                alt="This a screen to schedule your lessons." 
+                srcset="./assets/images/tv-stock.jpeg 200w, ./assets/images/tv-stock.jpeg 400w, ./assets/images/tv-stock.jpeg 800w">
+            </section>
+            <section id="schedule-information" role="region" aria-labelledby="schedule-information">
+                <h2>Schedule Contact Information</h2>
+                <p>For more schedule information call #99999999</p> 
+            </section>
+        </main>
+        <footer id="resources" role="contentinfo" aria-labelledby="swim-resources">
+            <!--Find additional resources and links to put here, and which statistics I would like to include-->
+            <h2 id="swim-resources">Importance of Water Safety </h2>
+            <p>For more information about the importance of water safety please visit the following links:</p>
+        </footer>
+    </body>
+    </html>

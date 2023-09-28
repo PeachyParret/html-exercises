@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <title>Bread!</title>
-    <meta charset="utf-8" />
-    <link rel="icon" href="assets/images/favicon.ico.png" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="author" content="Kat Zinn">
+    <meta name="description" content="A website all about bread">
+    <link rel="icon" href="assets/images/favicon.ico.png" type="image/x-icon">
 </head>
 <body>  
     <a href="#main" class="skip-to-link">Skip to Content</a>  
@@ -17,8 +19,8 @@
     </header>
     <nav role="navigation" aria-label="Main navigation">
         <ul>
-            <li><a href="./history-page/history-page.html">In-Depth History of Bread</a></li>
-            <li><a href="./recipe-page/recipe-page.html">Recipes</a></li>
+            <li><a href="./history/history.html">In-Depth History of Bread</a></li>
+            <li><a href="./recipes/recipes.html">Recipes</a></li>
         </ul>    
     </nav>
 <br>
@@ -26,7 +28,10 @@
         <img 
             srcset="assets/images/bread-assorted-pile1280x853.jpg 1280w, assets/images/bread-assorted/pile800x533.jpg 800w, assets/images/bread-assorted-pile400x267.jpg 400w"
             src="assets/images/bread-assorted-pile1280x853.jpg" 
-            alt="pile of bread">
+            alt="pile of bread"
+            sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1280px) 1280px"
+            width="1280px"
+            height="853px">
         <section id="info" role="region" aria-labelledby="fun-facts">
             <h2 id="fun-facts">Fun Facts About Bread</h2>
             <p>
@@ -64,12 +69,13 @@
                 </ul>
             </p>
         </section>
-        <figure style="text-align: center;">
             <img
+                srcset="assets/images/sourdough-bread-sliced1280x960.jpg 1280w, assets/images/sourdough-bread-sliced800x600.jpg 800w, assets/images/sourdough-bred-sliced400x300.jpg 400w"
                 src="assets/images/sourdough-bread-sliced1280x960.jpg"
                 alt="sliced sourdough bread"
-                size="600w"
-                >
+                sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1280px) 1280px"
+                width="1280"
+                height="960">
             <figcaption>Img. 2 - Sourdough bread, sliced.</figcaption>    
         </figure>
         <section role="region" aria-labelledby="reasons-to-eat-bread">
