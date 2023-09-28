@@ -1,41 +1,84 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+<!DOCTYPE html>
+<!--
+  High level Items
+  - Remove all of those spaces after an opening tag and just before the closing tags
+  - For the midterm, all images should use the four attributes: src, alt, width, height, and srcset
+  - ID attributes should be lowercase with no whitespaces; use hyphens between words.
+  - ID attributes are not needed, if you don't need to target the element. So, the nav element doesn't need an ID right now.
+  - Check your indentation scheme throughout to represent the hierarchical relationships
+  - we're going to learn later why we avoiv inline CSS styling, so be aware that those parts will need to be removed eventually
+-->
 <html lang="en-us">
   <head>
-    <meta charset=ISO-8859-1>
-    <meta name="viewport" content="width=device-width">
-    <title>&lt;title&gt; element</title>
+    <!-- shoudl be utf-8 -->
+    <!-- <meta charset=ISO-8859-1> -->
+    <meta charset="utf-8">
+    <!-- needs the appended part: "", initial-scale=1.0" we will be learning about this meta tag later-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Brooke Wager's Pets </title>
+    <!-- add a couple more meta tags like name and description -->
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
   </head>
   <body style="background-color:blanchedalmond;">
-    <main> 
-      <header> <h1> My Pets!</h1> </header> 
-      <section> Leo and Tito</section>
-      <section>
-        <h1> My current Family Dogs
-          <figure>
-           <img src="assets/images/leo-couch-lounging-.JPG" 
-           alt="Black Dog Sitting On The Couch Very Human Like"> </h1>
-             <figcaption> A Black and Brown Dog Sitting on a Couch 
-             </figcaption>
-          </figure> 
-          <p> This will be about Leo and Tito</p>
-      </section>
-      <section>
-        <h2> Maybe, the Cat
-            <img src="assets/images/maybe-large- cat-828w-1077h.jpg" alt="White Cat Sitting on Computer
-            srcset="maybe-small-cat-207w-269h 270w, maybe-medium-computer-414w-538h 414w, maybe-large-cat-828w-1077h 828w
-            sizes="(max-width: 600px) 270px, 828px"/>
-        </h2>
+      <header role="banner" aria-labelledby="Brooke's Pets">
+        <!-- skip link is the very first child of the body -->
+        <a href="#main" class="skip-to-link"> Skip To Main Content</a> 
+        <h1 id="Brooke's Pets"> My Pets! </h1>
+        <!-- the ID and class aren't needed here; also the aria-label is more appropriate, since there's no content for the landmark to be "labelledby" -->
+        <nav class="menu" id="navigation menu" aria-labelledby="navigation menu">
+          <ul>
+            <li><a href="otherdogs.html">Other Cute Pets</a></li>
+            <!-- External links in a primary nav is typically not a good idea, as it will confuse your users -->
+            <li><a href="https://www.mcfacc.org/volunteer" target="_blank">Learn More About Fostering</a></li>
+          </ul>
+        </nav>
+          <img src="assets/images/leo-tito-3024-4032.jpg" 
+          alt="Two Dogs Sitting on a Couch while one looks at the Other"
+          width="756" height="1008">
+        </div>
+      </header>
+      <main id="main" aria-labelledby="main">
+         <!-- All sections/regions need labels  -->
+        <section role="region">
+          <h2> Leo and Tito - My Dogs</h2>
+            <figure>
+              <img src="assets/images/leo-couch-lounging-910-1700.JPG" 
+              alt="Black Dog Sitting On The Couch Similar to How a Human Would"
+              width="450" height="850">
+             <figcaption>Leo Sitting on a Couch. </figcaption>
+            </figure> 
+            <p> This will be about Leo and Tito</p>
+        </section>
+        <section role="region">
+          <h2> Maybe, the Cat</h2>
+            <img src="assets/images/maybe-medium-computer-414w-538h.jpg" 
+            alt="White Cat Sitting on Computer"
+            srcset="maybe-medium-computer-414w-538h 414px, maybe-small-cat-207w-269h 207px, maybe-large-cat-828w-1077h 828px"
+            sizes="(max-width: 600px) 414px, 828px"/>
           <p> Lorem ipsum dolor </p> 
-      </section>
-      <section>
-        <h2> More about their breeds</h2>
-          <p> Lorem ipsum dolor </p>
-      </section>
-      <section>
-        <h2> Special mentions </h2>
-          <p> This will be about all other dogs I've had/foster animals</p>
-      </section>
-    </main>
+        </section>
+        <section role="region">
+          <h3> More about their breeds and personalities</h3>
+          <!-- note how the h3 and p are both children of this section, so they should be on the same 'column'/level of indentation -->
+              <p> Lorem ipsum dolor </p>
+        </section>
+      </main>
   </body>
-  <footer> I will put citation and more info down here</footer>
+  <!--
+    footer is content, so it should be contained by the body
+    also, be sure to use tags to wrap any content inside of it.
+  -->
+  <footer role="contentinfo" id="additional info" aria-labelledby="additional info"> I will put citation and more info down here</footer>
 </html>

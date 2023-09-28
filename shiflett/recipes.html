@@ -8,25 +8,48 @@
 
     <!-- Resources -->
     <link rel="shortcut icon" href="assets/images/wheatx.png">
-    <header>
-      <img src="assets/images/cooking banner D1.jpg" alt="Your guide to Gluten Free Cooking" width="1519" height="400" style="margin: 0px -100px;">
-      <h1>
+    <link rel="shortcut icon" href="assets/images/wheatx.png">
+    <header role="banner" aria-labelledby="a11y-title">
+      <img
+        srcset="assets/images/banner_D1.jpg 1519w" 
+        sizes="(min-width: 1519px) 1519px"
+        alt="Your guide to Gluten Free Cooking" 
+        style="margin: 0px -100px;"></header>
+      <h1 id="a11y-title">
           Intro to Gluten Free Cooking
       </h1>
+      <nav role="navigation" aria-label="Main Navigation" style="background-color: #00c65c; text-align: center;">
+        <ul style="list-style: none; margin: 0; padding: 0;">
+          <li style="display: inline; margin-right: 20px;">
+              <a href="index.html" style="text-decoration: none; color: #fff;"><strong>Home</strong></a>
+          </li>
+          <li style="display: inline; margin-right: 20px;">
+            <a href="recipes.html" style="text-decoration: none; color: #fff;"><strong>Recipes</strong></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 </head>
 <body style="margin: 0px 100px;">
   
-  <nav>
-    <a href="./index.html">
-      <img src="assets/images/home_big.jpg" alt="Homepage" style="padding-right: 2px" height="50" width="100"/>
-    </a>
-    <a href="./recipes.html">
-        <img src="assets/images/recipes_big.jpg" alt="Recipes" height="50" width="100"/>
-      </a>
-  </nav>
+  <section id="Nav">
+    <nav role="navigation" aria-labelledby="a11y-recipes"> 
+      <ul>
+        <h3 id="a11y-recipes">
+          Family Recipes
+        </h3>
+          <a href="#Basic_Pasta" style="text-decoration: none; color: inherit"><strong>Basic Pasta</strong></a>
+          <br>
+          <a href = "#Lasagna" style="text-decoration: none; color: inherit"><strong>Lasagna</strong></a>
+          <br>
+          <a href = "#Cookies" style="text-decoration: none; color: inherit"><strong>Cookies</strong></a>
+      </ul>
+    </nav>
+  </section>
     <main>
-    <p> hi</p>
+    <p>
+      Recipes will go here evntually.
+    </p>
     </main>
 </body>
 </html>
