@@ -1,41 +1,60 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
-    <meta charset=ISO-8859-1>
-    <meta name="viewport" content="width=device-width">
-    <title>&lt;title&gt; element</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brooke Wager">
+    <meta name="description" content="All About Brooke's Pets">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>Brooke Wager's Pets</title>
   </head>
-  <body style="background-color:blanchedalmond;">
-    <main> 
-      <header> <h1> My Pets!</h1> </header> 
-      <section> Leo and Tito</section>
-      <section>
-        <h1> My current Family Dogs
+    <body>
+      <header>
+        <a href="#main" aria-label="skip-to-main-content-link">Skip To Main Content</a> 
+        <h1><banner>My Pets!</banner></h1>
+        <nav>
+          <ul>
+            <li><a href="otherdogs.html">Other Cute Pets</a></li>
+            <li><a href="?">I'll have another link here eventually</a></li>
+          </ul>
+        </nav>
+        <img src="assets/images/leo-medium-tito-400-534.jpg" 
+        alt="Two Dogs Sitting on a Couch while one looks at the Other"
+        width="800" height="1067"
+        srcset="leo-large-tito-800-1067 800px, leo-medium-tito-400-534 400px, leo-small-tito-200-267 200px"/>
+      </header>
+      <main id="main">
+        <section aria-label="leo">
+          <h2>All About Leo - The Mastiff</h2>
           <figure>
-           <img src="assets/images/leo-couch-lounging-.JPG" 
-           alt="Black Dog Sitting On The Couch Very Human Like"> </h1>
-             <figcaption> A Black and Brown Dog Sitting on a Couch 
-             </figcaption>
+            <img src="assets/images/leo-large-couch-582-900.jpg" 
+            alt="Black Dog Sitting On The Couch Similar to How a Human Would"
+            width="582" height="900"
+            srcset="leo-large-couch-582-900 582px, leo-medium-couch-291-450 291px, leo-small-couch-145-224 145px">
           </figure> 
-          <p> This will be about Leo and Tito</p>
-      </section>
-      <section>
-        <h2> Maybe, the Cat
-            <img src="assets/images/maybe-large- cat-828w-1077h.jpg" alt="White Cat Sitting on Computer
-            srcset="maybe-small-cat-207w-269h 270w, maybe-medium-computer-414w-538h 414w, maybe-large-cat-828w-1077h 828w
-            sizes="(max-width: 600px) 270px, 828px"/>
-        </h2>
-          <p> Lorem ipsum dolor </p> 
-      </section>
-      <section>
-        <h2> More about their breeds</h2>
-          <p> Lorem ipsum dolor </p>
-      </section>
-      <section>
-        <h2> Special mentions </h2>
-          <p> This will be about all other dogs I've had/foster animals</p>
-      </section>
-    </main>
-  </body>
-  <footer> I will put citation and more info down here</footer>
+          <p>Leo is my older dog and he is very big and sort of scary looking but I promise he is really sweet. He likes to sit on you because it's more comfortable for him than sitting on the floor, and since he weighs a lot you might complain but he doesn't get why you wouldn't want him to sit there.</p>
+        </section>
+        <section aria-label="tito">
+          <h2>All About Tito - The Mutt</h2>
+          <p>Tito is my younger dog and she is from a rescue in Pennysylvania. Originally they found her in Texas in a parking lot.</p>
+        </section>
+        <section aria-label="maybe-the-cat">
+          <h2>Maybe, the Calico Cat</h2>
+            <img src="assets/images/maybe-medium-computer-414w-538h.jpg" 
+            alt="White Cat Sitting on Computer"
+            width="414" height="538"
+            srcset="maybe-medium-computer-414w-538h 414px, maybe-small-cat-207w-269h 207px, maybe-large-cat-828w-1077h 828px"
+            sizes="(max-width: 600px) 414px, 828px"/>
+            <p>Lorem ipsum dolor</p> 
+        </section>
+        <section aria-label="learn-more-about-my-dogs">
+          <h3>More about their breeds and personalities</h3>
+          <p>Mastiffs are usually protective and Leo definitely is protective but he's also a giant baby.</p>
+        </section>
+      </main>
+        <footer> 
+          <ul>
+            <li><a href="https://www.mcfacc.org/volunteer" target="_blank">Learn More About Fostering</a></li>
+          </ul>
+    </body>
 </html>
