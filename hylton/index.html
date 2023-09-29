@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Haley Hylton">
+    <meta name="description" content="A website giving book recommendations">
     <title>Just One More</title>
 
     <!-- Resources -->
@@ -11,9 +13,9 @@
 </head>
 <body>
     
-        <header>
-            
-            <h1>Just One More</h1>
+        <header role="banner" aria-label="book title">
+            <a href="#main" class="skip-to-link">skip to main content</a>
+            <h1 id="book title">Just One More</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim eligendi rem, dolores nihil porro natus repudiandae voluptas dicta? A reiciendis dolores libero laudantium recusandae porro eos saepe unde similique.</p>
     
         </header>
@@ -22,7 +24,13 @@
         <a href="./genres.html">Overall Genre Recommendations</a>
     </nav>
     <main role="main" aria-label="main content">
-        <img src="./assets/images/medium-stack of books.jpg" alt="an open book on a stack of books" width="1280 px" height="853 px"/>
+        <img src="./assets/images/medium-stack of books.jpg"
+             alt="an open book on a stack of books"
+             width="640"
+             height="427"
+        srcset="./assets/images/stack-large-1280x853.jpg 1280w,
+                ./assets/images/medium-stack-640x427.jpg 640w,
+                ./assets/images/stack-small-320x213.jpg 320w"/>
         <section>
             <h2>Recommendations</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequuntur perferendis voluptatem quisquam cum nesciunt facilis. Consequatur, earum? Quia explicabo accusamus quo odit ea sapiente aperiam aut suscipit. Accusantium, similique.</p>
@@ -45,7 +53,10 @@
             <h2>Rec Form</h2>
             <p>link for form</p>
         </section>
-        <img src="./assets/images/small-stack of books.jpg" alt="smaller stack of books"/>
+        <img src="./assets/images/stack-small-320x213.jpg" 
+        alt="smaller stack of books"
+        width="320"
+        height="213"/>
     </main>
 </body>
 </html>
