@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Cal Kruse"/>
@@ -8,22 +8,23 @@
     <title>How to make modular desktops in Canva</title>
 </head>
 <body>
+    <header role="banner" aria-labelledby="title">
+        <h1 id="title">How to make modular desktops in Canva</h1>
+    </header>
     <a href="#main-content">Skip to main content</a>
     <!-- header needs a role, and optionally a label for this one -->
     <!-- nav menu? -->
-    <nav>
-        <a href="#introduction">Introduction</a>
-        <a href="#getting-started">Getting Started</a>
-        <a href="#choosing-your-template">Choosing Your Template</a>
-        <a herf="#sections-to-consider">Sections to Consider</a>
-        <a href="tips-and-tricks">Tips and Tricks</a>
-        <a href="#examples">Examples</a>
+    <nav role="navigation">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#choosing-your-template">Choosing Your Template</a></li>
+            <li><a href="#sections-to-consider">Sections to Consider</a></li>
+            <li><a href="#tips-and-tricks">Tips and Tricks</a></li>
+            <li><a href="#examples">Examples</a></li>
+        </ul>
     </nav>
-    <header>
-        <h1>How to make modular desktops in Canva</h1>
-    </header>
-
-    <main id="main-content">
+    <main id="main-content" role="main">
         <!--
             So far a simple pattern below. Needs attention to some issues:
             - Will this page include much of the content in those sections, or will there be dedicated pages and these are CTAs for those pages? That will dictate what elements you might consider using instead of section here on the home page.
@@ -33,27 +34,27 @@
             - "id" attributes should be lowercase and never have whitespaces. Use hyphens between words, e.g., "Getting Started" can be "getting-started"
             - Need some images with src, alt, width, height, srcset
         -->
-        <section id="introduction">
-            <h2>Introduction</h2>
+        <section role="region" aria-labelledby="introduction">
+            <h2 id="introduction">Introduction</h2>
             <!-- Recommend the below indentation for paragraphs, so you can close them up when you're done with them. -->
             <p>
                 Are you looking to keep your workspace more organized? Do you feel overwhelmed by multiple to-do lists?
             </p>
         </section>
-        <section id="getting-started">
-            <h2>Getting Started </h2>
+        <section aria-labelledby="getting-started" role="region">
+            <h2 id="getting-started">Getting Started</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nemo laudantium! Distinctio eligendi commodi expedita ad ipsa provident natus voluptates recusandae excepturi quae quisquam, architecto maiores deserunt asperiores laudantium omnis.
             </p>
         </section>
-        <section id="choosing-your-template">
-            <h2>Choosing Your Template </h2>
+        <section role="region" aria-labelledby="choosing-your-template">
+            <h2 id="choosing-your-template">Choosing Your Template </h2>
             <p> 
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed sit accusantium obcaecati eum dicta quas odio excepturi inventore repellat fugiat quia distinctio id, magni quibusdam architecto consequuntur consectetur laudantium?
             </p>
         </section>
-        <section id="sections-to-consider">
-            <h2>Sections to Consider</h2>
+        <section role="region" aria-labelledby="sections-to-consider">
+            <h2 id="sections-to-consider">Sections to Consider</h2>
             <ul>
                 <li>To-do lists</li>
                 <ul>
@@ -67,16 +68,31 @@
                 <li>Space for important documents</li>
             </ul>
         </section>
-        <section id="tips-and-tricks">
-            <h2>Tips and Tricks</h2>
+        <section role="region" aria-labelledby="tips-and-tricks">
+            <h2 id="tips-and-tricks">Tips and Tricks</h2>
+            <p>
+                Canva has a premium subscription service where you can pay money for "better" or "more aesthetic" elements and templates. However, you shouldn't have to pay to create the designs you want. The best thing about Canva is that you have the tools to create whatever you want.
+            </p>
         </section>
-        <section id="examples">
-            <h2>Examples</h2>
+        <section role="region" aria-labelledby="examples">
+            <h2 id="examples">Examples</h2>
+            <img 
+                src="assets/images/basic-desktop-hand-watercolor1920x1080.png"
+                alt=""
+                width="1920px"
+                height="1080px"
+                srcset=
+                    "assets/images/basic-desktop-hand-watercolor1920x1080.png 1920w,
+                    assets/images/basic-desktop-hand-watercolor1080x608.jpg 1080w, 
+                    assets/images/basic-desktop-hand-watercolor920x518.jpg 920w"
+            />
         </section>
     </main>
 </body>
-<footer>
-        
+<footer role="contentinfo">
+     <p>
+         Created by Cal Kruse :&rpar;
+     </p>
 </footer>
 
 </html>
