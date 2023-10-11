@@ -1,77 +1,68 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<!--
+    Summative Feedback
+    - I know much more about Stardew Valley! :-)
+    - Note the revised indentation work with the doctype, head, and body
+    - Some a11y issues to resolve throughout.
+        1. See my two screenshots from VoiceOver. Note how the landmarks aren't defined with labels and indicates 2 mains are being used, since you've defined a section with the role of main
+        2. Lots of h3 headings. I see why you use them, and you can totally keep them, as I think there's a case for their use. But, I also want you to consider if those h3s clutter up the screenreading experience. In other words, is there sufficient amount of content to warrant the repeated use of h3 elemeents for shorter imperative tips? I'm not sure, and I wonder if there's any UX research about this matter.
+    - Big one to note: Over use of section and when it is used, you only put the heading inside of it. All of the content that is part of a coheisve section should be contained by that section. Otherwise, that strucutre isn't meaningful, since it doesn't contain the content intended to be in the section.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Hayley-Bisek">
     <meta name="description" content="eginners-guide-to-stardew-valley">
     <title>Stardew Valley Beginner's Guide</title>
     <link rel="shortcut icon" type="image/png" href="assets/img/android-chrome-512x512.png">
-    </head>
-    
-    <body 
-    style="background-color: rgb(123, 214, 126);">
-    
-    <header>
+</head>
+<body style="background-color: rgb(123, 214, 126);">
+    <!-- Skip link is the very very first element -->
+    <a href="#main" class="skip-to-link">Skip to Main Content</a>
+    <!-- I'd place your nav either before, inside of, or just after your header. It's a little strange to include it after the first "fold" of the page. -->
+    <nav role="navigation" aria-label="main-navigation">
+        <!-- not typical of nav menus to have a heading; plus you're using label not labelledby -->
+        <!-- <h2 id="main-navigation">Main Navigation</h2> -->
+        <ul>
+            <li>
+                <a class="active" href="the-dos.html">The Do's</a> </li>
+            <li>
+                <a class="active" href="The-donts.html">The Don'ts</a> </li>
+            <li>
+                <a class="active" href="items-to-keep.html">Items to keep</a> </li>
+            <li>
+                <a href="active"  href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <!-- Note my revision to your header. -->
+    <header role="banner" aria-labelledby="descriptino-of-page">
         <img src="assets/img/title-screen-header.png" 
             alt="title-screen-header"
             width="911" 
             height="415"
-            srcset="assets/img/title-screen-header.png 911w, assets/img/title-screen-header-600w.png 600w, assets/img/title-screen-header-300w.png 300w">
+            srcset="assets/img/title-screen-header.png 911w,
+                    assets/img/title-screen-header-600w.png 600w,
+                    assets/img/title-screen-header-300w.png 300w"
+        />
         
-            <a href="#main" 
-            class="skip-to-link">Skip to Main Content</a>
-            
-    <section 
-        role="banner" 
-        aria-labelledby="descriptino-of-page">
-            <h1
-                id="description-of-page">
-                A complete beginner's guide to a successful farm in Pelican Town
-            </h1>
-    </section> 
+        <h1 id="description-of-page">
+            A complete beginner's guide to a successful farm in Pelican Town
+        </h1>
     </header>
-        
-    <section 
-        id="introduction" 
-        role="banner" 
-        aria-labelledby="introduction">       
+
+    <!-- Should this content be in the main, since it introduces the content of the page? You wouldn't need to wrap the content in a section, since it is the intro to the main content.  -->
+    <section id="introduction" role="region" aria-labelledby="introduction">
         <h2>
             Welcome to Pelican Town!
         </h2>
-    </section>
-    
-    <section 
-        role="region" 
-        aria-labelledby="introduction-paragraph">
-        <p
-            id="description-of-page">
+        <p id="description-of-page">
             Hello new farmers! Welcome to the ultimate beginner’s guide to Stardew Valley. This site contains everything players need to know in order to cultivate a successful farm during their first year in Pelican Town. Every player is different which means every farm will be different, so this site covers the root basics of farming, foraging, fishing, mining and combat. Everything covered on this site will be limited to what can be done and collected during the first year. For more experienced players, find a complete Stardew Valley wiki down below. Happy playing!
         </p>
-
         <p>
             Find a <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki" target="_blank" rel="noopener noreferrer">complete Stardew Valley Wiki here</a>
         </p>
-    </section>             
-    
-    <nav 
-        role="navigation" 
-        aria-label="main-navigation">
-        <h2
-        id="main-navigation">
-        Main Navigation
-        </h2>
-        <ul>
-            <li> 
-                <a class="active" href="the-dos.html">The Do's</a> </li>
-            <li> 
-                <a class="active" href="The-donts.html">The Don'ts</a> </li>
-            <li> 
-                <a class="active" href="items-to-keep.html">Items to keep</a> </li>
-            <li> 
-                <a href="active"  href="faq.html">FAQ</a></li>
-        </ul>
-    </nav>
+    </section>
             
     <!-- Section 1-->
     
@@ -87,6 +78,7 @@
         </section>
         <ul>
             <li>
+                <!-- These divs aren't adding anything that the li doesn't already do by containing two elements. Now, if you were to consider adding another subunit, such as an image that is a sibling of this div, then that div usage would make sense, since you can now parse the textual content from the media/image content. Does that make sense: how the div is just adding another container right now, which the li already fulfills?  -->
                 <div> 
                     <h3>Plant seeds immediately</h3> 
                     <p>
@@ -255,7 +247,9 @@
         srcset="assets/img/map.png 1221w,assets/img/map-900w.png 900w,assets/img/map-400w.png 400w">
 
     <!-- Section 2-->
-
+    <!--
+        Avoid over-indenting like the section and h2 below. You actually have an error that's hard to spot, since the attributes have been indented. Check to see if you have closed the section's opening tag.
+    -->
     <section 
         role="main" 
         aria-labelledby="items-to-keep"        
@@ -266,6 +260,7 @@
     </section>
         <ul>
             <li>
+                <!-- What's nice with this pattern you've started is that you could include an image before or after the div -->
                 <div> 
                     <h3>Prismatic Shard</h3> 
                     <p>
@@ -322,6 +317,7 @@
     </main>
         
     <footer>
+        <!-- FAQ is probably it's own page and not typical of a footer. -->
         <section  
             role="region" 
             aria-labelledby="faq">      
@@ -356,6 +352,7 @@
                 </div>
             </li>
         </ol>
+        <!-- Again, you seem to be missing the closing ">" in your opening tags, due to your attribute indentation scheme. Images are one case where this indentation scheme is good to do. But, be sure to spot those errors. Note the different coloration of the tag in the next line, which indicates an error in the line above. -->
           <img 
             src="assets/img/saloon.png" 
             alt="star-drop-saloon-beer-party" 
@@ -363,8 +360,5 @@
             height="640"
             srcset="assets\img\saloon.png 967w,assets\img\saloon-484w.png 484w,assets\img\saloon-290w.png 290w"
     </footer>
-        
-        
-    </body>
-
+</body>
 </html>
