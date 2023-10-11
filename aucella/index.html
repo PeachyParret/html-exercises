@@ -3,21 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Be sure to review the readings and lecture slides about the title tag and metatags -->
     <title>Aucella.html</title>
 </head>
 <body>
+    <!-- skip link? -->
+    <!-- nav menu? -->
+
+    <!-- You can use <header> to wrap the "header" content that is the "banner" of your page -->
     <h1>Want to Learn how to Row?</h1>
-    
-    <img 
-    src="images/page1pic.jpg" 
+
+    <!--
+        Review the images week.
+        - We learned and practiced 3 more attributes for images: width, height, and srcset.
+        - Each image should have a small, medium, and large scaled version, which you'll use in srcset.
+        - Be sure to read the short reading on filenaming as well. Your images should adhere to the best practices defined in it.
+    -->
+    <img
+    src="images/page1pic.jpg"
     alt="A four person boat rowing at sunset" />
-   
+
+    <!-- Seems like your main content starts here instead -->
     <h2>So you are intrested in rowing...</h2>
     <p>Rowing is unfamiliar for most. It's a difficult sport to get into but it has many perks including increased mental and physical health. This page will provide a basic how to guide for those who would like to start rowing but don't know where to begin</p>
-   
+
     <h3>Mechanics of rowing</h3>
     <p>Understanding how to use the rowing machine is extremely signigant to the process of learning how to row. You can find a rowing machine at most local gyms. However, many use it incorrectly. To avoid injuring yourself, follow the steps below...</p>
     <figure>
+        <!-- Note that this image does not work, since the paths point to images that do not exist yet, but it looks like you're starting to get the srcset here. However, every image should at the very very least have the 'src' and 'alt' attributes. The src is the oldest attribute and will work on ALL browsers of ALL ages, so it is vital that you always include a src too. -->
         <img srcset="
         images/erg-image-1008x756.jpeg 1008w,
         images/-2016x1512.jpg 2016w,
@@ -25,21 +38,30 @@
         alt="VT Crew Team">
         <figcaption>Erg pictire with directions</figcaption>
     </figure>
+    <!-- List items are to be contained by either ul or ol. Also, are you planning on having a list here? It seems out of place -->
     <li>step one</li>
     <li>step two</li>
     <li>step three</li>
     <li>step four</li>
     <li>step five</li>
-   
+
     <main>
+        <!-- Heading? -->
+        <!--
+            Each paragraph should be wrapped as a <p> element. If you were to test this in your browser, you'll see who the whitespace is ignored, so it looks like one long paragraph.
+        -->
         <p><strong>Understanding the parts of a boat is a great way to get into rowing</strong> A racing shell is a complicated Donec blandit, ipsum eget dignissim dictum, est risus luctus lacus, non faucibus quam massa sit amet nisi. Vestibulum euismod ultricies justo sed consequat. Sed nisl ipsum, euismod et lorem sit amet, condimentum molestie dolor. Cras dolor quam, blandit quis erat quis, convallis dignissim ligula. Pellentesque in enim sodales, consectetur arcu sit amet, mollis magna. Nullam nec aliquam leo, ut lacinia diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut ante tortor, ornare eget eleifend sed, eleifend ut augue. Maecenas ornare augue ligula, nec dignissim massa volutpat vitae. Donec sed pharetra nunc. Integer quis imperdiet nunc.
-   
+
         Fusce fringilla vel augue consectetur lacinia. Quisque pellentesque faucibus iaculis. Vestibulum ligula tortor, pharetra vel auctor ac, efficitur pretium ante. In a laoreet ipsum, vitae dapibus ex. Pellentesque odio sem, condimentum id erat id, luctus sagittis lorem. In aliquet dignissim interdum. Nam fermentum purus vel dapibus porta. Fusce tincidunt, magna egestas malesuada efficitur, sem turpis volutpat lorem, ac dictum mauris ante at quam. Donec rutrum arcu lobortis interdum suscipit. Integer sit amet ultrices ipsum. Proin ante turpis, condimentum et fringilla sed, sollicitudin at orci. Vivamus hendrerit semper rhoncus. Mauris malesuada semper tempor.
-       
+
         Maecenas consectetur sem eget metus sollicitudin ultricies. In non tortor ex. Donec dapibus eget urna non vestibulum. Phasellus pulvinar commodo erat nec vehicula. Nam in volutpat quam. Donec vitae purus quis urna luctus condimentum. Nulla eu augue eu nulla maximus venenatis. Curabitur molestie dignissim lorem, vitae facilisis tortor ultricies quis. Fusce a sapien dictum, condimentum ex in, placerat turpis.</p>
     </main>
-   
+
+    <!-- What is this image in reference to? -->
     <img src="pic_trulli.jpg" alt="Italian Trulli">
-   
-    <footer>Click the links to follow <3</footer>  
+
+    <!-- Note the error on the closing tag. Also, any content in the footer should be contained by appropriately semantic tags. -->
+    <footer>Click the links to follow <3</footer>
+<!-- body tag isn't complete -->
 </body
+<!-- You need to close the html root element -->
