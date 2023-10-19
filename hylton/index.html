@@ -12,9 +12,20 @@
 
 </head>
 <body>
+    <!--
+        SUMMATIVE COMMENTS: These apply to the other pages too.
+        - Check your indentation and spacing throughout. For example,
+            - note how your page header is indented twice over from the body
+            - note the empty space in page header after the <p>
+            - note how your first image's srcset doesn't match the other attributes
+        - skip link is ok in the header. However, technically it should be the verry first element inside the body. Also, since there is no ID of "main" the skip link doesn't navigate the user anywhere.
+        - Relying too much on aria-label, when you have headings to use with aria-labelledby
+        - Would have liked to see more placeholder content to gather a better sense of your plan and design. Don't forget about those lorem ipsum shortcuts and the image placeholders too. I only required about 3 full images for the first phase of the course.
+    -->
     
         <header role="banner" aria-label="book title">
             <a href="#main" class="skip-to-link">skip to main content</a>
+            <!-- ID values cannot have spaces; it's one value, e.g., "book-title" -->
             <h1 id="book title">Just One More</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim eligendi rem, dolores nihil porro natus repudiandae voluptas dicta? A reiciendis dolores libero laudantium recusandae porro eos saepe unde similique.</p>
     
@@ -24,6 +35,7 @@
         <a href="./genres.html">Overall Genre Recommendations</a>
     </nav>
     <main role="main" aria-label="main content">
+        <!-- This src attribute's value will not work. Looks like it needs to be updated. The filenames could be more semantic too. Remember that filenames offer you a text to help search engine's index your site appropriately. -->
         <img src="./assets/images/medium-stack of books.jpg"
              alt="an open book on a stack of books"
              width="640"
@@ -31,6 +43,7 @@
         srcset="./assets/images/stack-large-1280x853.jpg 1280w,
                 ./assets/images/medium-stack-640x427.jpg 640w,
                 ./assets/images/stack-small-320x213.jpg 320w"/>
+        <!-- Add roles and labels for these sections -->
         <section>
             <h2>Recommendations</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequuntur perferendis voluptatem quisquam cum nesciunt facilis. Consequatur, earum? Quia explicabo accusamus quo odit ea sapiente aperiam aut suscipit. Accusantium, similique.</p>
@@ -45,6 +58,7 @@
         </section>
         <section>
             <h2>FAQs</h2>
+            <!-- inconsistent paragraph indentation. I rec. this formatting, however, over the "one-liner" approach -->
             <p>
                 check out <a href="https://goodreads.com" target ="_blank" rel="noopener noreferrer">goodreads!</a>
             </p>
@@ -53,6 +67,7 @@
             <h2>Rec Form</h2>
             <p>link for form</p>
         </section>
+        <!-- incomplete image here -->
         <img src="./assets/images/stack-small-320x213.jpg" 
         alt="smaller stack of books"
         width="320"
