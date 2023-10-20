@@ -1,77 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <Title>Swolenomics 101</Title>
-    </head> 
-    <body>
-    <main role="main" aria-labelledby="main-content">
-        <header role="banner" aria-labelledby="Swolenomics">
-            <h1>Swolenomics 101</h1>
-            <h2> Stephen's crash course to working out & building muscle!</h2>
-            <p> 
-                First I would suggest glancing at my vocabulary list to familiarize yourself with gym jargon you might be unfamilar with-><a href="jargon.html" target="_blank" rel="noopener noreferrer">here</a>
-            </p>
-        </header>
+<!-- head and body can be on the same column/indentation as the root to save space. Changed that for you. -->
+<head>
+    <meta charset="UTF-8">
+    <!-- note capitalization -->
+    <Title>Swolenomics 101</Title>
+    <!-- add those meta tags and a favicon-->
+</head>
+<body>
+<!--
+    COMMENTS - Applies across all pages.
+    - A11Y: Your screencast with Voiceover doesn't use the rotor menu. If you approach the screenreader as a user test, then you will catch the following issues
+        - skip link is missing and needs to be the very first element/child of the body
+        - none of your ARIA labels are working, since the values of aria-labelledby attributes are an elements ID. Since you do not create an ID on any element to link the ARIA label with existing comment, the landmark will not be labeled.
+        - sectioning/landmark elements: Consider your user of <header> everywhere. Is everything really a header, i.e., preface to the content that follows it in the source order? Instead, consider section with the role region. If everything's a banner, that's confusing for screenreader users.
+        - nav menu is needed across your pages
+        - Hierarchical relations:
+            - consider how the banner of the page should not be placed within the main
+            - Indentation: numerous places need to consider the hierarchy and revise the indentation to account for the inter-relations
+-->
+<main role="main" aria-labelledby="main-content">
+    <header role="banner" aria-labelledby="Swolenomics">
+        <h1>Swolenomics 101</h1>
+        <h2> Stephen's crash course to working out & building muscle!</h2>
+        <p>
+            First I would suggest glancing at my vocabulary list to familiarize yourself with gym jargon you might be unfamilar with-><a href="jargon.html" target="_blank" rel="noopener noreferrer">here</a>
+        </p>
+    </header>
+        <!--
+            - What content is this image related to? It's currently in a lone position with no immediately meaningful relationship with content on the page.
+            - This image will always load the 3024w image, due to the syntax error, (missing comma), which is why your performance score was low too. Also, older browsers with no srcset support will not load any image, since the src value doesn't exist.
+            - this applies to your copy pasted version on another page.
+        -->
+        <img alt="A red road bike leaning against a metal staircase outside."
+            src="assets/images/red-bike.jpg"
+            srcset="assets/images/red-bike-large-3024x3024.jpg 3024w,
+                    assets/images/red-bike-medium-1512x1512.jpg 1512w
+                    assets/images/red-bike-small-756x756.jpg 756w">
 
-            <img alt="A red road bike leaning against a metal staircase outside."
-             src="assets/images/red-bike.jpg"
-             srcset="assets/images/red-bike-large-3024x3024.jpg 3024w, 
-                     assets/images/red-bike-medium-1512x1512.jpg 1512w
-                     assets/images/red-bike-small-756x756.jpg 756w">
-                     
-        <header role="banner" aria-labelledby="warning">
-            <h2>DISCLAIMER!</h2>
+    <header role="banner" aria-labelledby="warning">
+        <h2>DISCLAIMER!</h2>
+    </header>
+        <p>
+            Going to the gym is for EVERYONE, no matter age, gender, and ability. Weightlifting can have amazing health benefits for all. Do not be detered from the gym because you feel you will get too bulky, "toning" is actully a different way of saying reducing body fat AND replacing it with muscle mass!
+        </p>
+    <header role="banner" aria-labelledby="warm-up">
+        <h2>Warm-up Y'all!</h2>
+    </header>
+        <!-- these paras throughout are on the same level as those header elements -->
+        <p>
+            Warming up is arguably just as important as the actual workout. If you were to just jump straight into a hard excersise, at best you will not perform well, at worse you can seriously injure yourself leading to weeks of recovery and physical therapy. No one wants that!
+        </p>
+        <p>
+            Warming up is anything that gets your muscles moving and blood pumping. This could range from performing a set of the excersize you are about to do with very light weight or low intensity cardio. A good way to start would be to walk on the treadmill for 5-10 min before starting to pump iron.
+        </p>
+        <p>
+            Personally I try to ride my bike to the gym to warm up, it is both relaxing and a relatively low level of cardio which gets me moving before getting ready to start lifting.
+        </p>
+        <!-- note how this opening tag uses a capital letter. mind those deets. -->
+        <P>
+            After you have warmed up learn how to perform the core 3 excersizes that will get you started working out! <a href="form.html" target="_blank" rel="noopener noreferrer">here</a>
+        </p>
+        <!-- note the main positioning -->
+</main>
+    <!-- note the spelling errors in your attr values -->
+    <aside role="contentinfo" aria-labelledby="fequency">
+        <header role="banner" aria-labelledby="excersize-frequency">
+            <h2>Excersize frequency</h2>
         </header>
             <p>
-                Going to the gym is for EVERYONE, no matter age, gender, and ability. Weightlifting can have amazing health benefits for all. Do not be detered from the gym because you feel you will get too bulky, "toning" is actully a different way of saying reducing body fat AND replacing it with muscle mass! 
+                this is how many days a week, how many sets per excersize,how many reps per set, how much rest between. blah blah blah boring blah
             </p>
-        <header role="banner" aria-labelledby="warm-up">
-            <h2>Warm-up Y'all!</h2>
-        </header>
+            <!-- use the lorem impsum, so the text isn't at least so uniform for testing purposes -->
             <p> 
-                Warming up is arguably just as important as the actual workout. If you were to just jump straight into a hard excersise, at best you will not perform well, at worse you can seriously injure yourself leading to weeks of recovery and physical therapy. No one wants that! 
+                radda radda radda radda radda raddaradda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda
             </p>
-            <p>
-                Warming up is anything that gets your muscles moving and blood pumping. This could range from performing a set of the excersize you are about to do with very light weight or low intensity cardio. A good way to start would be to walk on the treadmill for 5-10 min before starting to pump iron.
-            </p>
-            <p> 
-                Personally I try to ride my bike to the gym to warm up, it is both relaxing and a relatively low level of cardio which gets me moving before getting ready to start lifting.
-            </p>
-            <P> 
-                After you have warmed up learn how to perform the core 3 excersizes that will get you started working out! <a href="form.html" target="_blank" rel="noopener noreferrer">here</a>
-            </p>
-    </main>
-        <aside role="contentinfo" aria-labelledby="fequency"> 
-            <header role="banner" aria-labelledby="excersize-frequency">
-                <h2>Excersize frequency</h2>
-            </header>
-                <p>
-                    this is how many days a week, how many sets per excersize,how many reps per set, how much rest between. blah blah blah boring blah
-                </p>
-                <p> 
-                    radda radda radda radda radda raddaradda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda radda 
-                </p>
-        </aside>
-    <footer role="contentinfo" aria-labelledby="f-a-q">
-        <h2>F-A-Q</h2>
-    </footer>
-            <p> 
-                take shelter and rest here before proceeding to more advanced topics. remember rest is important
-            </p>
+    </aside>
+    <!-- note the footer positioning/indentation -->
+<footer role="contentinfo" aria-labelledby="f-a-q">
+    <h2>F-A-Q</h2>
+</footer>
+    <!-- where are these paras supposed to be? footer? -->
+        <p>
+            take shelter and rest here before proceeding to more advanced topics. remember rest is important
+        </p>
 
-            <ul>
-                <li>Q: some question pertaining to weight lifting</li>
-                <li>A: some answer pertaining to the question</li>
-            </ul>
-            <ul>
-                <li>Q: some question pertaining to weight lifting</li>
-                <li>A: some answer pertaining to the question</li>
-            </ul>
-            <ul>
-                <li>Q: some question pertaining to weight lifting</li>
-                <li>A: some answer pertaining to the question</li>
-            </ul>
-    </body>
-
+        <ul>
+            <li>Q: some question pertaining to weight lifting</li>
+            <li>A: some answer pertaining to the question</li>
+        </ul>
+        <ul>
+            <li>Q: some question pertaining to weight lifting</li>
+            <li>A: some answer pertaining to the question</li>
+        </ul>
+        <ul>
+            <li>Q: some question pertaining to weight lifting</li>
+            <li>A: some answer pertaining to the question</li>
+        </ul>
+</body>
 </html>
