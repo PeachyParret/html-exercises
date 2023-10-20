@@ -11,9 +11,11 @@
     <header role="banner" aria-labelledby="title">
         <h1 id="title">How to make modular desktops in Canva</h1>
     </header>
+    <!-- skip link is always the very first child of the body -->
     <a href="#main-content">Skip to main content</a>
+    <!-- you should delete these comments, once you've revised. -->
     <!-- header needs a role, and optionally a label for this one -->
-    <!-- nav menu? -->
+    <!-- nav menu needs a label -->
     <nav role="navigation">
         <ul>
             <li><a href="#introduction">Introduction</a></li>
@@ -24,6 +26,7 @@
             <li><a href="#examples">Examples</a></li>
         </ul>
     </nav>
+    <!-- label for the main? -->
     <main id="main-content" role="main">
         <!--
             So far a simple pattern below. Needs attention to some issues:
@@ -41,6 +44,7 @@
                 Are you looking to keep your workspace more organized? Do you feel overwhelmed by multiple to-do lists?
             </p>
         </section>
+        <!-- being picky here: the role typically goes first by convention. Also, it is what you do elsewhere. -->
         <section aria-labelledby="getting-started" role="region">
             <h2 id="getting-started">Getting Started</h2>
             <p>
@@ -76,19 +80,25 @@
         </section>
         <section role="region" aria-labelledby="examples">
             <h2 id="examples">Examples</h2>
-            <img 
-                src="assets/images/basic-desktop-hand-watercolor1920x1080.png"
-                alt=""
-                width="1920px"
-                height="1080px"
-                srcset=
-                    "assets/images/basic-desktop-hand-watercolor1920x1080.png 1920w,
-                    assets/images/basic-desktop-hand-watercolor1080x608.jpg 1080w, 
-                    assets/images/basic-desktop-hand-watercolor920x518.jpg 920w"
+            <!--
+                - revised your indentation a smidge based on some conventions
+                - No alt description
+            -->
+            <img src="assets/images/basic-desktop-hand-watercolor1920x1080.png"
+                 alt=""
+                 width="1920px"
+                 height="1080px"
+                 srcset="assets/images/basic-desktop-hand-watercolor1920x1080.png 1920w,
+                        assets/images/basic-desktop-hand-watercolor1080x608.jpg 1080w,
+                        assets/images/basic-desktop-hand-watercolor920x518.jpg 920w"
             />
         </section>
     </main>
 </body>
+<!--
+    - footer goes inside the body (all content does)
+    - landmark needs a  label. in this case, an aria-label that notes how it is copyright info works
+-->
 <footer role="contentinfo">
      <p>
          Created by Cal Kruse :&rpar;
