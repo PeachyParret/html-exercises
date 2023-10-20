@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <a href="#schedule-information">Skip to Schedule Information</a>
 </head>
+<!-- you have 2 body elements. -->
 <body>
     <header style="background-color: aqua;" role="banner" aria-labelledby="swim-banner" >
         <h1 style="text-align: center;">Swim School</h1>
@@ -31,9 +32,18 @@
             <section id="schedule" role="region" aria-labelledby="schedule">
                 <h1>Scheduling</h1>
                 <!--Ask how to insert a calender system or maybe just image for starters-->
+                <!--
+                    - made some suggested changes to your indentation work, since this is hard to read.
+                    - needs the width and height attributes
+                    - using only one file right now, so the srcset isn't really doing anything
+                    - filenames, when you add multiple versions, should be more semantic and include the dimensions at the end, as per the filenaming reading.
+                -->
                 <img src="./assets/images/tv-stock.jpeg" 
-                alt="This a screen to schedule your lessons." 
-                srcset="./assets/images/tv-stock.jpeg 200w, ./assets/images/tv-stock.jpeg 400w, ./assets/images/tv-stock.jpeg 800w">
+                     alt="This a screen to schedule your lessons."
+                     srcset="./assets/images/tv-stock.jpeg 200w,
+                             ./assets/images/tv-stock.jpeg 400w,
+                             ./assets/images/tv-stock.jpeg 800w"
+                />
             </section>
             <section id="schedule-information" role="region" aria-labelledby="schedule-information">
                 <h2>Schedule Contact Information</h2>
