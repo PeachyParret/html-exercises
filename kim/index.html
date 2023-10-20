@@ -10,7 +10,7 @@
 <body>
 <!--
     COMMENTS - Applies across all pages.
-    - A11Y: Your screencast with Voiceover doesn't use the rotor menu. If you approach the screenreader as a user test, then you will catch the following issues
+    - A11Y: Your screencast with NVDA doesn't use the rotor menu. If you approach the screenreader as a user test, then you will catch the following issues
         - skip link is missing and needs to be the very first element/child of the body
         - none of your ARIA labels are working, since the values of aria-labelledby attributes are an elements ID. Since you do not create an ID on any element to link the ARIA label with existing comment, the landmark will not be labeled.
         - sectioning/landmark elements: Consider your user of <header> everywhere. Is everything really a header, i.e., preface to the content that follows it in the source order? Instead, consider section with the role region. If everything's a banner, that's confusing for screenreader users.
