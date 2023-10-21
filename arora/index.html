@@ -15,7 +15,7 @@
 <body>
     <!-- Great skip link! -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    <header role="banner" aria-labelledby="a11y-title">
+    <header role="banner"
         <!-- Notably, this code is copy/pasted from my A11Y demo. This might be ok, but it doesn't always help you think carefully about your design/content context and goals. In short, this isn't a page/h1 about A11y stuff, so it needs revision. -->
         <h1 id="a11y-title">Yana's Skincare Website</h1>
         <h2>Welcome! If you're new here, this is the place to get the easiest info on taking care of your skin!</h2>
@@ -34,14 +34,14 @@
         assets/images/colorful-daily-skincare-products-arora-500x376.jpg 500w"
         alt="colorful bottles of skincare essentials"
         sizes="(max-width: 640px) 100vw, 50vw"
-        width="1080"
+        width="1012"
         height="812">
     <!-- Side navigation -->
     <!--
         Note how there is not any element with the ID of "nav-description", so that's why the nav doesn't have a label.
         Nav menus typically do not have headings, so you can use aria-label instead. aria-label is like an alt attributes in that you can write out the label manually. So, if this is the main/primary navigation, you could write: <nav role="navigation" aria-label="Primary navigation">
     -->
-    <nav role="navigation" aria-labelledby="nav-description">
+    <nav role="navigation" aria-labelledby="primary navigation">
         <div role="region" class="sidebar">
             <a href="#home">Home</a>
             <a href="types-of-products">Types of Products</a>
@@ -59,7 +59,7 @@
             <!--
                 Technically, this is a level 2, since the h2 in the header is acting as a "subheading" within that scope. This section is a new subsection of the page, so it is arguably an h2
             -->
-            <h3 id="types-heading">Types of Skincare Products</h3>
+            <h2 id="types-heading">Types of Skincare Products</h2>
             <p>
                 Cleanser: Arguably the most important step to any skincare routine is finding a cleanser that works best for you. When deciding on a cleanser to purchase, ensure that the product mainly incorporates natural, non-abrasive ingredients, includes at least one active ingredient that is safe for daily use (i.e. niacinamide, hyaluronic acid, tranexamic acid, etc.), and that you complete a patch test on the inside of your wrist before applying it to the face.
             </p>
