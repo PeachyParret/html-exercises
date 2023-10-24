@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-US">
- <head>
+<!--
+  SUMMATIVE COMMENTS
+  - title tag is metadata for the head.
+  - Check indentation/spacing throughout, e.g.,
+    - head and body need not be indented, even though they are children of html. It simply saves some horizontal space.
+    - note how children of the head are indented once too many times
+    - other places a single space is used, other times up to 3-4 indentations. See the sections' children indentation for an example.
+    - sometimes there's a whitespace before a closing tag, but not after the open, etc.
+-->
+<head>
     <meta charset="utf-8">
     <meta name="description" content="A guide to living in Blacksburg without completely draining your bank account">
     <meta name="author" content="Victoria Weber">
     <link rel="icon" type="image/x-icon" href="assets/images/faviconimage.jpg">
- 
- </head>
-
- <body>
+</head>
+<body>
+  <!-- title belongs in the head -->
     <title>Blacksburg on a Budget</title>
      <header role="banner" aria-labelledby="website name">
         <h1 id="website name">Blacksburg on a Budget</h1>
@@ -61,6 +69,7 @@
             <h2 id="how-to-get-around">Transportation</h2>
             <p>Transportation in Blacksburg is by no means perfect, but there's definitely some options to work with. Blacksburg Transit is by and large what most of the population uses to get around campus and its neighboring housing areas. However, if you're looking to get further than that, you'll likely need to own a car, or know someone who does. If you aren't inclined to purchase an entire vehicle, there's a couple Virginia Tech carpooling Facebook groups, and you can always poke around on the Virginia Tech Reddit thread to see if anyone can help you out. That said, be prepared to chip in for gas.</p>
             <figure>
+              <!-- use the instrinsic size values of the source used in the 'src' attribute for width and height -->
                 <img src="assets/images/bus-transportation-travel-transit-1920.jpg"
                      alt="Blue bus"
                      width="640"
@@ -74,6 +83,7 @@
             </figure>
         </section>
       </main>
+      <!-- In this case, you could just use label and denote the landmark as "Copyright information" -->
       <footer role="contentinfo" aria-labelledby="copyright-info">
         <p id="copyright-info">Copyright 2023</p>
       </footer>
