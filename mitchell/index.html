@@ -4,19 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Alex Mitchell">
-  <meta 
-    name="description"
-    content="The Digital Frontier of Indie Fiction website informs readers on a new way to get books to read.">
+  <!-- if you use multiline indentation for openning tags, then be sure to use the first line -->
+  <meta name="description"
+        content="The Digital Frontier of Indie Fiction website informs readers on a new way to get books to read.">
   <title>Digital Frontier of Indie Fiction</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
 <body>
-  
+  <!-- need a skip link as the first element on the page -->
+  <!-- All landmarks need ARIA labels: aria-label or aria-labelledby -->
   <header role="banner">
-    <img alt="Book Laptop"
-          src="book-laptop-fusion-mitchell.jpg"
-          srcset="assets/images/book-laptop-fusion-mitchell-large-1200x630.jpg 1200w, assets/images/book-laptop-fusion-mitchell-medium-600x315.jpg 600w, asset/images/book-laptop-fusion-mitchell-small-300x158.jpg 300w">
+    <!-- Spot and revise the indentation issues inside of this header -->
+    <!--
+      IMAGES
+      - need width and height attrs
+      - image below: its 'src' path does not exist
+      - note suggested indentation revision to help with its readability. When I did so, I spotted an issue with one of your paths: 'asset' should be 'assets'
+      - alt desc doesn't quite make sense. The screenreader testing is meant to hear how your A11Y properties create a UX for those users, so be sure to consider that for the final.
+    -->
+    <img src="book-laptop-fusion-mitchell.jpg"
+         alt="Book Laptop"
+         width="" height=""
+         srcset="assets/images/book-laptop-fusion-mitchell-large-1200x630.jpg 1200w,
+                 assets/images/book-laptop-fusion-mitchell-medium-600x315.jpg 600w,
+                 asset/images/book-laptop-fusion-mitchell-small-300x158.jpg 300w"
+    />
     
   <h1>Web Serials: What Are They?</h1>
   <p>
@@ -41,13 +54,21 @@
   </nav>
   </header>
 
+  <!--
+    A11Y
+    - None of your landmarks are labelled. Most should use aria-labelledby
+    - you have placed your aside and footer (for the page) inside of the main element. Consider how this doesn't quite align with their typicaly usage--at least in this page's case.
+   -->
   <main role="main">
     <section role="region" id="defining-webserial">
       <h2>Defining Webserial</h2>
       <p>
         Lorem ipsum dolor sit amet.
       </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum architecto suscipit sit repellendus fugit aperiam hic optio quaerat! Facilis consectetur voluptate explicabo sequi voluptas!</p>
+      <!-- be consistent with your indentation work. -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum architecto suscipit sit repellendus fugit aperiam hic optio quaerat! Facilis consectetur voluptate explicabo sequi voluptas!
+      </p>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa illo eaque fugiat dicta accusamus dolorum, veritatis quam? Modi repudiandae pariatur maiores autem obcaecati, harum mollitia placeat in sequi molestiae debitis?
       </p>
