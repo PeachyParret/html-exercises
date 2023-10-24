@@ -7,21 +7,36 @@
 
     <!-- Resources -->
     <link rel="shortcut icon" href="assets/images/wheatx.png">
+
+    <!-- header == content, so header elements go inside the body. In this case, the header element will be the header/banner for the page, so it makes sense to position it either after the skip link. -->
     <header role="banner" aria-labelledby="a11y-banner">
-      <img
-        srcset="assets/images/banner_D1_1519.jpg 1519w,
-        assets/images/banner_D1_760.jpg 760w,
-        assets/images/banner_D1_380.jpg 380w" 
-        width="1519px"
-        alt="Your guide to Gluten Free Cooking" 
+      <!--
+        IMAGES (check throughout)
+        - missing src, width, and height attributes
+        - order of attrs typically: src, width, height, alt, srcset, etc. with id and class first, if there.
+        - first attribute or 2 should be on the same line as the element for readability
+        - alt desc should describe the image, not provide other content
+        - DO NOT use the style attr. Be sure to remove all of them later. Also, that margin will most likely be difficult to work with later.
+        - filenames are not following the filenaming conventions noted in our reading
+      -->
+      <img src="path/here.jpg"
+           width="1519" height=""
+           alt="Your guide to Gluten Free Cooking"
+           srcset="assets/images/banner_D1_1519.jpg 1519w,
+                   assets/images/banner_D1_760.jpg 760w,
+                   assets/images/banner_D1_380.jpg 380w"
         style="margin: 0px -100px;"
         >
-        <h1 id="a11y-banner">
-          Intro to Gluten Free Cooking
-        </h1>
+        <!-- headings needn't include a new line -->
+        <h1 id="a11y-banner">Intro to Gluten Free Cooking</h1>
     </header>
 </head>
+<!--
+  A11Y
+  - ARIA roles and labels need attention throughout. Some are missing and others need clarification with either the heading itself or the label value. For example, headings should be written with a more active and guiding approach. As is, they're mostly noun-based with no real sense about the action around them, e.g., "Bread" or "Meat". What about them?
+-->
 <body style="margin: 0vw 100px;">
+  <!-- note the indentaiton on this skip link; also, we will learn later how to style it so it doesn't appear visually on the screen, so no need to style it here. -->
       <a href="#main" class="skip-to-link" style="text-decoration: none; color: inherit;">
         Skip to Content
       </a>
@@ -42,9 +57,14 @@
     <h2 id="a11y-title"> 
       Overview
     </h2>
+    <!-- note the indentation here -->
         <p>
           This site is designed to show you all the ways that you can make your family's cooking <strong>without</strong> compromising taste. Soon, you'll be able to make your delicious family meals able to be enjoyed by everybody at the table.
         </p>
+      <!--
+        - this section isn't necessary. A nav element is its own landmarker, so it doesn't quite make sense to contain a nave by a section in this case, since it is the main content's TOC of sorts.
+        - again indentation here too. Check for these issues throughout
+      -->
       <section id="nav">
         <nav role="navigation" aria-labelledby="a11y-menu"> 
             <h3 id="a11y-menu">
@@ -80,13 +100,19 @@
         </nav>
       </section>
       <section id="bread" role="region" aria-labelledby="a11y-bread">
+        <!-- note that such visual aspects that an hr renders can easily be produced with CSS borders later. -->
         <hr>
+        <!-- again, short headings like this needn't add new lines to your code. Save space when you can for readability. -->
         <h3 id="a11y-bread">
           Bread
         </h3>
         <h4>
           Sandwiches
         </h4>
+        <!--
+          - typically you do not want to wrap an image in a paragraph like this. It's a rare use case and can make it difficult to style later.
+          - alt descs should typically be more descriptive; esp. with a site like this!
+        -->
         <p>
           <img 
           srcset="assets/images/sandwich_650.jpg 650w,
@@ -105,14 +131,17 @@
         </p>
       </section>
       <section id="pasta" role="region" aria-labelledby="a11y-pasta">
+        <!-- again, I rec. removing these br and hr tags -->
         <hr>
         <br>
         <br>
         <br>
         <br>
+        <!-- remove those other styling attributes throughout -->
         <h3 id="a11y-pasta" align="center">
           Pasta
         </h3>
+        <!-- again, work on the indentation, because there's lots to revise here with missing attrs and broken paths -->
         <img 
         srcset="assets/images/vodka2_3024.jpg 3024w,
                 assets/images/vodka2_1512.jpg 1512w,
@@ -212,6 +241,7 @@
       <br>
       By: Christopher Shiflett
     </p>
+    <!-- since you have multiple nav menus, you really need to make it clear what each one is to your audience. -->
     <nav role="navigation">
       <ul style="list-style: none; margin: 0; padding: 0;">
         <li style="display: inline; margin: 20px;">
