@@ -1,3 +1,6 @@
+<!--
+    Overall, good work! I provide some comments/suggestions below, which also apply to your other page.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,22 +12,36 @@
     <!-- Add a link to your CSS file if you have one -->
     <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
-<body>  
+<body>
+    <!-- Great skip link! -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    <header role="banner" aria-labelledby="a11y-title">
+    <header role="banner"
+        <!-- Notably, this code is copy/pasted from my A11Y demo. This might be ok, but it doesn't always help you think carefully about your design/content context and goals. In short, this isn't a page/h1 about A11y stuff, so it needs revision. -->
         <h1 id="a11y-title">Yana's Skincare Website</h1>
         <h2>Welcome! If you're new here, this is the place to get the easiest info on taking care of your skin!</h2>
     </header>
-    <img src="assets/images/colorful-daily-skincare-products-arora-1012x812.jpeg" 
-        srcset="assets/images/colorful-daily-skincare-products-arora-1012x812.jpg 400w, 
+
+    <!--
+        What's the plan for this image? What content is it related to? If it is part of the banner, then it should be within that scope. If something else, then it should be within that scope.
+
+        RE: srcset
+            - When using 'w', that's information about the intrinsic width of the image source, which you are providing the browser to make the best choice for the particular viewer of your page.
+            - Note how your w values do not match the intrinsic sizes: 1012px instrinsic width with a 400w value
+     -->
+    <img src="assets/images/colorful-daily-skincare-products-arora-1012x812.jpeg"
+        srcset="assets/images/colorful-daily-skincare-products-arora-1012x812.jpg 400w,
         assets/images/colorful-daily-skincare-products-arora-800x601.jpg 800w,
-        assets/images/colorful-daily-skincare-products-arora-500x376.jpg 500w" 
-        alt="colorful bottles of skincare essentials" 
+        assets/images/colorful-daily-skincare-products-arora-500x376.jpg 500w"
+        alt="colorful bottles of skincare essentials"
         sizes="(max-width: 640px) 100vw, 50vw"
-        width="1080" 
-        height="812"> 
+        width="1012"
+        height="812">
     <!-- Side navigation -->
-    <nav role="navigation" aria-labelledby="nav-description">  
+    <!--
+        Note how there is not any element with the ID of "nav-description", so that's why the nav doesn't have a label.
+        Nav menus typically do not have headings, so you can use aria-label instead. aria-label is like an alt attributes in that you can write out the label manually. So, if this is the main/primary navigation, you could write: <nav role="navigation" aria-label="Primary navigation">
+    -->
+    <nav role="navigation" aria-labelledby="primary navigation">
         <div role="region" class="sidebar">
             <a href="#home">Home</a>
             <a href="types-of-products">Types of Products</a>
@@ -39,7 +56,10 @@
     <!-- Page content -->
     <main id="main-content">
         <section id="types" role="region" aria-labelledby="types-heading">
-            <h3 id="types-heading">Types of Skincare Products</h3>
+            <!--
+                Technically, this is a level 2, since the h2 in the header is acting as a "subheading" within that scope. This section is a new subsection of the page, so it is arguably an h2
+            -->
+            <h2 id="types-heading">Types of Skincare Products</h2>
             <p>
                 Cleanser: Arguably the most important step to any skincare routine is finding a cleanser that works best for you. When deciding on a cleanser to purchase, ensure that the product mainly incorporates natural, non-abrasive ingredients, includes at least one active ingredient that is safe for daily use (i.e. niacinamide, hyaluronic acid, tranexamic acid, etc.), and that you complete a patch test on the inside of your wrist before applying it to the face.
             </p>
@@ -50,7 +70,7 @@
                 Sunscreen: You may be under the impression that you only need sunscreen on those hot days lying by the beach or pool. Unfortunately, that is simply not the truth. EVERYONE, no matter your age, requires daily sunscreen application in order to avoid serious skin issues down the road. Using an SPF of 50 or more provides your skin barrier with enough protection to withstand the sun's rays, even on those cloudy days. When choosing a daily sunscreen, ensure it does not include zinc oxide, as that ingredient can have harmful side effects.
             </p>
         </section>
-        
+
         <section id="howto" role="region" aria-labelledby="howto-heading">
             <h3 id="howto-heading">How to Use Skincare Products</h3>
             <p>
@@ -69,7 +89,7 @@
                 Remember that consistency is key when using these skincare products. Stick to a routine that works for your skin type, and don't forget to listen to your skin's needs. Over time, you'll notice improvements in your skin's texture, tone, and overall health.
             </p>
         </section>
-        
+
         <section id="skintype" role="region" aria-labelledby="skintype-heading">
             <h3 id="skintype-heading">Determine Your Skin Type</h3>
             <p>
@@ -110,12 +130,15 @@
             </p>
             <p>
                 By identifying your skin type, you can select products that cater to your specific needs and concerns, paving the way for a healthier, more radiant complexion. Remember that your skin type may change over time due to factors like climate, age, and lifestyle, so periodically reassess it to adapt your skincare routine accordingly.
-            </p>  
+            </p>
         </section>
     </main>
 
     <!--
+        Same feedback remains here from before:
         What's the plan for this figure? Right now, it seems a little detached from the site.
+
+        Also, is a figure necessary? If you want the caption, for sure keep it. :-)
      -->
     <figure>
         <img src="images/skincare-variety-fall-arora-640x384.jpg"
@@ -124,6 +147,9 @@
     </figure>
 
     <!-- Footer -->
+    <!--
+        Again, there is no "contact-title" ID for aria-labelledby
+    -->
     <footer role="contentinfo" aria-labelledby="contact-title">
         <div class="contact-info">
             <h3>Contact Me</h3>
