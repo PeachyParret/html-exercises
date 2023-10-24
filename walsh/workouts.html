@@ -7,10 +7,14 @@
     <meta name="language" content="ES">
     <meta name="distribution" content="Global">
     <title>Variety of Effective Workouts</title>
+    <!-- Definitely do not use such a huge image for a little icon. Create a like ~50x50 version -->
     <link rel="icon" href="/walsh/assets/images/vegetables-walsh-large-1024x683px.jpeg" type="image/x-icon">
 </head>
 <body>
     <a href="#main" class="skip-to-link">Skip to content</a>
+    <!--
+        A11Y: Overall, well done! But, recheck your ARIA roles and attributes, as there are some issues to resolve here and there. Your roles look good overall, but some of you ARIA label attributes need revision.
+    -->
     <header role="banner" aria-labelledby="Variety of Effective Workouts">
         <h1 id="variety-of-effective-workouts">
             Variety of Effective Workouts
@@ -38,6 +42,11 @@
                 High Intensity Interval Training Workouts
             </h2>
             <figure>
+                <!--
+                    Notes on images to consider throughout:
+                    If you're not using figcaption, then probably no need to use figure
+                    I'd also rec. using slightly smaller images from the onset. 7000's pretty huge to start with. Even the 1700 would be good as the largest size for most design situations.
+                -->
                 <img 
                 src="assets/images/workout-walsh-small-1768x1180.jpeg" 
                 alt="Man on a yoga matt doing mountain climbers" 
@@ -53,6 +62,9 @@
             </p>
             <p>
                 For the first set complete 8 of the following and each time you repeat, decrease your rep by one:
+                <!--
+                    You can nest your uls like this wihtin the paragraph, or you can cloase the paragraph and simply add it afterwards. That usually is best, since it might introduce CSS cascading issues with your selection rules that may not account for this relationship in some cases.
+                -->
                     <ul>
                         <li>
                             Shoulder taps
@@ -196,6 +208,7 @@
         </section>
     </main>
 </body>
+<!-- footer needs to be in the body' also note the misspelled 'arria-label' attribute -->
 <footer role="contentinfo" arria-label="copyright information">
     <p>
         &copy;College is Hard, I can Help!
