@@ -11,17 +11,17 @@
 </head>
 <body>
     <header>
+        <div>
+            <h1>Kiara's Reading Blog</h1>
+        </div>
         <nav>
             <a href="#button1">Skip to Article #1</a>
             <a href="#button2">Skip to Article #2</a>
         </nav>
-        <div>
-            <h1>Kiara's Reading Blog</h1>
-        </div>
     </header>
     <main>
-        <article>
-            <h1>Article 1: How To Read</h1>
+        <article aria-labelledby="aritle-1">
+            <h1 id="article-1">Article 1: How To Read</h1>
             <!-- all images need the following: src, alt, width, height, and srcset -->
             <img srcset="
                 ./assets/images/reading-a-book-small-1008x756.jpeg 1008w 756h, 
@@ -48,13 +48,13 @@
                     </ul>
                     <p>Simple enought, right?</p>
                     <a>
-                        <button id="button1" type="button" onclick="window.location.href='story.html';">Read me!</button>
+                        <button id="button1" type="button" onclick="window.location.href='story.html';">Click me to read Article #1</button>
                     </a>
                 </div>
             </section>
         </article>
-        <article>
-            <h1>Article 2: Reading, the Basics</h1>
+        <article aria-labelledby="article-2">
+            <h1 id="article-2">Article 2: Reading, the Basics</h1>
             <!-- all images need the following: src, alt, width, height, and srcset -->
             <img srcset="
                 ./assets/images/reading-a-book-small-1008x756.jpeg 1008w 756h, 
@@ -81,11 +81,14 @@
                     </ul>
                     <p>Simple enought, right?</p>
                     <a>
-                        <button id="button2" type="button" onclick="window.location.href='story.html';">Read me!</button>
+                        <button id="button2" type="button" onclick="window.location.href='story.html';">Click me to read article #2</button>
                     </a>
                 </div>
             </section>
         </article>
     </main>
 </body> 
+<footer>
+    <p>This is my footer</p>
+</footer>
 </html>
