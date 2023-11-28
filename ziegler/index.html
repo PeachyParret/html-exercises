@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Let's set up a time to meet Chloe. I think there's some things that a conversation would more efficiently clarify for you. I'll provide some overarching comments for now though. -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,22 @@
         </title>
         <link rel="site icon" href="./assets/images/main/flower.ico">
     </head>
-   
+   <!--
+        OVERALL COMMENTS
+        ## A11Y ##
+        - Need to use ARIA roles and labels correctly. Your use of labelledby isn't going to work in places, because the value of this attribute is an ID defined on an element.
+        - A nav menu should be available across your site's pages, since it provides a consistent space for everyone to more easily navigate your site
+
+        ## SEMANTICS ##
+        - Be sure to review the semantics for your elements. For example, the <figure> element. I'd argue that your site doesn't need it, since you're not referencing or captioning your media. But, if you use the <figcaption> appropriately, sure thing! Right now, you figcaptions are not being used appropriately, since they are seemingly going to become CTA links. That's not captioning the figure, right? So, instead, you would use a different element to wrap up that anchored CTA.
+        - the footer should be contained by the body too, since the body contains all of the content for the page
+
+        ## OTHER ##
+        - Your use of the anchor tag to link to the same place with multiple elements is not the best practice. Typically you provide a more consistent CTA (call-to-action) link
+        - Indentation scheme is off in places. Typically, using 1 too many tab indents in some places
+        - Be sure to remove all inline styles and font elements throughout for the final
+        - An aside: I would've liked to see some more (placeholder) content and structure development on one of the other pages, based on your album review goals, for example. So far, I can envision lots of card-like elements on this page, but the other two included esssentially 1 ul.
+    -->
     <body style="background-color:#F995C5;">
 
         <header role="banner" aria-labelledby="a11y-title">
