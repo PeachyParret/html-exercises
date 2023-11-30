@@ -5,8 +5,8 @@
 :root {
   --canvasColor: #f9f9f9;
 
-  --backgroundColor: #fff;
-  --foregroundColor: #111;
+  --backgroundColor: #f0f0f0;
+  --foregroundColor: #800080;
 
   --primaryColor: #800080; /* Purple */
   --primaryShade1: #e1d4e9;
@@ -37,7 +37,7 @@
 /* General Color Scheme */
 body {
   background: var(--backgroundColor);
-  color: var(--neutralShade8);
+  color: var(-- primaryColor);
 }
 
 /* Typography */
