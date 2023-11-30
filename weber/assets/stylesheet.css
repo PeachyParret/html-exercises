@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+/*============
+  COLOR SCHEME
+
+  2. Define the color scheme within the root element by using CSS variables:
+
+    - '--variableName: color_value;'
+    - Use in code later as "color: var(--variableName)"
+
+  The power of CSS variables includes interchangability. For example, when you want to change your color pallette, you only need to change the value defined at the variable.
+
+  For example, if you want to change your background and foreground colors, your primary and secondary colors, etc., locate the variable in the :root, change it, and then that value will be applied anywhere that variable is used in your CSS.
+
+  Define it once, use across your code.
+  Change it in one spot, it changes everywhere it's used in your code!
+
+  - See https://randoma11y.com to establish a basic 2-color scheme: primary and secondary colors.
+  - Note how the colors shades move from 1-5, i.e., lighter shades to darker shades. To produce shades, use VS Code's color picker tool to produce gradiations of the initial color.
+  - If you want //accent// shade(s), feel free to consider additional complimentary colors.
+=============*/
+
+:root {
+  --canvasColor: #f9f9f9;
+
+  --backgroundColor: #fff;
+  --foregroundColor: #111;
+
+  --primaryColor: #630031;
+  --primaryShade1: #efb8d3;
+  --primaryShade2: #b96b92;
+  --primaryShade3: #ab537f;
+  --primaryShade4: #a13d6f;
+  --primaryShade5: #86385f;
+
+  --secondaryColor: #cf4420;
+  --secondaryShade1: #d8a193;
+  --secondaryShade2: #ab6e5e;
+  --secondaryShade3: #9b5644;
+  --secondaryShade4: #a9543f;
+  --secondaryShade5: #972f15;
+
+  --accentColor: #08415c;
+  --accentShade1: #17adf2;
+  --accentShade2: #158ac1;
+  --accentShade3: #0e6d98;
+  --accentShade4: #0b5779;
+  --accentShade5: #041e2b;
+
+  --accent2Color: #8ea8C3;
+  --accent2Shade1: #eaedf0;
+  --accent2Shade2: #b9d6f4;
+  --accent2Shade3: #81b7f1;
+  --accent2Shade4: #4998ed;
+  --accent2Shade5: #338cea;
+
+  --accent3Color: #D8CFAF;
+  --accent3Shade1: #f4f2eb;
+  --accent3Shade2: #f1e7c3;
+  --accent3Shade3: #f6e29a;
+  --accent3Shade4: #f1d46c;
+  --accent3Shade5: #f6cd38;
+
+  --neutralShade1: #f5D0C5;
+  --neutralShade2: #fdf9f8;
+  --neutralShade3: #f5e0da;
+  --neutralShade4: #fae1d9;
+  --neutralShade5: #f7a58c;
+  --neutralShade6: #f98c6b;
+  --neutralShade7: #fb7249;
+  --neutralShade8: #fc3f06;
+
+  --grayColor: #999;
+  --lightGrayColor: #ddd;
+
+  /* You can also use it for generally applied sizing and spacing. */
+  --borderRadius: 6px;
+  --boxShadow: 0 2px 5px rgba(#333, 0.2);
+
+  /* Change default root font size (16px), if desired */
+  font-size: 18px;
+}
+
+
+/*
+  After you define your color schemes above, revise the color and typography rulesets below in accordance with your desired new font families, weights, line-heights, etc. You can even modify which variables are being used.
+*/
+
+/* GENERAL COLOR SCHEME */
+body {
+  background: var(--backgroundColor);
+  color: var(--neutralShade8);
+}
+
+/*==========
+  TYPOGRAPHY
+===========*/
+
+/* Font Families */
+body { font-family: "Didact Gothic", sans-serif;}
+h1,h2,h3 { font-family: "Merriweather Sans", sans-serif; }
+
+/* Emphasis and Bolding */
+strong { font-weight: 500; }
+em { font-style: italic; }
+
+/* Font Weight, Sizing & Spacing */
+body {
+  font-weight: 300;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+h1 {
+  font-weight: 700;
+  font-size: clamp(2.5rem,3rem,3.5rem);
+  line-height: 2;
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: 500;
+  font-size: clamp(1.75rem,2rem,2.5rem);
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+h3 {
+  font-weight: 500;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.6;
+}
+h4 {
+  font-weight: 300;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.4;
+  font-style: italic;
+}
+h5 {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+h6 {
+  font-weight: 200;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+a { font-weight: 500; }
+
+/* Default Font Colors & Styling */
+
+/* default links */
+a {
+  color: var(--neutralShade8);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a:hover {
+  color: var(--neutralShade1);
+  background-color: var(--primaryColor);
+  border-bottom: 3px solid var(--primaryShade5);
+  transition: 0.4s;
+}
+
+/* primary color links */
+a.primary {
+  color: var(--primaryColor);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.primary:hover {
+  color: var(--primaryShade1);
+  background-color: var(--primaryShade4);
+  border-bottom: 3px solid var(--secondaryColor);
+  transition: 0.4s;
+}
+
+/* secondary color links */
+a.secondary {
+  color: var(--secondaryShade5);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.secondary:hover {
+  color: var(--secondaryShade1);
+  background-color: var(--secondaryShade5);
+  border-bottom: 3px solid var(--primaryColor);
+  transition: 0.4s;
+}
+
+
+/*##########################################
+
+  !!!!IGNORE!!!!
+  STYLES BELOW ARE SPECIFIC TO THE STYLE GUIDE
+  DO NOT COPY-PASTE THESE STYLES
+
+###########################################*/
+
+/*==============
+  LAYOUT STYLES
+  DO NOT CHANGE!
+===============*/
+
+.main_banner h1 {
+  text-align: center;
+}
+
+/*Large Screen Layout*/
+main {
+  width: 90%;
+  margin: 3em auto;
+  display: grid;
+  grid-template-columns: 30ch repeat(5, minmax(50px,1fr));
+  grid-template-areas:
+  "colors typography typography typography headlines headlines"
+  "colors bodyex bodyex bodyex links links";
+  color: var(--foregroundColor);
+  text-align: left;
+}
+
+main > section:not(:first-child) {
+  box-shadow: 1px 1px 2px 0px var(--primaryColor);
+}
+
+/* Grid Areas */
+.colors { grid-area: colors; background-color: var(--secondaryShade1); box-shadow: 2px 2px 3px -1px var(--secondaryShade2);}
+.typography { grid-area: typography; }
+.headlines { grid-area: headlines; }
+.body_text_example { grid-area: bodyex; }
+.links { grid-area: links; }
+
+.colors,.typography,.headlines,.body_text_example,.links {
+  padding: 1rem;
+}
+.links > div { margin: 2rem 0; }
+
+/* Font Family Cases */
+.font-family {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.font-family > div {
+  flex: 1 1 30%;
+  min-width: 10em;
+}
+
+.font__second-level { font-family: "Poppins", sans-serif;}
+.font__first-level { font-family: "Exo 2", serif; }
+.font__first-level > span { font-size: 1rem; }
+.font__second-level > span { font-size: 0.8rem; }
+.font-family-bold > * { font-weight: 900; }
+.font-family-medium > * { font-weight: 500; }
+.font-family-light > * { font-weight: 300; }
+
+.font-example {
+  display: flex;
+  flex-wrap: wrap;
+}
+.font-example > div {
+  flex: 1 1 45%;
+  min-width: 16em;
+}
+.font-example p {
+  margin-bottom: 15px;
+}
