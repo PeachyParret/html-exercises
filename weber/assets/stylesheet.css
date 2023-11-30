@@ -55,13 +55,6 @@
   --accent2Shade4: #4998ed;
   --accent2Shade5: #338cea;
 
-  --accent3Color: #D8CFAF;
-  --accent3Shade1: #f4f2eb;
-  --accent3Shade2: #f1e7c3;
-  --accent3Shade3: #f6e29a;
-  --accent3Shade4: #f1d46c;
-  --accent3Shade5: #f6cd38;
-
   --neutralShade1: #f5D0C5;
   --neutralShade2: #fdf9f8;
   --neutralShade3: #f5e0da;
@@ -82,6 +75,23 @@
   font-size: 18px;
 }
 
+/* Skip Link */
+a.skip-to-link {
+    position: absolute;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+}
+
+a.skip-to-link:focus {
+    color: black;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: auto;
+}
 
 /*
   After you define your color schemes above, revise the color and typography rulesets below in accordance with your desired new font families, weights, line-heights, etc. You can even modify which variables are being used.
@@ -213,7 +223,7 @@ a.secondary:hover {
 main {
   width: 90%;
   margin: 3em auto;
-  display: grid;
+  display: default;
   grid-template-columns: 30ch repeat(5, minmax(50px,1fr));
   grid-template-areas:
   "colors typography typography typography headlines headlines"
