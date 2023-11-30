@@ -207,9 +207,3 @@ a.secondary:hover {
     text-align: left;
   }
 }
-
-/* Block of filled color behind headlines and h1/h2 headings */
-.headlines {
-  background-color: #008080; /* Blue complementary to purple and olive */
-  padding: 20px;
-}
