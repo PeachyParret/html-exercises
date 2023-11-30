@@ -17,13 +17,17 @@
   <header role="banner">
     <!-- Notably, this code is copy/pasted from my A11Y demo. This might be ok, but it doesn't always help you think carefully about your design/content context and goals. In short, this isn't a page/h1 about A11y stuff, so it needs revision. -->
     <h1 id="a11y-title">Yana's Skincare Website</h1>
-    <h2>Welcome! If you're new here, this is the place to get the easiest info on taking care of your skin!</h2>
+    <h2>Welcome! If you're new here, this is the place to get the easiest info on taking care of your skin!</h2>    
+    <section> class="image-container"
+    <figure>
     <img src="arora/images/colorful-daily-skincare-products-arora-1012x812.jpeg"
       srcset="arora/images/colorful-daily-skincare-products-arora-1012x812.jpg 400w,
         arora/images/colorful-daily-skincare-products-arora-800x601.jpg 800w,
         arora/images/colorful-daily-skincare-products-arora-500x376.jpg 500w"
       alt="colorful bottles of skincare essentials" sizes="(max-width: 640px) 100vw, 50vw" width="1012"
       height="812">
+      </figure>
+    </section>
   </header>
 
   <!-- Nav menus typically do not have headings, so you can use aria-label instead. aria-label is like an alt attributes in that you can write out the label manually. So, if this is the main/primary navigation, you could write: <nav role="navigation" aria-label="Primary navigation"> -->
