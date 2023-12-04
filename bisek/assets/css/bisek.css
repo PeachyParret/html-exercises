@@ -8,10 +8,15 @@
     top: auto;
 }
 
+img {
+  width: 50%;
+  height: 50%;
+}
+
 :root {
-    --canvasColor: #f9f9f9;
+    --canvasColor:#7FBF50;
   
-    --backgroundColor: #fffffffff;
+    --backgroundColor: #b0eafd;
     --foregroundColor: #000000;
   
     --primaryColor: #7FBF50;
@@ -139,6 +144,10 @@
     line-height: 1.2;
   }
   
+  p {
+    display: flex;
+  }
+  
   a { font-weight: 500; }
   
   /* Default Font Colors & Styling */
@@ -146,7 +155,6 @@
   /* default links */
   a { 
     color: var(--neutralShade8); 
-    border-bottom: 2px dashed;
     cursor: pointer;
     transition: 0.4s;
   }
@@ -184,3 +192,58 @@
     border-bottom: 3px solid var(--primaryColor);
     transition: 0.4s; 
   }
+
+/* Section 1 */
+.title-pic {
+  align-items: center;
+  width: 100%;
+  width: 100%;
+}
+
+.intro-sent {
+  text-align: center;
+}
+
+.nav-main {
+  background-color: var(--accentColor);
+  color: var(--neutralShade1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 20%;
+  height: 400px;
+  margin: 10px;
+}
+
+.main-navigation {
+  text-align: center;
+}
+
+.bulk-main {
+  display: flex;
+  align-items: baseline;
+  background-color: var(--accent2Color);
+}
+
+a.active {
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+}
+
+.welcome-main {
+  display: block;
+  margin: 30px;
+  font-size: 30px;
+}
+
+.intro-pics {
+  display: flex;
+  margin: 10px;
+  object-fit: contain;
+}
+
+.map-pic {
+  height: 100%;
+}
