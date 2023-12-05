@@ -6,25 +6,30 @@
     <meta name="author" content="Hayley-Bisek">
     <meta name="description" content="eginners-guide-to-stardew-valley">
     <title>Stardew Valley Beginner's Guide</title>
+    <link rel="stylesheet" href="assets/css/bisek.css"></link>
     <link rel="shortcut icon" type="image/png" href="assets/img/android-chrome-512x512.png">
     </head>
     
     <header>
-        <img src="assets/img/tltle-img.png"
+        
+        
+            <img class="title-pic"
+        src="assets/img/tltle-img.png"
         alt="title"
         width="1920px"
         height="576">
         
-            <a href="#main" 
-            class="skip-to-link">Skip to Main Content</a>
-            
+            <a href="#main" class="skip-to-link">Skip to Main Content</a>
+        
+        <div class="intro-sent">
             <h1>
                 A complete beginner's guide to a successful farm in Pelican Town
             </h1>
-    
-    <nav>
+        </div>
+    <div class="bulk-main">
+    <nav class="nav-main">
         <h2 
-        id="main-navigation">Main Navigation
+        class="main-navigation">Main Navigation
         </h2>
         <ul>
             <li> 
@@ -33,53 +38,56 @@
                 <a class="active" href="The-donts.html">The Don'ts</a> </li>
             <li> 
                 <a class="active" href="items-to-keep.html">Items to keep</a> </li>
-            <li> 
-                <a href="active"  href="faq.html">FAQ</a></li>
         </ul>
     </nav>
+    <div class="welcome-main">
+        <h2 id="introduction" 
+        role="banner" 
+        aria-labelledby="introduction">
+            Welcome to Pelican Town!
+        </h2>
+        <p id="description-of-page">
+            Hello new farmers! Welcome to the ultimate beginner’s guide to Stardew Valley. This site contains everything players need to know in order to cultivate a successful farm during their first year in Pelican Town. Every player is different which means every farm will be different, so this site covers the root basics of farming, foraging, fishing, mining and combat. Everything covered on this site will be limited to what can be done and collected during the first year. For more experienced players, find a complete Stardew Valley wiki down below. Happy playing!
+        </p>
+
+        <p class="wiki-link">
+            Find a complete Stardew Valley Wiki...<a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki" target="_blank" rel="noopener noreferrer">here</a>
+        </p>
+    </div>
+    </div>
+    <div class="intro-pics">
+    <img class="map-pic"
+        src="assets/img/map.png"
+        alt="map-of pelican-town"
+        width="1221px" 
+        height="744px"
+        srcset="assets/img/map.png 1221w,assets/img/map-900w.png 900w,assets/img/map-400w.png 400w">
+
+     <img class="saloon-pic"
+        src="assets/img/saloon.png" 
+        alt="star-drop-saloon-beer-party" 
+        width="967" 
+        height="640"
+        srcset="assets\img\saloon.png 967w,assets\img\saloon-484w.png 484w,assets\img\saloon-290w.png 290w">
+    </div>  
     </header>             
     
             
     <!-- Section 1-->
     
     <main>
-        <section 
-        id="introduction" 
-        role="banner" 
-        aria-labelledby="introduction">       
-        <h2>
-            Welcome to Pelican Town!
-        </h2>
-        <p
-            id="description-of-page">
-            Hello new farmers! Welcome to the ultimate beginner’s guide to Stardew Valley. This site contains everything players need to know in order to cultivate a successful farm during their first year in Pelican Town. Every player is different which means every farm will be different, so this site covers the root basics of farming, foraging, fishing, mining and combat. Everything covered on this site will be limited to what can be done and collected during the first year. For more experienced players, find a complete Stardew Valley wiki down below. Happy playing!
-        </p>
-
-        <p>
-            Find a <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki" target="_blank" rel="noopener noreferrer">complete Stardew Valley Wiki here</a>
-        </p>
         
-        <img src="assets/img/map.png"
-        alt="map-of pelican-town"
-        width="1221px" 
-        height="744px"
-        srcset="assets/img/map.png 1221w,assets/img/map-900w.png 900w,assets/img/map-400w.png 400w">
 
-        <img src="assets/img/saloon.png" 
-            alt="star-drop-saloon-beer-party" 
-            width="967" 
-            height="640"
-            srcset="assets\img\saloon.png 967w,assets\img\saloon-484w.png 484w,assets\img\saloon-290w.png 290w">
-        </section>
 
-    <section  
+    <section
         role="main" 
-        aria-labelledby="the-dos">     
+        aria-labelledby="the-dos">
+        <div class="the-dos-main">   
         <h2
             id="the-dos">
             The Do's
         </h2>
-        <ul>
+        <ul class="the-dos-list">
             <li> 
                     <h3>Plant seeds immediately</h3> 
                     <p>
@@ -135,28 +143,33 @@
                     </p>
             </li>
         </ul> 
+        </div>
         
-        <img src="assets/img/bundle-640w.png"
+        <div class="the-dos-pics">
+        <img class="bundle-pic"
+            src="assets/img/bundle-640w.png"
             alt="bundles"
             width="640px"
             height="360px">
         
-        <img src="assets/img/mines.jpg"
-        alt="mines"
-        width="960px"
-        height="540px"
-
+        <img class="mine-pic"
+            src="assets/img/mines.jpg"
+            alt="mines"
+            width="960px"
+            height="540px">
+        </div>
     </section>
 
             
     <section 
         role="main" 
-        aria-labelledby="the-donts">      
+        aria-labelledby="the-donts">
+        <div class="the-donts-main">    
         <h2
             id="the-donts">
             The Dont's
         </h2>
-        <ul>
+        <ul class="the-donts-list">
             <li>
                     <h3>Do not sell everything right away!</h3> 
                     <p>
@@ -199,18 +212,22 @@
                         Your livestock need affection and grass/hay everyday to produce collectables. Remembering to do both results in more profitable and bigger collectables. Forgetting can result in none.
                     </p>
             </li>
-        </ul> 
+        </ul>
+        </div>   
         
-        <img src="assets/img/barn.png"
-        alt="barn"
-        width="711px"
-        height="489px">
+        <div class="the-donts-pics">
+        <img class="barn-pic"
+            src="assets/img/barn.png"
+            alt="barn"
+            width="711px"
+            height="489px">
         
-        <img src="assets/img/foraging.jpeg"
-        alt="foraging"
-        width="878px"
-        height="773px">
-        
+        <img class="foraging-pic"
+            src="assets/img/foraging.jpeg"
+            alt="foraging"
+            width="878px"
+            height="773px">
+        </div>
     </section>
 
 
@@ -218,12 +235,13 @@
 
     <section 
         role="main" 
-        aria-labelledby="items-to-keep">       
+        aria-labelledby="items-to-keep">
+        <div class="items-main">      
         <h2
             id="items-to-keep">
             Items to Keep
         </h2>
-        <ul>
+        <ul class="items-list">
             <li>
                     <h3>Prismatic Shard</h3> 
                     <p>
@@ -261,17 +279,21 @@
                     </p>
             </li>
         </ul>
+        </div>
 
-        <img src="assets/img/prism-shard.png"
-        alt="prism-shard"
-        width="610px"
-        height="423px">
+        <div class="items-pics">
+        <img class="prism-shard-pic"
+            src="assets/img/prism-shard.png"
+            alt="prism-shard"
+            width="610px"
+            height="423px">
 
-        <img src="assets/img/dino.jpg" 
-        alt="dino"
-        width="501px"
-        height="417">
-
+        <img class="dino-pic"
+            src="assets/img/dino.jpg" 
+            alt="dino"
+            width="501px"
+            height="417">
+        </div>
     </section>
 </main>
 </html>

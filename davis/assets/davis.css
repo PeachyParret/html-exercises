@@ -1,0 +1,267 @@
+/*============
+  IMPORT FONTS
+
+  1. Import your own fonts via https://fonts.google.com. Be sure to revise the family names in the CSS and in the HTML
+==============*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap');
+
+/*============
+  COLOR SCHEME
+
+  2. Define the color scheme within the root element by using CSS variables:
+
+    - '--variableName: color_value;'
+    - Use in code later as "color: var(--variableName)"
+
+  The power of CSS variables includes interchangability. For example, when you want to change your color pallette, you only need to change the value defined at the variable.
+
+  For example, if you want to change your background and foreground colors, your primary and secondary colors, etc., locate the variable in the :root, change it, and then that value will be applied anywhere that variable is used in your CSS.
+
+  Define it once, use across your code.
+  Change it in one spot, it changes everywhere it's used in your code!
+
+  - See https://randoma11y.com to establish a basic 2-color scheme: primary and secondary colors.
+  - Note how the colors shades move from 1-5, i.e., lighter shades to darker shades. To produce shades, use VS Code's color picker tool to produce gradiations of the initial color.
+  - If you want //accent// shade(s), feel free to consider additional complimentary colors.
+=============*/
+img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+:root {
+  --canvasColor: #f9f9f9;
+
+  --backgroundColor: #fff;
+  --foregroundColor: #111;
+
+  --primaryColor: #ffffff;
+  --primaryShade1: #cdd4d8;
+  --primaryShade2: #9fa6a9;
+  --primaryShade3: #4fc2f727;
+  --primaryShade4: #0289d110;
+  --primaryShade5: #0278bd00;
+
+  --secondaryColor: #630031;
+  --secondaryShade1: #f4d2d2;
+  --secondaryShade2: rgb(215, 160, 160);
+  --secondaryShade3: #cd7575;
+  --secondaryShade4: #a82d2d;
+  --secondaryShade5: #921b1b;
+
+  --accentColor: #CF4420;
+  --accentShade1: #f2e7e0;
+  --accentShade2: #dfc6b2;
+  --accentShade3: #b6704d;
+  --accentShade4: #793400;
+  --accentShade5: #4d2500;
+/*
+  --accent2Color: #8bc34a;
+  --accent2Shade1: #e7f6d5;
+  --accent2Shade2: #c5e1a5;
+  --accent2Shade3: #aed581;
+  --accent2Shade4: #689f38;
+  --accent2Shade5: #558b2f;
+
+  --accent3Color: #f44336;
+  --accent3Shade1: #ffdde0;
+  --accent3Shade2: #ffcdd2;
+  --accent3Shade3: #ef9a9a;
+  --accent3Shade4: #d32f2f;
+  --accent3Shade5: #b71c1c;
+*/
+  --neutralShade1: #f2f2f2;
+  --neutralShade2: #e8e9e9;
+  --neutralShade3: #d1d3d4;
+  --neutralShade4: #babdbf;
+  --neutralShade5: #808488;
+  --neutralShade6: #666a6d;
+  --neutralShade7: #4d5052;
+  --neutralShade8: #212122;
+
+  --grayColor: #999;
+  --lightGrayColor: #ddd;
+
+  /* You can also use it for generally applied sizing and spacing. */
+  --borderRadius: 6px;
+  --boxShadow: 0 2px 5px rgba(#333, 0.2);
+
+  /* Change default root font size (16px), if desired */
+  font-size: 16px;
+}
+
+
+/*
+  After you define your color schemes above, revise the color and typography rulesets below in accordance with your desired new font families, weights, line-heights, etc. You can even modify which variables are being used.
+*/
+
+/* GENERAL COLOR SCHEME */
+body {
+  background: var(--backgroundColor);
+  color: var(--neutralShade8);
+}
+
+/*==========
+  TYPOGRAPHY
+===========*/
+
+/* Font Families */
+body { font-family: "Work Sans", sans-serif;}
+h1,h2,h3 { font-family: "Playfair Display", serif; }
+
+/* Emphasis and Bolding */
+strong { font-weight: 500; }
+em { font-style: italic; }
+
+/* Font Weight, Sizing & Spacing */
+body {
+  font-weight: 300;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+h1 {
+  font-weight: 700;
+  font-size: clamp(2.5rem,3rem,3.5rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: 500;
+  font-size: clamp(1.75rem,2rem,2.5rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+h3 {
+  font-weight: 500;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
+}
+h4 {
+  font-weight: 300;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
+  font-style: italic;
+}
+h5 {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+h6 {
+  font-weight: 200;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+a { font-weight: 500; }
+
+/* Default Font Colors & Styling */
+
+/* default links */
+a {
+  color: var(--neutralShade8);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a:hover {
+  color: var(--neutralShade5);
+  background-color: var(--primaryColorshade5);
+  border-bottom: 3px solid var(--primaryShade5);
+  transition: 0.4s;
+}
+
+/* primary color links */
+a.primary {
+  color: var(--secondaryShade5);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.primary:hover {
+  color: var(--secondaryShade1);
+  background-color: var(--secondaryShade5);
+  border-bottom: 3px solid var(--primaryColor);
+  transition: 0.4s;
+}
+
+/* secondary color links */
+a.secondary {
+  color: var(--accent2Shade3);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.secondary:hover {
+  color: var(--accent2Shade1);
+  background-color: var(--accent2Shade4);
+  border-bottom: 3px solid var(--accentColor);
+  transition: 0.4s;
+}
+/* navigation */
+.topnav {
+  background-color: white;
+}
+.topnav a {
+  color:var(--secondaryShade5);
+  text-align: center;
+  font-size: 16px;
+  border-bottom: none;
+}
+.topnav a:hover {
+  color: var(--neutralShade7);
+}
+/* MOBILE FIRST */
+.logo-img {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  /*margin: 20px;*/
+}
+.semester-container {
+  display: grid;
+  grid-template-rows: 3(1fr);
+}
+/* Grid Area Definitions */
+.statement-container {grid-area: sta}
+.logo-img {grid-area: lgo;}
+.history-container {grid-area: hst;}
+.semester-container {grid-area: sem;}
+.newmembers-container {grid-area: nwm;}
+.profiles-container {grid-area: pro;}
+.tweets-container {grid-area: twt;}
+.podcast-container {grid-area: pod;}
+
+/* TABLET */
+@media screen and (min-width:775px) {
+   main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "sta hst"
+    "sem sem"
+    "nwm nwm"
+    "pro twt"
+    "pod pod";
+    grid-gap: 1rem;
+  }
+  .logo-img {
+    height: auto;
+    width: auto;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1125px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "sta lgo"
+    "hst lgo"
+    "sem sem"
+    "nwm nwm"
+    "pro twt"
+    "pod pod";
+  }
+}

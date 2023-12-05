@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Pixelify+Sans&family=Press+Start+2P&family=Silkscreen&display=swap');
+
+.skip-to-link {
+    position: absolute;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+}
+
+:root {
+    --canvasColor:#7FBF50;
+  
+    --backgroundColor: #b0eafd;
+    --foregroundColor: #000000;
+  
+    --primaryColor: #7FBF50;
+    --primaryShade1: #c7fea1;
+    --primaryShade2: #8bc95f;
+    --primaryShade3: #7fbf50;
+    --primaryShade4: #61933d;
+    --primaryShade5: #385424;
+  
+    --secondaryColor: #73cdeb;
+    --secondaryShade1: #b0eafd;
+    --secondaryShade2: #83e0ff;
+    --secondaryShade3: #73cdeb;
+    --secondaryShade4: #65b1ca;
+    --secondaryShade5: #508da1;
+  
+    --accentColor: #d97ba7;
+    --accentShade1: #ffaad2;
+    --accentShade2: #f390be;
+    --accentShade3: #d97ba7;
+    --accentShade4: #b3668a;
+    --accentShade5: #874a67;
+  
+    --accent2Color: #ead539;
+    --accent2Shade1: #ffef77;
+    --accent2Shade2: #fce84f;
+    --accent2Shade3: #ead539;
+    --accent2Shade4: #c5b328;
+    --accent2Shade5: #9d8f27;
+  /*
+    --accent3Color: #f44336;
+    --accent3Shade1: #ffdde0;
+    --accent3Shade2: #ffcdd2;
+    --accent3Shade3: #ef9a9a;
+    --accent3Shade4: #d32f2f;
+    --accent3Shade5: #b71c1c;
+  */
+    --neutralShade1: #f2f2f2;
+    --neutralShade2: #e8e9e9;
+    --neutralShade3: #d1d3d4;
+    --neutralShade4: #babdbf;
+    --neutralShade5: #808488;
+    --neutralShade6: #666a6d;
+    --neutralShade7: #4d5052;
+    --neutralShade8: #212122;
+  
+    --grayColor: #999;
+    --lightGrayColor: #ddd;
+    
+    /* You can also use it for generally applied sizing and spacing. */
+    --borderRadius: 6px;
+    --boxShadow: 0 2px 5px rgba(#333, 0.2);
+  
+    /* Change default root font size (16px), if desired */
+    font-size: 18px;
+  }
+  
+  
+  /*
+    After you define your color schemes above, revise the color and typography rulesets below in accordance with your desired new font families, weights, line-heights, etc. You can even modify which variables are being used.
+  */
+  
+  /* GENERAL COLOR SCHEME */
+  body {
+    background: var(--canvasColor);
+    color: var(--neutralShade8);
+  }
+  
+  /*==========
+    TYPOGRAPHY
+  ===========*/
+  
+  /* Font Families */
+  p { font-family: "Ariel", sans-serif;}
+  h1 { font-family: "Press Start 2P"; }
+  h2 { font-family: "Pixelify Sans", serif; }
+  h3 { font-family: "Silkscreen"; }
+  
+  nav {
+    font-family: "Pixelify Sans";
+  }
+  .links__sec { font-family: "Pixelify Sans";}
+  
+  /* Emphasis and Bolding */
+  strong { font-weight: 500; }
+  em { font-style: italic; }
+  
+  /* Font Weight, Sizing & Spacing */
+  body {
+    font-weight: 300;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: clamp(2.5rem,3rem,3.5rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: clamp(1.75rem,2rem,2.5rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: clamp(1.25rem,1.5rem,1.75rem);
+    line-height: 1.2;
+  }
+  h4 {
+    font-weight: 300;
+    font-size: clamp(1.25rem,1.5rem,1.75rem);
+    line-height: 1.2;
+    font-style: italic;
+  }
+  h5 {
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  h6 {
+    font-weight: 200;
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  
+  p {
+    display: flex;
+  }
+  
+  a { font-weight: 500; }
+  
+  /* Default Font Colors & Styling */
+  
+  /* default links */
+  a { 
+    color: var(--neutralShade8); 
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  a:hover {
+    color: var(--neutralShade1);
+    background-color: var(--primaryColor);
+    border-bottom: 3px solid var(--primaryShade5);
+    transition: 0.4s;
+  }
+  
+  /* primary color links */
+  a.primary { 
+    color: var(--primaryColor); 
+    border-bottom: 2px dashed;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  a.primary:hover {
+    color: var(--primaryShade1);
+    background-color: var(--primaryShade4);
+    border-bottom: 3px solid var(--secondaryColor);
+    transition: 0.4s;
+  }
+  
+  /* secondary color links */
+  a.secondary { 
+    color: var(--secondaryShade5); 
+    border-bottom: 2px dashed;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  a.secondary:hover {
+    color: var(--secondaryShade1);
+    background-color: var(--secondaryShade5);
+    border-bottom: 3px solid var(--primaryColor);
+    transition: 0.4s; 
+  }
+
+/* Section 1 */
+.title-pic {
+  align-items: center;
+  width: 100%;
+  width: 100%;
+}
+
+.intro-sent {
+  text-align: center;
+}
+
+.nav-main {
+  background-color: var(--accentColor);
+  color: var(--neutralShade1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 20%;
+  height: 400px;
+  margin: 10px;
+}
+
+.main-navigation {
+  text-align: center;
+}
+
+.bulk-main {
+  display: flex;
+  align-items: baseline;
+  background-color: var(--accent2Color);
+}
+
+a.active {
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+}
+
+.welcome-main {
+  display: block;
+  margin: 30px;
+  font-size: 30px;
+}
+
+.intro-pics {
+  display: flex;
+  margin: 10px;
+  object-fit: contain;
+}
+
+.map-pic {
+  height: 100%;
+}

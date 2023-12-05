@@ -5,8 +5,8 @@
 :root {
   --canvasColor: #f9f9f9;
 
-  --backgroundColor: #fff;
-  --foregroundColor: #111;
+  --backgroundColor: #f0f0f0;
+  --foregroundColor: #800080;
 
   --primaryColor: #800080; /* Purple */
   --primaryShade1: #e1d4e9;
@@ -37,7 +37,7 @@
 /* General Color Scheme */
 body {
   background: var(--backgroundColor);
-  color: var(--neutralShade8);
+  color: var(--primaryColor);
 }
 
 /* Typography */
@@ -67,6 +67,7 @@ h1 {
   font-size: clamp(2.5rem, 3rem, 3.5rem);
   line-height: 1.2;
   text-transform: uppercase;
+  color: var(--secondaryColor); /* Navy */
 }
 
 h2 {
@@ -74,12 +75,14 @@ h2 {
   font-size: clamp(1.75rem, 2rem, 2.5rem);
   line-height: 1.2;
   text-transform: uppercase;
+  color: var(--accentColor); /* Olive Green */
 }
 
 h3 {
   font-weight: 500;
   font-size: clamp(1.25rem, 1.5rem, 1.75rem);
   line-height: 1.2;
+  color: var(--accentColor); /* Olive Green */
 }
 
 h4 {
@@ -87,27 +90,29 @@ h4 {
   font-size: clamp(1.25rem, 1.5rem, 1.75rem);
   line-height: 1.2;
   font-style: italic;
+  color: var(--foregroundColor); /* Purple */
 }
 
 h5 {
   font-weight: 300;
   font-size: 1.05rem;
   line-height: 1.2;
+  color: var(--foregroundColor); /* Purple */
 }
 
 h6 {
   font-weight: 200;
   font-size: 1.05rem;
   line-height: 1.2;
+  color: var(--foregroundColor); /* Purple */
 }
 
 a {
   font-weight: 500;
-  text-decoration: none; /* added this line to remove default underline */
+  text-decoration: none;
 }
 
 /* Default Font Colors & Styling */
-/* default links */
 a {
   color: var(--neutralShade8);
   cursor: pointer;
@@ -120,7 +125,6 @@ a:hover {
   transition: 0.4s;
 }
 
-/* primary color links */
 a.primary {
   color: var(--primaryColor);
   cursor: pointer;
@@ -133,7 +137,6 @@ a.primary:hover {
   transition: 0.4s;
 }
 
-/* secondary color links */
 a.secondary {
   color: var(--secondaryShade5);
   cursor: pointer;
@@ -147,7 +150,6 @@ a.secondary:hover {
 }
 
 /* Media Queries */
-/* Small Screens */
 @media (max-width: 974px) {
   main {
     width: 100%;
@@ -158,9 +160,9 @@ a.secondary:hover {
       "headlines headlines"
       "bodyex bodyex"
       "links links";
-    display: flex; /* added this line to enable flexbox */
-    flex-wrap: wrap; /* added this line to wrap flex items */
-    justify-content: center; /* added this line to center flex items */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .colors {
