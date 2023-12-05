@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <!-- This is metadata, so no ARIA role/label here -->
     <title role="banner" aria-labelledby="swim-banner">Swim School</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body> 
+    <!--
+        COMMENTS for throughout the site
+
+        - remove all inline styles
+        - remoe any HTML file that is empty and not going to be used
+        - double check all aria-labelledby attributes, as some are not pointing to any existing elements with that particular ID value
+        - check your element names, as some do not exist, such as <p1>
+        - image alt descriptions should describe the image, rather than make a general statement like "this is x."
+        - mind you implicit content hierarchy with headings, as you are repeating the use of the h1, which is typically used just for the title of the page. From thereon, start at h2 for a new section of the page.
+        - use the main element to wrap the main content of the page. In this case, if you are only going to have one content area, you actually wouldn't need a section. But, it may be good to keep it if you plan on expanding the main content to include another topic/section
+    -->
     <header style="background-color: aqua;" role="banner" aria-labelledby="swim-banner" >
         <h1 style="text-align: center;">Swim School</h1>
     </header>   
