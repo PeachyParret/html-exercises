@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webserials: A New (And Free) Way To Read!</title>
 </head>
-<nav class="site_navigation">
+<nav class="site_navigation" id="top_page">
     <div>
-        <p>Main Page</p>
+        <a href="">Main Page</a>
     </div>
     <div>
-        <p>Page Two</p>
+        <a href="">Page Two</a>
     </div>
 </nav>
-<body>
+<body class="body_page_one">
     <header>
         <h1>
             A New (And Free) Way To Read!
@@ -22,39 +22,57 @@
     </header>
     <nav class="page_navigation">
         <ol>
-            <li>The Sales Pitch</li>
-            <li>The Highlight Reel</li>
-            <li>Highlight Links</li>
-            <li>Next Page</li>
+            <li>
+                <a href="#sales_pitch">The Sales Pitch</a>
+            </li>
+            <li>
+                <a href="#highlight_reel">The Highlight Reel</a>
+            </li>
+            <li>
+                <a href="#highlight_links">Highlight Links</a>
+            </li>
+            <li>
+                <a href="#next_page">Next Page</a>
+            </li>
         </ol>
     </nav>
-    <section class="pitch">
+    <section class="pitch" id="sales_pitch">
         <h2>The Sales Pitch</h2>
-        <p></p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dolorem amet quis, quisquam maiores iste minus vitae non error. Veniam quod laudantium est iure exercitationem suscipit, dolor eum atque fuga?
+        </p>
     </section>
-    <section class="highlight">
+    <section class="highlight" id="highlight_reel">
         <h2>The Highlight Reel</h2>
         <h3>Tip: click the arrows to scroll!</h3>
         <div class="story_a">
             <img src="" alt="">
-            <p></p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia consequuntur ipsam tempore, soluta fuga doloremque nulla eum deleniti quam harum placeat dolores architecto alias in porro vitae laboriosam. Perferendis!
+            </p>
         </div>
         <div class="story_b">
             <img src="" alt="">
-            <p></p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias soluta officia facere fugit aspernatur dolores laboriosam et debitis cumque itaque, modi autem quidem placeat! Labore veniam libero nesciunt non maiores!
+            </p>
         </div> 
         <div class="story_c">
             <img src="" alt="">
-            <p></p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi omnis doloribus rem tempore eius dolore consequuntur voluptates cumque totam praesentium neque numquam beatae voluptate, aut officiis molestiae nostrum saepe iure.
+            </p>
         </div> 
         <div class="story_d">
             <img src="" alt="">
-            <p></p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nobis culpa suscipit iste dolorem dolor sapiente illum maxime aperiam maiores at voluptate enim omnis dolores, iusto quod laboriosam, reiciendis ducimus?
+            </p>
         </div>
-        <button class="arrowleft"></button>
-        <button class="arrowright"></button>
+        <button class="button arrowleft">←</button>
+        <button class="button arrowright">→</button>
     </section>
-    <section>
+    <section class="links" id="highlight_links">
         <h2>Highlight Links</h2>
         <ul>
             <li>Story A</li>
@@ -64,14 +82,16 @@
         </ul>
     </section>
     
-    <footer>
+    <footer class="footer" id="next_page">
         <div>
-            <h2>Next Page</h2>
-            <button class="next_page_button"></button>
+            <a href="serial.html">
+                <button class="next_page_button">Next Page</button>
+            </a>
         </div>
         <div>
-            <h2>Back to Top</h2>
-            <button class="back_to_top"></button>
+            <a href="#top_page">
+                <button class="button back_to_top">Back to Top</button>
+            </a>
         </div>
     </footer>
 </body>
