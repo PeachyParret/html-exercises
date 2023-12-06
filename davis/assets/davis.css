@@ -155,7 +155,22 @@ h6 {
 
 a { font-weight: 500; }
 
-/* Default Font Colors & Styling */
+/* skip to link */
+a.skip-to-link {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+}
+a.skip-to-link:focus {
+  color: black;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  position: static;
+  margin: auto;
+}
 
 /* default links */
 a {
@@ -198,7 +213,9 @@ a.secondary:hover {
   border-bottom: 3px solid var(--accentColor);
   transition: 0.4s;
 }
-/* navigation */
+
+/* NAVIGATION */
+
 .topnav {
   background-color: white;
 }
@@ -211,26 +228,33 @@ a.secondary:hover {
 .topnav a:hover {
   color: var(--neutralShade7);
 }
-/* MOBILE FIRST */
+
+/* IMAGES */
+
 .logo-img {
   display: flex;
   height: 100%;
   width: 100%;
   /*margin: 20px;*/
 }
+
+/* HEADER */
+
+
+/* SEMESTER - WHAT'S HAPPENING */
+
 .semester-container {
-  display: grid;
-  grid-template-rows: 3(1fr);
+  /* display: grid; */
+  /* grid-template-rows: 3(1fr); */
 }
+
 /* Grid Area Definitions */
 .statement-container {grid-area: sta}
-.logo-img {grid-area: lgo;}
 .history-container {grid-area: hst;}
 .semester-container {grid-area: sem;}
 .newmembers-container {grid-area: nwm;}
 .profiles-container {grid-area: pro;}
-.tweets-container {grid-area: twt;}
-.podcast-container {grid-area: pod;}
+.other-container {grid-area: oth;}
 
 /* TABLET */
 @media screen and (min-width:775px) {
@@ -241,9 +265,9 @@ a.secondary:hover {
     "sta hst"
     "sem sem"
     "nwm nwm"
-    "pro twt"
-    "pod pod";
+    "pro oth";
     grid-gap: 1rem;
+    
   }
   .logo-img {
     height: auto;
@@ -252,8 +276,8 @@ a.secondary:hover {
 }
 
 /* DESKTOP */
-@media screen and (min-width: 1125px) {
-  main {
+@media screen and (min-width:1125px) {
+   main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -261,7 +285,6 @@ a.secondary:hover {
     "hst lgo"
     "sem sem"
     "nwm nwm"
-    "pro twt"
-    "pod pod";
+    "pro oth";
   }
 }

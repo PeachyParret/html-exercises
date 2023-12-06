@@ -9,8 +9,11 @@
 }
 
 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
   width: 50%;
-  height: 50%;
 }
 
 :root {
@@ -112,13 +115,12 @@ img {
   }
   h1 {
     font-weight: 700;
-    font-size: clamp(2.5rem,3rem,3.5rem);
+    font-size: 2vw;
     line-height: 1.2;
     text-transform: uppercase;
   }
   h2 {
     font-weight: 500;
-    font-size: clamp(1.75rem,2rem,2.5rem);
     line-height: 1.2;
     text-transform: uppercase;
   }
@@ -146,6 +148,7 @@ img {
   
   p {
     display: flex;
+
   }
   
   a { font-weight: 500; }
@@ -227,15 +230,12 @@ img {
 }
 
 a.active {
-  font-size: 30px;
   color: white;
-  display: inline-block;
 }
 
 .welcome-main {
   display: block;
   margin: 30px;
-  font-size: 30px;
 }
 
 .intro-pics {
@@ -246,4 +246,33 @@ a.active {
 
 .map-pic {
   height: 100%;
+}
+
+
+
+.the-dos-pics {
+  display: flex;
+}
+
+.the-donts-pics {
+  display: flex;
+}
+
+.items-pics {
+  display: flex;
+}
+
+.saloon-pic {
+  height: 50%;
+}
+
+
+@media screen and (min-width: 600px) {
+ p {
+  font-size: 30px;
+ }
+
+ h2 {
+  font-size: 50px;
+ }
 }
