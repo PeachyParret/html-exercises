@@ -213,3 +213,7 @@ a.secondary:hover {
     text-align: left;
   }
 }
+img {
+  width: 100%;
+  height: 100%;
+}
