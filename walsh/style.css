@@ -287,11 +287,6 @@
       display: flex;
       justify-content: center;
     }
-   .image-nav {
-      display: flex;
-      flex-direction: row-reverse;
-      
-    } 
     .healthy-salad {
       margin-left: 100px;
       width: 900px;
@@ -399,6 +394,10 @@
   
   @media screen and (min-width: 1280px) /*Desktop*/ {
     /*index*/
+    .image-nav {
+      display: flex;
+      flex-direction: row-reverse;
+    } 
     .bullets {
       display: grid;
       row-gap: 10px;
