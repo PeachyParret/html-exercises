@@ -218,15 +218,19 @@ a.secondary:hover {
 
 .topnav {
   background-color: white;
+  border: 2px solid maroon;
 }
 .topnav a {
   color:var(--secondaryShade5);
   text-align: center;
   font-size: 16px;
+  color: black;
+  text-align: center;
   border-bottom: none;
+  padding: 14px 16px;
 }
 .topnav a:hover {
-  color: var(--neutralShade7);
+  color: var(--accentColor);
 }
 
 /* IMAGES */
@@ -239,14 +243,6 @@ a.secondary:hover {
 }
 
 /* HEADER */
-
-
-/* SEMESTER - WHAT'S HAPPENING */
-
-.semester-container {
-  /* display: grid; */
-  /* grid-template-rows: 3(1fr); */
-}
 
 /* Grid Area Definitions */
 .statement-container {grid-area: sta}
@@ -265,15 +261,16 @@ a.secondary:hover {
     "sta hst"
     "sem sem"
     "nwm nwm"
-    "pro oth";
+    "pro pro"
+    "oth oth";
     grid-gap: 1rem;
-    
   }
   .logo-img {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
   }
 }
+
 
 /* DESKTOP */
 @media screen and (min-width:1125px) {
@@ -281,10 +278,11 @@ a.secondary:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "sta lgo"
-    "hst lgo"
+    "sta sta"
+    "hst hst"
     "sem sem"
     "nwm nwm"
-    "pro oth";
+    "pro pro"
+    "oth oth";
   }
 }
