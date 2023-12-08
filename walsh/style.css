@@ -1,0 +1,438 @@
+/* Color Scheme */
+  :root {
+    --canvasColor: #f9f9f9;
+  
+    --backgroundColor: #fff;
+    --foregroundColor: #111;
+  
+    --primaryColor: #f77f00;
+    --primaryShade1: #f68812;
+    --primaryShade2: #f49b3c;
+    --primaryShade3: #f3a756;
+    --primaryShade4: #f3c493;
+    --primaryShade5: #f5d8ba;
+  
+    --secondaryColor: #fcbf49;
+    --secondaryShade1: #f8cf7b;
+    --secondaryShade2: #f8d389;
+    --secondaryShade3: #f6d799;
+    --secondaryShade4: #f9e7c5;
+    --secondaryShade5: #f8f1e2;
+  
+    --neutralShade1: #f2f2f2;
+    --neutralShade2: #e8e9e9;
+    --neutralShade3: #d1d3d4;
+    --neutralShade4: #babdbf;
+    --neutralShade5: #808488;
+    --neutralShade6: #666a6d;
+    --neutralShade7: #4d5052;
+    --neutralShade8: #212122;
+  
+    --grayColor: #999;
+    --lightGrayColor: #ddd;
+    
+    /* Sizing and Spacing. */
+    --borderRadius: 6px;
+    --boxShadow: 0 2px 5px rgba(#333, 0.2);
+  
+    /* Fontont Size */
+    font-size: 18px;
+  }
+
+  /* GENERAL COLOR SCHEME */
+    body {
+      background: var(--primaryShade4);
+      color: var(--neutralShade8);
+    }
+  
+/*==========
+  TYPOGRAPHY
+===========*/
+  
+  /* Font Families */
+    body { font-family: "inter", sans-serif;}
+    h1,h2,h3 { font-family: "bitter", serif; }
+  
+  /* Emphasis and Bolding */
+    strong { font-weight: 500; }
+    em { font-style: italic; }
+  
+  /* Font Weight, Sizing & Spacing */
+    body {
+      font-weight: 300;
+      line-height: 1.5;
+      transition: all 0.3s ease;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: clamp(2.5rem,3rem,3.5rem);
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-weight: 500;
+      font-size: clamp(1.75rem,2rem,2.5rem);
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-weight: 500;
+      font-size: clamp(1.25rem,1.5rem,1.75rem);
+      line-height: 1.2;
+    }
+    h4 {
+      font-weight: 300;
+      font-size: clamp(1.25rem,1.5rem,1.75rem);
+      line-height: 1.2;
+      font-style: italic;
+    }
+    h5 {
+      font-weight: 300;
+      font-size: 1.05rem;
+      line-height: 1.2;
+    }
+    h6 {
+      font-weight: 200;
+      font-size: 1.05rem;
+      line-height: 1.2;
+    }
+    
+    a { font-weight: 500; }
+    
+/* Default Font Colors & Styling */
+  
+  /* Default Links */
+    a { 
+      color: var(--neutralShade8); 
+      border-bottom: 2px dashed;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+    a:hover {
+      color: var(--neutralShade1);
+      background-color: var(--primaryColor);
+      border-bottom: 3px solid var(--primaryShade5);
+      transition: 0.4s;
+    }
+  
+  /* Primary Color Links */
+    a.primary { 
+      color: var(--primaryColor); 
+      border-bottom: 2px dashed;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+    a.primary:hover {
+      color: var(--primaryShade1);
+      background-color: var(--primaryShade5);
+      border-bottom: 3px solid var(--secondaryColor);
+      transition: 0.4s;
+    }
+  
+  /* Secondary Color Links */
+    a.secondary { 
+      color: var(--secondaryShade5); 
+      border-bottom: 2px dashed;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+    a.secondary:hover {
+      color: var(--secondaryShade1);
+      background-color: var(--secondaryShade5);
+      border-bottom: 3px solid var(--primaryColor);
+      transition: 0.4s;
+    }
+  
+/* Images in Index HTML */
+  .healthy-salad {
+    width: 100%;
+    height: 100%;
+  } 
+  .students-in-class {
+    width: 100%;
+    height: 100%;
+    padding-right: 2em;
+    padding-bottom: .5em;
+  }
+
+/* Images for Recipes HTML */
+  .chicken-stirfry {
+    width: 100%;
+    height: 100%;
+    padding-right: 2em;
+    padding-bottom: .5em;
+  }
+
+  .chicken-salad {
+    width: 100%;
+    height: 100%;
+    padding-right: 2em;
+    padding-bottom: .5em;
+  }
+
+  .stuffed-chicken {
+    width: 100%;
+    height: 100%;
+    padding-right: 2em;
+    padding-bottom: .5em;
+  }
+
+  .turkey-burrito {
+    width: 100%;
+    height: 100%;
+    padding-right: 2em;
+    padding-bottom: .5em;
+    object-fit: cover;
+  }
+
+/* Images for Workouts HTML */
+
+  .workout {
+    width: 100%;
+    height: 100%;
+    padding-right: 2em;
+    padding-bottom: .5em;
+  }
+
+  .dumbbells {
+    width: 100%;
+    height: 100%;
+    padding-right: 2em;
+    padding-bottom: .5em;
+
+  }
+
+  .treadmill {
+    width: 100%;
+    height: 100%;
+    padding-right: 2em;
+    padding-bottom: .5em;
+  }
+
+/* Headings*/
+
+  #college-is-hard-i-can-help {
+    display: flex;
+    justify-content: center;
+  }
+
+  #thirty-minute-or-less-recipes {
+    display: flex;
+    justify-content: center;
+  }
+
+  #high-intensity-interval-training-workouts {
+    display: flex;
+    justify-content: center;
+  }
+
+  #dumbbell-workouts {
+    display: flex;
+    justify-content: center;
+  }
+
+  #cardio-workouts {
+    display: flex;
+    justify-content: center;
+  }
+  
+/*Grid Areas for Index*/
+  .b1 {
+    grid-area: b1;
+  }
+  .b2 {
+    grid-area: b2;
+  }
+  .b3 {
+    grid-area: b3;
+  }
+  .b4 {
+    grid-area: b4;
+  }
+  .b5 {
+    grid-area: b5;
+  }
+  .b6 {
+    grid-area: b6;
+  }
+
+/*Grid Areas for Recipes*/
+  .h1 {
+    grid-area: h1;
+  }
+  .h2 {
+    grid-area: h2;
+  }
+  .h3 {
+    grid-area: h3;
+  }
+  .h4 {
+    grid-area: h4;
+  }
+  
+  
+
+/*Grid Areas for Workouts*/
+ .track-wo {
+  grid-area: track-wo;
+ }
+ .treadmill-wo {
+  grid-area: treadmill-wo;
+ }
+/* Media Queries*/
+
+  @media screen and (min-width: 768px) /*Tablet*/ {
+    /* Index */
+    .chh {
+      display: flex;
+      justify-content: center;
+    }
+   .image-nav {
+      display: flex;
+      flex-direction: row-reverse;
+      
+    } 
+    .healthy-salad {
+      margin-left: 100px;
+      width: 900px;
+      height: 500px;
+    }
+    .students-in-class {
+      width: 900px;
+      height: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    .figcap1 {
+      display: flex;
+      justify-content: center;
+    }
+    .bullets {
+      display: grid;
+      grid-template-columns: repeat(2);
+      grid-template-rows: repeat(3);
+      row-gap: 10px;
+      column-gap: 30px;
+      grid-template-areas: 
+      "b1 b2"
+      "b3 b4"
+      "b5 b6";
+    }
+    
+    /* Recipes */
+    .qhr {
+      display: flex;
+      justify-content: center;
+    }
+   
+    .hr {
+      display: grid;
+      row-gap: 50px; 
+      column-gap: 50px;
+      grid-template-columns: repeat(2);
+      grid-template-rows: repeat(6,);
+      grid-template-areas: 
+      "h1 h2"
+      "h3 h4";
+    }
+      .i1 {
+        width: 500px;
+        height: 300px;
+      }
+      .i2 {
+        padding: auto;
+      }
+      .i3 {
+        width: 500px;
+        height: 300px;
+      }
+      .i4 {
+        width: 500px;
+        height: 300px;
+      }
+  
+    /* Workouts */
+    .vew {
+      display: flex;
+      justify-content: center;
+    }
+    .workout {
+      width: 700px;
+      height: 500px;
+    }
+    .dumbbells {
+      width: 700px;
+      height: 500px;
+    }
+    .treadmill {
+      width: 600px;
+      height: 600px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .figcap2 {
+      display: flex;
+      justify-content: center;
+    }
+   
+    .dumbbell-grid {
+      display: grid;
+      row-gap: 50px;
+      column-gap: 50px;
+      grid-template-columns: repeat(2);
+      grid-template-rows: 1;
+      grid-template-areas: 
+      "armday-wo legdaywo";
+    }
+    .cardio-grid {
+      display: grid;
+      row-gap: 50px;
+      column-gap: 50px;
+      grid-template-columns: repeat(2);
+      grid-template-rows: 1;
+      grid-template-areas: 
+      "track-wo treadmill-wo";
+    }
+  }
+  
+  @media screen and (min-width: 1280px) /*Desktop*/ {
+    /*index*/
+    .bullets {
+      display: grid;
+      row-gap: 10px;
+      column-gap: 30px;
+      grid-template-columns: repeat(3);
+      grid-template-rows: repeat(4);
+      grid-template-areas: 
+      "b1 b2 b3"
+      "b4 b5 b6";
+    }
+    .i1 {
+      width: 700px;
+      height: 500px;
+    }
+    .i2 {
+      width: 700px;
+      height: 500px;
+    }
+    .i3 {
+      width: 700px;
+      height: 500px;
+    }
+    .i4 {
+      width: 700px;
+      height: 500px;
+    }
+    .hiit-grid {
+      display: grid;
+      row-gap: 50px;
+      column-gap: 50px;
+      grid-template-columns: repeat(2);
+      grid-template-rows: 1;
+      grid-template-areas: 
+      "only-image ladder-wo";
+    }
+    
+  }
