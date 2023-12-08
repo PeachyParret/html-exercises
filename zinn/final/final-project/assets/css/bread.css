@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Playfair+Display:wght@400;500;900&display=swap");
+
+:root {
+    --canvasColor: #f9f9f9;
+  
+    --backgroundColor: #fff;
+    --foregroundColor: #111;
+  
+    --primaryColor: #6ae9c7;
+    --primaryShade1: #c7ece2;
+    --primaryShade2: #92efd6;
+    --primaryShade3: #7bebcd;
+    --primaryShade4: #45cfaa;
+    --primaryShade5: #129572;
+  
+    --secondaryColor: #ffa500;
+    --secondaryShade1: #f4deb6;
+    --secondaryShade2: #f3c46c;
+    --secondaryShade3: #fab73c;
+    --secondaryShade4: #b37c15;
+    --secondaryShade5: #8d5e07;
+  
+    --accentColor: #008080;
+    --accentShade1: #bcf5f5;
+    --accentShade2: #86f0f0;
+    --accentShade3: #46f7f7;
+    --accentShade4: #0d6767;
+    --accentShade5: #033f3f;
+
+    font-size:18px;
+}
+
+body { font-family: "Open Sans", sans-serif;}
+
+h1,h2,h3 { font-family: "Playfair Display", serif; }
+
+h1 {
+    font-weight: 700;
+    font-size: clamp(2.5rem,3rem,3.5rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--accentShade5);
+}
+
+h2 {
+    font-weight: 500;
+    font-size: clamp(1.75rem,2rem,2.5rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--accentShade4);
+}
+
+h3 {
+    font-weight: 500;
+    font-size: clamp(1.25rem,1.5rem,1.75rem);
+    line-height: 1.2;
+    color: var(--secondaryColor);
+    display: flex;
+    align-self: first baseline;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a { 
+    color: var(--secondaryColor); 
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: var(--neutralShade1);
+    background-color: var(--primaryColor);
+    transition: 0.4s;
+}
+
+header {
+    background-color: var(--primaryColor);
+    margin: auto;
+    padding: 10px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    padding: 10px;
+    border: solid var(--accentShade4) 4px;
+    flex-wrap: wrap;
+}
+
+#banner-image {
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+}
+
+.page-nav {
+    border: solid var(--accentShade4) 4px;
+    margin: 1em;
+}
+
+.page-nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.page-nav li {
+    padding: 10px;
+}
+
+#fun-facts-container {
+    background-color: var(--secondaryShade2);
+    margin:0;
+    padding: 1em;
+}
+
+#types-of-bread-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#types-of-bread-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#types-of-bread-container img {
+    max-width: 50vw;
+    margin: 1em;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+#types-of-bread-container p,h3 {
+    margin: 1em;
+}
+
+#white, #grain, #sourdough {
+    border: solid var(--accentShade4) 4px;
+}
+
+.sidebar {
+    background-color: var(--secondaryShade2);
+    margin: 1em;
+    padding: 1em;
+}
+/* Grid Area Definitions */
+.main-nav {
+    grid-area: mn;
+}
+
+#banner-image {
+    grid-area: bi;
+}
+
+.page-nav {
+    grid-area: pn;
+}
+
+#fun-facts-container {
+    grid-area: ff;
+}
+
+#types-of-bread {
+    grid-area: bt;
+}
+
+#white {
+    grid-area: wte;
+}
+
+#wheat {
+    grid-area: wht;
+}
+
+#grain {
+    grid-area: gr;
+}
+
+#flat {
+    grid-area: fl;
+}
+
+#sourdough {
+    grid-area:sd;
+}
+
+#quick-bread {
+    grid-area:qb;
+}
+/*tablet size*/
+@media only screen and (min-width: 768px) {
+    #white, #grain, #sourdough {
+        border: none;
+    }
+   
+    #types-of-bread-container {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "wte wht"
+        "gr fl"
+        "sd qb";
+    }
+    #types-of-bread-container img {
+        max-width: 30vw;
+    }
+}
+
+/*desktop size*/
+@media only screen and (min-width: 1280px) {
+   
+}
