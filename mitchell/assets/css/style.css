@@ -1,10 +1,14 @@
+/*
+  When you complete this style guide, you will copy the following scope of the code below starting at the font import until the comment that states "STYLES BELOW ARE SPECIFIC TO THE STYLE GUIDE"
+*/
+
 /*============
   IMPORT FONTS
 
   1. Import your own fonts via https://fonts.google.com. Be sure to revise the family names in the CSS and in the HTML
 ==============*/
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
 /*============
   COLOR SCHEME
 
@@ -24,38 +28,34 @@
   - Note how the colors shades move from 1-5, i.e., lighter shades to darker shades. To produce shades, use VS Code's color picker tool to produce gradiations of the initial color.
   - If you want //accent// shade(s), feel free to consider additional complimentary colors.
 =============*/
-img {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
+
 :root {
   --canvasColor: #f9f9f9;
 
-  --backgroundColor: #fff;
-  --foregroundColor: #111;
+  --backgroundColor: #265232;
+  --foregroundColor: #fad7b0;
 
-  --primaryColor: #ffffff;
-  --primaryShade1: #cdd4d8;
-  --primaryShade2: #9fa6a9;
-  --primaryShade3: #4fc2f727;
-  --primaryShade4: #0289d110;
-  --primaryShade5: #0278bd00;
+  --primaryColor: #03a9f4;
+  --primaryShade1: #e1f5fe;
+  --primaryShade2: #b3e5fc;
+  --primaryShade3: #4fc3f7;
+  --primaryShade4: #0288d1;
+  --primaryShade5: #0277bd;
 
-  --secondaryColor: #630031;
-  --secondaryShade1: #f4d2d2;
-  --secondaryShade2: rgb(215, 160, 160);
-  --secondaryShade3: #cd7575;
-  --secondaryShade4: #a82d2d;
-  --secondaryShade5: #921b1b;
+  --secondaryColor: #673ab7;
+  --secondaryShade1: #ede7f6;
+  --secondaryShade2: #d1c4e9;
+  --secondaryShade3: #9575cd;
+  --secondaryShade4: #512da8;
+  --secondaryShade5: #311b92;
 
-  --accentColor: #CF4420;
-  --accentShade1: #f2e7e0;
-  --accentShade2: #dfc6b2;
-  --accentShade3: #b6704d;
-  --accentShade4: #793400;
-  --accentShade5: #4d2500;
-/*
+  --accentColor: #009688;
+  --accentShade1: #e0f2f1;
+  --accentShade2: #b2dfdb;
+  --accentShade3: #4db6ac;
+  --accentShade4: #00796b;
+  --accentShade5: #004d40;
+
   --accent2Color: #8bc34a;
   --accent2Shade1: #e7f6d5;
   --accent2Shade2: #c5e1a5;
@@ -69,7 +69,7 @@ img {
   --accent3Shade3: #ef9a9a;
   --accent3Shade4: #d32f2f;
   --accent3Shade5: #b71c1c;
-*/
+
   --neutralShade1: #f2f2f2;
   --neutralShade2: #e8e9e9;
   --neutralShade3: #d1d3d4;
@@ -87,7 +87,7 @@ img {
   --boxShadow: 0 2px 5px rgba(#333, 0.2);
 
   /* Change default root font size (16px), if desired */
-  font-size: 16px;
+  font-size: 18px;
 }
 
 
@@ -106,8 +106,8 @@ body {
 ===========*/
 
 /* Font Families */
-body { font-family: "Work Sans", sans-serif;}
-h1,h2,h3 { font-family: "Playfair Display", serif; }
+body { font-family: "Hedvig Letters; sans-serif"}
+h1,h2,h3 { font-family: "Hedvig Letters", serif; }
 
 /* Emphasis and Bolding */
 strong { font-weight: 500; }
@@ -155,22 +155,7 @@ h6 {
 
 a { font-weight: 500; }
 
-/* skip to link */
-a.skip-to-link {
-  position: absolute;
-  left: -999px;
-  width: 1px;
-  height: 1px;
-  top: auto;
-}
-a.skip-to-link:focus {
-  color: black;
-  display: inline-block;
-  height: auto;
-  width: auto;
-  position: static;
-  margin: auto;
-}
+/* Default Font Colors & Styling */
 
 /* default links */
 a {
@@ -180,109 +165,36 @@ a {
   transition: 0.4s;
 }
 a:hover {
-  color: var(--neutralShade5);
-  background-color: var(--primaryColorshade5);
+  color: var(--neutralShade1);
+  background-color: var(--primaryColor);
   border-bottom: 3px solid var(--primaryShade5);
   transition: 0.4s;
 }
 
 /* primary color links */
 a.primary {
-  color: var(--secondaryShade5);
+  color: var(--primaryColor);
   border-bottom: 2px dashed;
   cursor: pointer;
   transition: 0.4s;
 }
 a.primary:hover {
-  color: var(--secondaryShade1);
-  background-color: var(--secondaryShade5);
-  border-bottom: 3px solid var(--primaryColor);
+  color: var(--primaryShade1);
+  background-color: var(--primaryShade4);
+  border-bottom: 3px solid var(--secondaryColor);
   transition: 0.4s;
 }
 
 /* secondary color links */
 a.secondary {
-  color: var(--accent2Shade3);
+  color: var(--secondaryShade5);
   border-bottom: 2px dashed;
   cursor: pointer;
   transition: 0.4s;
 }
 a.secondary:hover {
-  color: var(--accent2Shade1);
-  background-color: var(--accent2Shade4);
-  border-bottom: 3px solid var(--accentColor);
+  color: var(--secondaryShade1);
+  background-color: var(--secondaryShade5);
+  border-bottom: 3px solid var(--primaryColor);
   transition: 0.4s;
-}
-
-/* NAVIGATION */
-
-.topnav {
-  background-color: white;
-  border: 2px solid maroon;
-}
-.topnav a {
-  color:var(--secondaryShade5);
-  text-align: center;
-  font-size: 16px;
-  color: black;
-  text-align: center;
-  border-bottom: none;
-  padding: 14px 16px;
-}
-.topnav a:hover {
-  color: var(--accentColor);
-}
-
-/* IMAGES */
-
-.logo-img {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  /*margin: 20px;*/
-}
-
-/* HEADER */
-
-/* Grid Area Definitions */
-.statement-container {grid-area: sta}
-.history-container {grid-area: hst;}
-.semester-container {grid-area: sem;}
-.newmembers-container {grid-area: nwm;}
-.profiles-container {grid-area: pro;}
-.other-container {grid-area: oth;}
-
-/* TABLET */
-@media screen and (min-width:775px) {
-   main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "sta hst"
-    "sem sem"
-    "nwm nwm"
-    "pro pro"
-    "oth oth";
-    grid-gap: 1rem;
-  }
-  .logo-img {
-    height: 100%;
-    width: 100%;
-  }
-}
-
-
-/* DESKTOP */
-@media screen and (min-width:1125px) {
-   main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "sta sta"
-    "hst hst"
-    "sem sem"
-    "nwm nwm"
-    "pro pro"
-    "oth oth";
-  }
 }
