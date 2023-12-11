@@ -14,8 +14,8 @@
      <header role="banner" aria-labelledby="website name">
         <h1 id="website name">Blacksburg on a Budget</h1>
      </header>
-
-     <nav role="navigation" aria-label="navigation-menu">
+     
+     <nav class="navigation">
        <ul>
         <li>Home</li>
         <li>Food</li>
@@ -26,29 +26,33 @@
         <li>Virginia and Federal Resources</li>
        </ul>
      </nav>
+
      <main role="main">
       <a href="#main" class="skip-to-link">Skip to main content</a>
-        <section role="region" aria-labelledby="cheap-food">
-                <h2 id="cheap-food">Food</h2>
-                <p>Blacksburg has a long list of iconic restaurants that every visitor should check out if given the opportunity. However, some are more budget-friendly than others. If you feel like going out, or just don't want to cook, check out these popular stops that are a little easier on the wallet:
-                  <ul>
-                    <li>Green's Grill and Sushi Bar: If you're trying to go out with a group of people that can't agree on one kind of food, Green's is a great place to go. As one might expect, Green's is popular for sushi, but it also serves Mediterranean food, tacos, vegetarian fare, and more. </li>
-                  </ul>
-                </p>
-                <figure>
-                    <img src="assets/images/dinner-food-meal-lunch-853.jpg"
-                        alt="Tacos al pastor"
-                        width="397"
-                        height="697"
-                        srcset="assets/images/dinner-food-meal-lunch-853.jpg 853w,
-                                assets/images/dinner-food-meal-lunch-427.jpg 427w,
-                                assets/images/dinner-food-meal-lunch-397.jpg 397w"
-                        sizes="(min-width: 397px) 397px, (min-width: 853px) 853px"
-                    />
-                    <figcaption>Image by SallyMeza via Pixabay</figcaption>
-                </figure>
-        </section>
-
+      <div class="grid-container">
+        <div>
+          <section role="region" aria-labelledby="cheap-food">
+                  <h2 id="cheap-food">Food</h2>
+                  <p>Blacksburg has a long list of iconic restaurants that every visitor should check out if given the opportunity. However, some are more budget-friendly than others. If you feel like going out, or just don't want to cook, check out these popular stops that are a little easier on the wallet:
+                    <ul>
+                      <li>Green's Grill and Sushi Bar: If you're trying to go out with a group of people that can't agree on one kind of food, Green's is a great place to go. As one might expect, Green's is popular for sushi, but it also serves Mediterranean food, tacos, vegetarian fare, and more. </li>
+                    </ul>
+                  </p>
+                  <figure>
+                      <img src="assets/images/dinner-food-meal-lunch-853.jpg"
+                          alt="Tacos al pastor"
+                          width="397"
+                          height="697"
+                          srcset="assets/images/dinner-food-meal-lunch-853.jpg 853w,
+                                  assets/images/dinner-food-meal-lunch-427.jpg 427w,
+                                  assets/images/dinner-food-meal-lunch-397.jpg 397w"
+                          sizes="(min-width: 397px) 397px, (min-width: 853px) 853px"
+                      />
+                      <figcaption>Image by SallyMeza via Pixabay</figcaption>
+                  </figure>
+            </section>
+       </div>
+       <div>
         <section role="region" aria-labelledby="cheap-housing">
             <h2 id="cheap-housing">Housing</h2>
             <p>Housing in Blacksburg is getting pretty close to an oxymoron. Still, there's some relatively inexpensive options out there for you. Something to keep in mind is that the further away from Blacksburg you get, the cheaper it is, but that might translate to higher transportation costs if it means you need to drive to get to campus.</p>
@@ -66,7 +70,8 @@
                 <figcaption>Image by Pexels via Pixabay</figcaption>
             </figure>
         </section>
-
+      </div>
+      <div>
         <section role="region" aria-labelledby="how-to-get-around">
             <h2 id="how-to-get-around">Transportation</h2>
             <p>Transportation in Blacksburg is by no means perfect, but there's definitely some options to work with. Blacksburg Transit is by and large what most of the population uses to get around campus and its neighboring housing areas. However, if you're looking to get further than that, you'll likely need to own a car, or know someone who does. If you aren't inclined to purchase an entire vehicle, there's a couple Virginia Tech carpooling Facebook groups, and you can always poke around on the Virginia Tech Reddit thread to see if anyone can help you out. That said, be prepared to chip in for gas.</p>
@@ -83,12 +88,30 @@
                 <figcaption>Image by EPr-666 via Pixabay</figcaption>
             </figure>
         </section>
-
+      </div>
+      <div>
         <section role="region" aria-labelledby="cheap-activities-in-blacksburg">
           <h2 id="cheap-activities-in-blacksburg">Entertainment</h2>
           <p>One convenient aspect about Blacksburg is that it has a plethora of ways to have an inexpensive, fun time.</p>
         </section>
-
+     </div>
+      <div>
+        <section role="region" aria-labelledby="VT-BBurg-MontgomeryCounty-resources">
+          <h2 id="VT-BBurg-MontgomeryCounty-resources">Virginia Tech, Blacksburg, and Montgomery County Resources</h2>
+          <p>It can be hard to figure out where to start if you want information on financial resources, but I've compiled some that I and people I know personally have found helpful. </p>
+          <ul>
+          <li>If you're a Virginia Tech student, make sure to check out the financial aid portal here: https://finaid.vt.edu/</li>
+          <li>Virginia Tech further maintains a Student Emergency Fund, which students can apply for if they are suddenly put in a dire financial situation. Access the website here: https://dos.vt.edu/emergencyfund.html</li>
+          <li>The Market at Virginia Tech is a food pantry exclusively for Virginia Tech students, and you can find that here: https://foodaccess.vt.edu</li>
+          <li>Hokie Wellness maintains a list of financial resources for anyone to access, which you can find here: https://hokiewellness.vt.edu/students/financial-wellness-resources.html</li>
+          </ul>
+      </div>
+      <div>
+        <section role="region" aria-labelledby="Virginia-Federal-resources">
+          <h2 id="Virginia-Federal-resources">Virginia and Federal Resources</h2>
+          <p></p>
+        </section>  
+      </div>
         </main>
       <footer role="contentinfo" aria-labelledby="copyright-info">
         <p id="copyright-info">Copyright 2023</p>
