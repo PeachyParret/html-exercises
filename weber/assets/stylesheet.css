@@ -146,9 +146,9 @@ border:solid;
   border-color:#0e6d98;
 }
 
-img {
-  display: flex;
-  justify-content: left;
+figure {
+  margin: 0;
+  justify-content: right;
 }
 /*
   After you define your color schemes above, revise the color and typography rulesets below in accordance with your desired new font families, weights, line-heights, etc. You can even modify which variables are being used.
