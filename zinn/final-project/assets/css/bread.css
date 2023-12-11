@@ -55,7 +55,6 @@ h3 {
     font-size: clamp(1.25rem,1.5rem,1.75rem);
     line-height: 1.2;
     color: var(--secondaryColor);
-    display: flex;
     align-self: first baseline;
 }
 
@@ -92,9 +91,8 @@ header {
 }
 
 #banner-image {
-    max-width: 60vw;
-    margin: auto;
-    display: flex;
+    max-width: 85vw;
+    margin: 1em;
 }
 
 .page-nav {
@@ -119,15 +117,7 @@ header {
     padding: 1em;
 }
 
-#types-of-bread-container {
-    display: flex;
-    flex-direction: column;
-}
-
 #types-of-bread-container div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 10px;
 }
 
@@ -135,8 +125,6 @@ header {
     max-width: 50vw;
     margin: 1em;
     min-width: 250px;
-    display: flex;
-    justify-content: center;
 }
 
 #types-of-bread-container p,h3 {
@@ -165,7 +153,7 @@ header {
     grid-area: mn;
 }
 
-#banner-image {
+#banner-container {
     grid-area: bi;
 }
 
@@ -177,12 +165,12 @@ header {
     grid-area: ff;
 }
 
-#types-of-bread {
-    grid-area: bt;
+#types-of-bread-container {
+    grid-area: tc;
 }
 
-#bread-types {
-    grid-area:btp;
+#types-intro {
+    grid-area: ti;
 }
 
 #white {
@@ -217,12 +205,8 @@ header {
     grid-area: s;
 }
 
-footer {
-    grid-area:foot;
-}
-
 /*tablet size*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
     #white, #grain, #sourdough {
         border: none;
     }
@@ -230,10 +214,9 @@ footer {
     #types-of-bread-container {
         display: grid;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 600px;
+        grid-template-rows: auto;
         grid-template-areas:
-        "bt bt"
-        "btp btp"
+        "ti ti"
         "wte wht"
         "gr fl"
         "sd qb";
@@ -242,32 +225,41 @@ footer {
     #types-of-bread-container img {
         max-width: 30vw;
     }
+
+    #types-of-bread-container > * {
+        display: flex;
+        flex-direction: column;
+    }
+    #banner-container {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /*desktop size*/
 @media only screen and (min-width: 1280px) {
-    body {
+    #desktop-grid {
         display: grid;
         grid-template-columns: repeat(3, 23vw) 30vw;
         grid-template-rows: auto;
         grid-template-areas:
-        "sl sl sl sl"
-        "h h h h"
         "mn bi bi bi"
         "pn bi bi bi"
         "ff ff ff ff"
-        "bt bt bt bt"
-        "btp btp btp btp"
-        "wte wte wte se"
-        "wht wht wht se"
-        "gr gr gr se"
-        "fl fl fl s"
-        "sd sd sd s"
-        "qb qb qb s"
-        "foot foot foot foot";
+        "tc tc tc se"
+        "tc tc tc s";
     }
     #types-of-bread-container {
-        display: block;
-        width: 65vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "ti ti"
+        "wte wht"
+        "gr fl"
+        "sd qb";
+    }
+    #banner-container {
+        max-width: 70vw;
     }
 }
