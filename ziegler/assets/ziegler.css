@@ -1,0 +1,178 @@
+/* . in front if i made it up, no . necessary if its a tag already existing*/
+
+/* add 2 fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kalnia&display=swap');
+/*viewports?*/
+
+body{
+    margin:auto;
+}
+
+.main-flex {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: flex-end;
+    align-content:flex-start;
+}
+.ab-me-grid{
+    display:grid;
+    grid-template-areas:"1" "2"
+                         "3"   "3";
+    padding: 20px;
+    margin:auto;
+    }
+
+    .chloe-image{
+        grid-area: 1;
+    }
+    .abme{
+        grid-area: 2;
+    }
+    .final{
+        grid-area:3;
+    }
+
+
+header {
+    grid-area: h1;
+}
+
+main {
+    grid-area: m1;
+}
+
+.nav_ugh {
+    grid-area: n;
+}
+
+.albumselection {
+   flex: 1;
+   padding:20px; 
+}
+
+.songselection {
+    flex: 1;
+    padding:20px; 
+}
+
+footer {
+    grid-area: f1;
+}
+
+/* general*/
+body {
+    background: #F995C5;
+    margin:0;
+    padding:0;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.float_center {
+    margin:auto;
+}
+
+
+/*typography*/
+
+    /*sizing*/
+    h1 { font-size: 45px; }
+    h2 { font-size: 30px; }
+    p {font-size: 20px;}
+
+    /*style and color*/
+    h1 {
+        color: #FFFAA0;
+        text-align:center;
+        font-family: "Kalnia", serif;
+    }
+    h2 {
+        color: #FFFAA0;
+       
+       font-family: "Kalnia", serif;
+    }
+    p {
+        color: white;
+        font-family: "Josefin+Sans", sans-serif;
+    }
+
+/*images*/
+
+img {
+    display: inline-block;
+    align-self: center;
+    max-width: 100%;
+    height:auto;
+    margin:auto;
+  }
+
+.header-image {
+    max-width: 750px;
+    margin: auto;
+}
+
+.album_img{
+    max-width: 480px;
+    float: left;
+  
+  }
+   
+  .song_img{
+    max-width: 480px;
+    float: right;
+  }
+
+  .chloe-image {
+    max-width: 480px;
+    margin: auto;
+  }
+
+
+
+  @media screen and (min-width:768px){
+    .grid-layout {
+        display:grid;
+        grid-template-areas:"h1" 
+                            "n"
+                            "m1"
+                            "f1";
+        padding: 20px;
+        margin:auto;
+    }
+}
+
+@media screen and (min-width:480 px){
+    .grid-layout {
+        display:grid;
+        grid-template-areas:"h1" 
+                            "n"
+                            "m1"
+                            "f1";
+        padding: 20px;
+        margin:auto;
+    }
+}
+
+@media screen and (min-width:1080px){
+    .grid-layout {
+        display:grid;
+        grid-template-areas:"h1" 
+                            "n" "m1"
+                            "f1";
+        padding: 20px;
+        margin:auto;
+    }
+}
