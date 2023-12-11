@@ -1,0 +1,108 @@
+/* . in front if i made it up, no . necessary if its a tag already existing*/
+
+/* add 2 fonts*/
+
+/*viewports?*/
+
+.main-flex {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: flex-end;
+    align-content:flex-start;
+}
+
+.grid-layout {
+    display:grid;
+    grid-template-areas:"h1" 
+                        "m1"
+                        "f1";
+    padding: 20px;
+    margin:auto;
+}
+
+
+
+header {
+    grid-area: h1;
+}
+
+main {
+    grid-area: m1;
+}
+
+.albumselection {
+   flex: 1;
+   padding:20px; 
+}
+
+.songselection {
+    flex: 1;
+    padding:20px; 
+}
+
+footer {
+    grid-area: f1;
+}
+
+/* general*/
+body {
+    background: #F995C5;
+    margin:auto;
+}
+
+.float_center {
+    margin:auto;
+}
+
+
+/*typography*/
+
+    /*sizing*/
+    h1 { font-size: 45px; }
+    h2 { font-size: 30px; }
+    p {font-size: 20px;}
+
+    /*style and color*/
+    h1 {
+        color: #FFFAA0;
+        text-align:center;
+    }
+    h2 {
+        color: #FFFAA0;
+    }
+    p {
+        color: white;
+        align-self: center;
+    }
+
+/*images*/
+
+img {
+    display: block;
+    align-self: center;
+    width: 100%;
+  }
+
+.header-image {
+    max-width: 750px;
+    margin: auto;
+}
+
+.album_img{
+    max-width: 480px;
+    float: left;
+  
+  }
+   
+  .song_img{
+    max-width: 480px;
+    float: right;
+  }
+
+  .chloe-image {
+    max-width: 480px;
+    margin: auto;
+  }

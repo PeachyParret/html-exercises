@@ -3,93 +3,76 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            Chloe's Cool Jams!
-        </title>
+        <title>Chloe's Cool Jams</title>
         <link rel="site icon" href="./assets/images/main/flower.ico">
+        <link rel="stylesheet" href="./assets/ziegler.css">
     </head>
-   
-    <body style="background-color:#F995C5;">
 
-        <header role="banner" aria-labelledby="a11y-title">
-
-            <div>
+    <body class="grid-layout" >
+        <header class="float_center" role="header-area" aria-labelledby="header-section">
+            <section id="header-section" role="region" aria-labelledby="header-section">
                 <a href="index.html">
-                    <img src="./assets/images/homepage/headersmall.png"
-                    alt="Chloes Cool Jams logo, orange and yellow gradient background">
+                    <img class="header-image" src=src="./assets/images/homepage/headersmall.png" 
+                    alt="Chloes Cool Jams logo, orange and yellow gradient background"
+                    srcset="./assets/images/homepage/headersmall.png 400w,
+                            ./assets/images/homepage/headermedium.png 800w
+                            ./assets/images/homepage/headerlarge.png 1200w"
+                    >
                 </a>
-            </div>
-            <div>
-                <h1 id="a11y-title">
-                        <font color="#FFFAA0" >Find Great Tunes :P ! </font>
+                <h1 id="header-section">
+                    Find Great Tunes :P !
                 </h1>
-                <a href="#about-me">skip to the bottom</a>
                 <p>
-                        <font color="white">
-                            you can trust me because i write for a music magazine xoxo
-                        </font>
+                    you can trust me because i write for a music magazine xoxo
                 </p>
-            </div>
+                <a href="#about-me">my references</a>
+            </section>
         </header>
 
-        <main role="main" aria-labelledby="main-page">
-            <section role="region" aria-labelledby="album-reviews">
+        <main class="main-flex" id="main-section" role="main" aria-labelledby="Chloes-Music-Collection">
+            <section class="album-selection" class="albumbody" id="albums" role="region" aria-labelledby="albums-of-the-season">
                 <a href="albumreviews.html">
-                    <img src="./assets/images/homepage/albumreviewssmall.jpg" 
-                    width="480px" height="480px" 
+                    <img class="album_img" src="./assets/images/homepage/albumreviewssmall.jpg" 
                     alt="album reviews art with cat"
                     srcset="./assets/images/homepage/albumreviewssmall.jpg 400w,
                             ./assets/images/homepage/albumreviewsmedium.jpg 800w
-                            ./assets/images/homepage/albumreviewslarge.jpg 1200w">
+                            ./assets/images/homepage/albumreviewslarge.jpg 1200w"
+                    >
+                    `<h2 id="albums-of-the-season">
+                        Albums of the Season!
+                    </h2>
                 </a>
-                <h2 id="album-reviews">
-                    <a href="albumreviews.html">
-                        <font color="#FFFAA0">
-                            Albums of the Season!
-                        </font>
-                    </a>
-                </h2>
             </section>
-            <div role = "region" aria-labelledby="songs">
+            <section class="song-collection" id="songs" role="region" aria-labelledby="song-collections">
                 <a href="collective.html">
-                    <img src="./assets/images/homepage/collectivesmall.jpg" 
-                    width="480px" height="480px" 
+                    <img class="song_img" src="./assets/images/homepage/collectivesmall.jpg" 
                     alt="chloe's song collective"
                     srcset="./assets/images/homepage/collectivesmall.jpg 400w,
                             ./assets/images/homepage/collectivemedium.jpg 800w
-                            ./assets/images/homepage/collectivelarge.jpg 1200w">
+                            ./assets/images/homepage/collectivelarge.jpg 1200w"
+                    >
+                    `<h2 id="song-collections">
+                        Chloe's Collection!
+                    </h2>
                 </a>
-                <h2 id="songs">
-                    <a href="collective.html">
-                        <font color="#FFFAA0">
-                                Chloe's Collection!
-                        </font>
-                    </a>
-                </h2>
-            </div>
+            </section>
         </main>
-        <footer id="about-me" role="region" aria-labelledby="about-me">
-            <figure>
-            <img src="./assets/images/homepage/aboutmesmall.jpg" 
-                width="480px" height="480px" 
+
+        <footer id="about-the-creator" role="contentinfo" aria-labelledby="about-me">
+            <section id="about-me" role="region" aria-labelledby="about-me">
+                <img class="chloe-image" src="./assets/images/homepage/aboutmesmall.jpg" 
                 alt="picture of chloe"
                 srcset="./assets/images/homepage/aboutmesmall.jpg 400w,
                                 ./assets/images/homepage/aboutmedium.jpg 800w
-                                ./assets/images/homepage/aboutmelarge.jpg 1200w">
-                <h2>                    
-                    <figcaption>
-                        <font color="#FFFAA0">
-                            About me!
-                        </font>
-                    </figcaption>
+                                ./assets/images/homepage/aboutmelarge.jpg 1200w"
+                >
+                <h2 id="about-me">
+                    About me!    
                 </h2>
-                </figure>
-            <p>
-                <font color="#FFFAA0">
-                     Hiiiiii<!--little bit of here n there--> 
-                </font>
-            </p>
+                <p>
+                    Hiiiiii<!--little bit of here n there--> 
+                </p>
+            </section>
         </footer>
     </body>
-    
 </html>
