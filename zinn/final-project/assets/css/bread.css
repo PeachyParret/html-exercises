@@ -147,12 +147,20 @@ header {
     border: solid var(--accentShade4) 4px;
 }
 
-.sidebar {
+aside {
     background-color: var(--secondaryShade2);
     margin: 1em;
     padding: 1em;
 }
 /* Grid Area Definitions */
+.skip-to-link {
+    grid-area:sl;
+}
+
+header {
+    grid-area:h;
+}
+
 .main-nav {
     grid-area: mn;
 }
@@ -171,6 +179,10 @@ header {
 
 #types-of-bread {
     grid-area: bt;
+}
+
+#bread-types {
+    grid-area:btp;
 }
 
 #white {
@@ -197,9 +209,18 @@ header {
     grid-area:qb;
 }
 
-.sidebar {
+#sidebar-eat {
+    grid-area: se;
+}
+
+#sidebar {
     grid-area: s;
 }
+
+footer {
+    grid-area:foot;
+}
+
 /*tablet size*/
 @media only screen and (min-width: 768px) {
     #white, #grain, #sourdough {
@@ -211,6 +232,8 @@ header {
         grid-template-columns: 50vw 50vw;
         grid-template-rows: 600px;
         grid-template-areas:
+        "bt bt"
+        "btp btp"
         "wte wht"
         "gr fl"
         "sd qb";
@@ -223,5 +246,28 @@ header {
 
 /*desktop size*/
 @media only screen and (min-width: 1280px) {
-
+    body {
+        display: grid;
+        grid-template-columns: repeat(3, 23vw) 30vw;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "sl sl sl sl"
+        "h h h h"
+        "mn bi bi bi"
+        "pn bi bi bi"
+        "ff ff ff ff"
+        "bt bt bt bt"
+        "btp btp btp btp"
+        "wte wte wte se"
+        "wht wht wht se"
+        "gr gr gr se"
+        "fl fl fl s"
+        "sd sd sd s"
+        "qb qb qb s"
+        "foot foot foot foot";
+    }
+    #types-of-bread-container {
+        display: block;
+        width: 65vw;
+    }
 }
