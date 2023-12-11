@@ -20,7 +20,7 @@
     </header> 
 <main id="main" role="main" aria-label="about-bread-homepage"> 
 <div id="desktop-grid">
-    <nav role="navigation" aria-label="main-navigation" class="main-nav">
+    <nav id="main-nav" role="navigation" aria-label="main-navigation">
         <a href=".homepage.html">Homepage</a>
         <a href=".recipes.html">Recipes</a>
     </nav>
@@ -35,17 +35,17 @@
                      assets/images/bread-assorted-pile400x267.jpg 400w"
          />
     </div>
-    <nav role="navigation" aria-label="page-navigation" class="page-nav">
+    <nav id="page-nav" role="navigation" aria-label="page-navigation">
         <ul>
-            <li><a href="#fun-facts">Fun Facts About Bread</a></li>
+            <li><a href="#fun-facts-container">Fun Facts About Bread</a></li>
             <li><a href="#types-of-bread">Types of Bread</a></li>
-            <li><a href="#why-eat">Why You Should Eat Bread</a></li>
-            <li><a href="#why-make">Why You Should Make Your Own Bread</a></li>
+            <li><a href="#reasons-to-eat-bread">Why You Should Eat Bread</a></li>
+            <li><a href="#reasons-to-make-your-own">Why You Should Make Your Own Bread</a></li>
         </ul>    
     </nav>
     <section id="fun-facts-container" role="region" aria-labelledby="facts">
         <h2 id="facts">Fun Facts About Bread</h2>
-        <p id="fun-facts">
+        <p>
             Here are some things you might not know about bread!
             <ol>
                 <li>Bread used to be so important in Egypt that it was used as money!</li>
@@ -61,7 +61,7 @@
                 There are over 100 different varieties of bread in the world today! Many of these can be put into sub-categories based on their ingredients or shape, like white, wheat, or flatbread. Different types of bread come from different regions of the world. A certain style of bread can arise simply because of what was available when people started making it. For example, challah comes from a region where oil is more widely used than butter, making it different from brioche. Here are some examples of those sub-categories:
             </p>
         </div>    
-        <div id="white" aria-labelledby="white-bread">
+        <div id="white" class="bordered" role="region" aria-labelledby="white-bread">
             <img src="./assets/images/white-bread1280x853.jpg"
                  alt="slice of toasted white bread"
                  width="1280"
@@ -75,7 +75,7 @@
                 A bread made from flour that has been heavily processed.
             </p>
         </div>
-        <div id="wheat" aria-labelledby="wheat-bread">
+        <div id="wheat" role="region" aria-labelledby="wheat-bread">
             <img src="./assets/images/wheat-bread-1280x953.jpg"
                  alt="loaf of wheat bread"
                  width="1280"
@@ -88,7 +88,7 @@
                 A bread with a bit more nutrients than white, but still made with refined white flour.
             </p>
         </div>
-        <div id="grain" aria-labelledby="whole-grain-bread">
+        <div id="grain" class="bordered" role="region" aria-labelledby="whole-grain-bread">
             <img src=".assets/images/whole-grain1280x724.jpg"
                  alt="whole grain bread"
                  width="1280"
@@ -101,7 +101,7 @@
                 A bread made with grains that remain fully intact, such as wheat, barley, and more.
             </p>
         </div>
-        <div id="flat" aria-labelledby="flatbread">
+        <div id="flat" role="region" aria-labelledby="flatbread">
             <img src="assets/images/flatbread1280x853.jpg"
                  alt="flatbread"
                  width="1280"
@@ -114,7 +114,7 @@
                 A mixture of flour, water, and salt, rolled flat and cooked. Some, like pita, may also include yeast.
             </p>
         </div>
-        <div id="sourdough">
+        <div id="sourdough" class="bordered" role="region" aria-labelledby="sourdough-bread">
             <img src="./assets/images/sourdough-bread-sliced1280x960.jpg"
                  alt="sliced sourdough"
                  width="1280"
@@ -122,12 +122,12 @@
                  srcset="assets/images/sourdough-bread-sliced1280x960.jpg 1280w, 
                          assets/images/sourdough-bread-sliced800x600.jpg 800w, 
                          assets/images/sourdough-bred-sliced400x300.jpg 400w">
-            <h3>Sourdough</h3>
+            <h3 id="sourdough-bread">Sourdough</h3>
             <p>
                 Bread that achieves rise from fermentation instead of yeast. Any kind of bread can be sourdough, but the fermentation gives a slightly more sour taste than yeast.
             </p>
         </div>
-        <div id="quick-bread">
+        <div id="quick" role="region" aria-labelledby="quick-bread">
             <img src="./assets/images/quickbread1280x946.jpg"
                  alt="quick bread"
                  width="1280"
@@ -135,25 +135,31 @@
                  srcset="assets/images/quickbread1280x946.jpg 1280w,
                          assets/images/quickbread800x591.jpg 800w,
                          assets/images/quickbread400x296.jpg 400w">
-            <h3>Quick Bread</h3>
+            <h3 id="quick-bread">Quick Bread</h3>
             <p>
                 A type of bread that gets its rise from a chemical leavener such as baking powder or baking soda instead of from yeast or fermentation.
             </p>
         </div>
     </section>
-    <aside role="complementary" id="sidebar-eat" aria-labelledby="reasons-to-eat-bread">
+    <aside id="sidebar-eat" role="complementary" aria-labelledby="reasons-to-eat-bread">
         <h2 id="reasons-to-eat-bread">So Why Should You Eat Bread?</h2>
         <p>
             It's good for you! 
-            <br>
+            <br><br>
             Bread, especially that of the whole grain variety, contains a lot of important nutrients. Some kinds are fortified with calcium and iron, essential for maintaining healthy immune systems, energy, and bones. Bread is also a good source of fiber, which helps regulate our digestive system, keep blood sugar and cholesterol in check, and makes us feel full for longer.
             <br> 
         </p>
     </aside>
-    <aside role="complementary" id="sidebar" aria-labelledby="reasons-to-make-your-own">
+    <aside id="sidebar" role="complementary" aria-labelledby="reasons-to-make-your-own">
         <h2 id="reasons-to-make-your-own">Why Should You Make Your Own Bread?</h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quidem.
+            For starters, it's delicious! Homemade bread is generally fresher (and better tasting) than what you can find in most grocery stores in the United States. 
+            <br><br>
+            By making your own bread, you can try out a variety of different recipes—you might even be able to try types of bread that your usual stores don't sell!
+            <br><br>
+            When you bake your own loaves, you can customise them to suit your own tastes. That means you can add in (or omit) any ingredients you want to! It's a lot more expensive to buy a custom loaf from a bakery than it is to make one yourself.
+            <br><br>
+            Baking your own bread can give you a great sense of satisfaction! It can take some time, but at the end, you're left with a beautifully delicious loaf that makes all of your hard work worth it.
         </p>
     </aside>
 </div>

@@ -61,6 +61,7 @@ h3 {
 img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 a { 
@@ -70,7 +71,7 @@ a {
 }
 
 a:hover {
-    color: var(--neutralShade1);
+    color: var(--accentShade5);
     background-color: var(--primaryColor);
     transition: 0.4s;
 }
@@ -81,7 +82,7 @@ header {
     padding: 10px;
 }
 
-.main-nav {
+#main-nav {
     display: flex;
     justify-content: space-around;
     margin: 1em;
@@ -95,25 +96,27 @@ header {
     margin: 1em;
 }
 
-.page-nav {
+#page-nav {
     border: solid var(--accentShade4) 4px;
     margin: 1em;
 }
 
-.page-nav ul {
+#page-nav ul {
     list-style-type: none;
     text-align: center;
     margin: 0;
-    padding: 10px;
+    padding: 0;
 }
 
-.page-nav li {
+#page-nav li {
     padding: 10px;
+    border-top: solid var(--primaryShade5) 1px;
 }
 
 #fun-facts-container {
     background-color: var(--secondaryShade2);
-    margin:0;
+    margin:1em;
+    margin-top:2em;
     padding: 1em;
 }
 
@@ -131,7 +134,7 @@ header {
     margin: 1em;
 }
 
-#white, #grain, #sourdough {
+.bordered{
     border: solid var(--accentShade4) 4px;
 }
 
@@ -140,16 +143,23 @@ aside {
     margin: 1em;
     padding: 1em;
 }
+
+footer {
+    background-color: var(--primaryColor);
+    padding: 1em;
+}
+footer a {
+    color: var(--accentShade5); 
+    cursor: pointer;
+    transition: 0.4s;
+}
+footer a:hover {
+    color: var(--accentShade5);
+    background-color: var(--secondaryShade2);
+    transition: 0.4s;
+}
 /* Grid Area Definitions */
-.skip-to-link {
-    grid-area:sl;
-}
-
-header {
-    grid-area:h;
-}
-
-.main-nav {
+#main-nav {
     grid-area: mn;
 }
 
@@ -157,7 +167,7 @@ header {
     grid-area: bi;
 }
 
-.page-nav {
+#page-nav {
     grid-area: pn;
 }
 
@@ -193,7 +203,7 @@ header {
     grid-area:sd;
 }
 
-#quick-bread {
+#quick {
     grid-area:qb;
 }
 
@@ -207,11 +217,14 @@ header {
 
 /*tablet size*/
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-    #white, #grain, #sourdough {
+    .bordered {
         border: none;
     }
-   
-    #types-of-bread-container {
+    #page-nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+       #types-of-bread-container {
         display: grid;
         grid-template-columns: 50vw 50vw;
         grid-template-rows: auto;
@@ -221,11 +234,9 @@ header {
         "gr fl"
         "sd qb";
     }
-
     #types-of-bread-container img {
         max-width: 30vw;
     }
-
     #types-of-bread-container > * {
         display: flex;
         flex-direction: column;
@@ -234,6 +245,12 @@ header {
         display: flex;
         justify-content: center;
     }
+    #wheat, #grain, #quick {
+        background-color: var(--primaryShade1);
+    }
+    #wheat-bread, #whole-grain-bread, #quick-bread {
+        color: var(--accentShade5);
+    }
 }
 
 /*desktop size*/
@@ -241,7 +258,7 @@ header {
     #desktop-grid {
         display: grid;
         grid-template-columns: repeat(3, 23vw) 30vw;
-        grid-template-rows: auto;
+        grid-template-rows: 100px 250px auto 700px;
         grid-template-areas:
         "mn bi bi bi"
         "pn bi bi bi"
@@ -261,5 +278,18 @@ header {
     }
     #banner-container {
         max-width: 70vw;
+    }
+    .bordered {
+        border: none;
+    }
+    #types-of-bread-container > * {
+        display: flex;
+        flex-direction: column;
+    }
+    aside {
+        line-height: 2;
+    }
+    h3 {
+        border-bottom: solid var(--primaryShade5) 2px;
     }
 }
