@@ -19,11 +19,12 @@
         </p>
     </header> 
 <main id="main" role="main" aria-label="about-bread-homepage"> 
+<div id="desktop-grid">
     <nav role="navigation" aria-label="main-navigation" class="main-nav">
         <a href=".homepage.html">Homepage</a>
         <a href=".recipes.html">Recipes</a>
     </nav>
-    <div>
+    <div id="banner-container">
         <img id="banner-image"
              src="assets/images/bread-assorted-pile1280x853.jpg"
              alt="pile of bread"
@@ -43,7 +44,6 @@
         </ul>    
     </nav>
     <section id="fun-facts-container" role="region" aria-labelledby="facts">
-        <img>
         <h2 id="facts">Fun Facts About Bread</h2>
         <p id="fun-facts">
             Here are some things you might not know about bread!
@@ -55,10 +55,12 @@
         </p>
     </section>
     <section id="types-of-bread-container" role="region" aria-labelledby="types-of-bread">
-        <h2 id="types-of-bread">Different Types of Bread</h2>
-            <p id="bread-types">
+        <div id="types-intro">
+            <h2 id="types-of-bread">Different Types of Bread</h2>
+            <p>
                 There are over 100 different varieties of bread in the world today! Many of these can be put into sub-categories based on their ingredients or shape, like white, wheat, or flatbread. Different types of bread come from different regions of the world. A certain style of bread can arise simply because of what was available when people started making it. For example, challah comes from a region where oil is more widely used than butter, making it different from brioche. Here are some examples of those sub-categories:
             </p>
+        </div>    
         <div id="white" aria-labelledby="white-bread">
             <img src="./assets/images/white-bread1280x853.jpg"
                  alt="slice of toasted white bread"
@@ -138,8 +140,7 @@
                 A type of bread that gets its rise from a chemical leavener such as baking powder or baking soda instead of from yeast or fermentation.
             </p>
         </div>
-    </section> 
-</main>  
+    </section>
     <aside role="complementary" id="sidebar-eat" aria-labelledby="reasons-to-eat-bread">
         <h2 id="reasons-to-eat-bread">So Why Should You Eat Bread?</h2>
         <p>
@@ -155,11 +156,13 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quidem.
         </p>
     </aside>
+</div>
     <footer role="contentinfo" aria-label="copyright info">
         <p>
             Copyright 2023 Kat Zinn
         </p>
         <a href="https://docs.google.com/document/d/1tVNBK4pOiOzoMIqjF_iz3lh3-aI0y-p0qQ0ATTEMIAI/edit?usp=sharing" target="_blank">Priority Guide</a>
     </footer>
+</main>
 </body>
 </html>
