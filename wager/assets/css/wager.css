@@ -1,45 +1,48 @@
-/* GENERAL STYLES AND RESET */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Ubuntu:wght@300;400;700&display=swap');
-:root {
-  --backgroundColor: #f3c0be;
-  --foregroundColor: #592118;
 
-  --primaryColor: #d6dee6;
-  --primaryShade1: #e1f5fe;
-  --primaryShade2: #b3e5fc;
-  --primaryShade3: #65ceff;
-  --primaryShade4: #0288d1;
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+
+  --backgroundColor: #94e2d7;
+  --foregroundColor: #000000;
+
+  --primaryColor: #fdce94;
+  --primaryShade1: #fce3e1;
+  --primaryShade2: #f9d7d6;
+  --primaryShade3: #dcaba9;
+  --primaryShade4: #c69594;
   --primaryShade5: #0277bd;
 
-  --secondaryColor: #111;
-  --secondaryShade1: #ede7f6;
-  --secondaryShade2: #d1c4e9;
-  --secondaryShade3: #9575cd;
-  --secondaryShade4: #512da8;
-  --secondaryShade5: #311b92;
+  --secondaryColor: #a2e2a6;
+  --secondaryShade1: #6a9978;
+  --secondaryShade2: #c5e1a5;
+  --secondaryShade3: #aed581;
+  --secondaryShade4: #689f38;
+  --secondaryShade5: #558b2f;
 
-  --accentColor: #009688;
+  --accentColor: #d8e798;
   --accentShade1: #e0f2f1;
   --accentShade2: #b2dfdb;
   --accentShade3: #4db6ac;
   --accentShade4: #00796b;
   --accentShade5: #004d40;
 
-  --accent2Color: #8bc34a;
+  --accent2Color: #94E2d7;
   --accent2Shade1: #e7f6d5;
   --accent2Shade2: #c5e1a5;
   --accent2Shade3: #aed581;
   --accent2Shade4: #689f38;
   --accent2Shade5: #558b2f;
 
-  --accent3Color: #f44336;
+  --accent3Color: #f6ebac;
   --accent3Shade1: #ffdde0;
   --accent3Shade2: #ffcdd2;
   --accent3Shade3: #ef9a9a;
   --accent3Shade4: #d32f2f;
   --accent3Shade5: #b71c1c;
 
-  --neutralShade1: #f2f2f2;
+  --neutralShade1: #000000;
   --neutralShade2: #e8e9e9;
   --neutralShade3: #d1d3d4;
   --neutralShade4: #babdbf;
@@ -56,7 +59,7 @@
   --boxShadow: 0 2px 5px rgba(#333, 0.2);
 
   /* Change default root font size (16px), if desired */
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .skip-to-link {
@@ -69,8 +72,11 @@
 
 img {
   max-width: 100%;
-  height: 100%;
+  height: auto;
   margin: auto;
+  background-color: var(--neutralShade1);
+  padding: 5px;
+  display: inline-block;
 }
 
 /* GENERAL COLOR SCHEME */
@@ -82,6 +88,7 @@ body {
 /*==========
   TYPOGRAPHY
 ===========*/
+
 /* Font Families */
 body { font-family: "Ubuntu", sans-serif;}
 h1,h2,h3 { font-family: "Lora", serif; }
@@ -131,6 +138,8 @@ h6 {
 }
 
 a { font-weight: 500; }
+
+/* Default Font Colors & Styling */
 
 /* default links */
 a {
@@ -186,11 +195,87 @@ ul {
   justify-content: space-around;
   margin: 5 10rem;
   flex-wrap: wrap;
+  list-style-type: none; 
+  font-size: 1.3rem;
 }
+
 /* MAIN CONTENT */
 body {
   margin: 0;
   padding: 0;
+}
+
+p { 
+  font-size: 12px;
+}
+
+.owner-info-container {
+  text-align: center;
+}
+
+.brooke-tito {
+  border-radius: 50%;
+}
+
+.section-main-photo-display-pets {
+  text-align: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.section-about {
+  text-align: center
+}
+
+.section-about img {
+  text-align: center;
+}
+
+.odd {
+  background-color: var(--secondaryColor);
+  padding-top: 1rem;
+}
+
+
+/* FOOTER */
+
+
+/* Medium/Tablet Sizes */
+@media screen and (min-width: 768px) {
+
+p {
+  font-size: 1rem;
+}
+.section-main-photo-display-pets {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--primaryColor);
+  padding-bottom: 2rem;
+}
+
+.pets_couch_three {
+  display: block;
+  margin: 2rem auto;
+  max-width: 60%;
+  height: auto;
+  text-align: center;
+  border-width: 1rem;
+}
+
+.owner-info-container img {
+  width: 300px;
+}
+
+.section-main-photo-display-pets img {
+  width:100;
+  height: auto;
+  margin: 0rem;
+  display:block;
+}
+
+.section-main-photo-display-pets h2 {
+ text-align: center;
 }
 
 .section-about {
@@ -202,14 +287,16 @@ body {
 }
 
 .section-about .content {
-  flex: 1;
-  max-width: 50%;
+  flex: 1 1 1;
+  background-color: #fdce94;
+  padding: 1rem
 }
 
 .section-about img {
   max-width: 100%;
   height: auto;
-  margin: 0rem
+  margin: 1rem;
+  background-color: #a2e2a6
 }
 
 .section-about.odd {
@@ -222,70 +309,33 @@ body {
   flex-direction: row-reverse;
 }
 
-
-/* SECTION */
-
-/* ASIDE */
-
-/* FOOTER */
-
-/* Medium/Tablet Sizes */
-@media screen and (min-width: 768px) {
-
-.section-main-photo-display-pets {
-  font-size: 1rem;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
-
-.section-main-photo-display-pets img {
-  max-width: 75%;
-  width:100;
-  height: auto;
-  margin-top: 5rem;
-  display:block;
-}
-
-.section-main-photo-display-pets h2 {
- text-align: center;
-}
-
- .pets_couch_three {
-  display: block;
-  margin: 2rem auto;
-  max-width: 60%;
-  height: auto;
-  text-align: center;
-  border-width: 1rem;
-}
-
-.owner-info-container {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.brooke-tito {
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  overflow: hidden;
-  max-width: 25%;
-}
-}
-
 
 /* Large Size */
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1080px) 
+
+{
+
+  img {
+    max-width: 100%;
+    text-align: center;
+  }
+
   .section-main-photo-display-pets {
-    font-size: 1rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 0rem;
   }
   
+  .owner-info-container img {
+    width: 400px;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
   
   .section-main-photo-display-pets h2 {
     text-align: center;
@@ -300,17 +350,33 @@ body {
     border-width: 1rem;
   }
   
-  .owner-info-container {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
+  .section-about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
   }
   
-  .brooke-tito {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    overflow: hidden;
-    max-width: 30%;
-  }  
+  .section-about .content {
+    flex: 1 1 1;
+    max-width: 50%;
+    background-color: #fdce94;
+  }
+  
+  .section-about img {
+    margin: 0rem;
+    background-color: #a2e2a6
+  }
+  
+  .section-about.odd {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .section-about.even {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
 }
