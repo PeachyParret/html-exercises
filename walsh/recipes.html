@@ -8,18 +8,21 @@
     <meta name="distribution" content="Global">
     <title>Quick, Healthy Recipes</title>
     <link rel="icon" href="/walsh/assets/images/vegetables-walsh-large-1024x683px.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <a href="#main" class="skip-to-link">Skip to content</a>
-    <header role="banner" aria-labelledby="quick-healthy-recipes">
-        <h1 id="quick-healthy-recipes">
-            Quick, Healthy Recipes
-        </h1>
-        <p>
-            Don't have a lot of time? Hate to cook? These quick and easy recipes will help solve your problems!
-        </p>
-    </header>
-    <nav role="navigation" aria-label="Main navigation">
+    <div class="qhr">
+        <header role="banner" aria-labelledby="quick-healthy-recipes">
+            <h1 id="quick-healthy-recipes">
+                Quick, Healthy Recipes
+            </h1>
+            <p>
+                Don't have a lot of time? Hate to cook? These quick and easy recipes will help solve your problems!
+            </p>
+        </header>
+    </div>
+    <nav role="navigation" aria-label="main navigation" class="nav">
         <ul>
             <li>
                 <a href="index.html">College is Hard, I can Help!</a>
@@ -33,39 +36,136 @@
         </ul>
     </nav>
     <main id="main" role="main" aria-label="Recipes">
-        <section role="region" aria-labelledby="30 Minute or Less Recipes">
-            <h2 id="30-minute-or-less-recipes">
+        <section role="region" aria-labelledby="30-minute-or-less-recipes">
+            <h2 id="thirty-minute-or-less-recipes">
                 30 Minute or Less Recipes
             </h2>
-            <h3>
-                Chicken Stir Fry
-            </h3>
-                <p>
-                    This recipe is a great one to check out! There are multiple variations that I like to do to this. One thing that I do to make it faster is buying frozen vegetables. All you need is chicken breast, Minute Rice, vegetables, and a sauce of your choice. Sometimes I get a bag of frozen chicken strips (healhty ones) to use so I don't need to cook chicken breasts.
-                </p>
-            <h3>
-                Chicken Salad
-            </h3>
-                <p>
-                    All you need for this recipe are fresh vegetables, salad, chicken, and a dressing of your choice. I like to add rice and hummus into my salad as well to add a little extra flavor!
-                </p>
-        </section>
-        <section role="region" aria-labelledby="Other Easy Recipes"> 
-            <h2 id="other-easy-recipes">
-                Other Easy Recipes
-            </h2>
-            <h3>
-                Spaghetti Squash
-            </h3>
-                <p>
-                This one takes a little bit longer than 30 minutes, but all you need is a spaghetti squash, marinara sauce, and meatballs if you would like to add protein. This recipe is super healthy and tastes very yummy.
-            </p>
+            <div class="hr">
+                <div class="h1">
+                    <h3 id="chicken-stir-fry">
+                        Chicken Stir Fry
+                    </h3>
+                    <figure class="i1">
+                        <img src="assets/images/chicken-stirfry-walsh-large-1700x1133px.jpg" 
+                        alt="Chicken, pomagranette, and spinach salad with a kebab and healthy dips in the background." 
+                        srcset="assets/images/chicken-stirfry-walsh-large-1700x1133px.jpg 1700w, assets/images/chicken-stirfry-walsh-medium-850x567px.jpeg 850w, assets/images/chicken-stirfry-walsh-small-425x284px.jpeg 425w"
+                        width="1700" 
+                        height="1133"
+                        class="chicken-stirfry">
+                    </figure>
+                    <p>
+                        This recipe is a great one to check out! There are multiple variations that I like to do to this. One thing that I do to make it faster is buying frozen vegetables. All you need is chicken breast, Minute Rice, vegetables, and a sauce of your choice. Sometimes I get a bag of frozen chicken strips (healhty ones) to use so I don't need to cook chicken breasts.
+                    </p>
+                    <ul>
+                        <li>
+                            Prepare the chicken in whatever way you prefer  
+                        </li>
+                        <li>
+                            Cook the frozen vegetables and rice at the same time
+                        </li>
+                        <li>
+                            All three foods should be done at the same time and enjoy!
+                        </li>
+                    </ul>
+                </div>
+                <div class="h2">
+                    <h3 id="chicken-salad">
+                        Chicken Salad
+                    </h3>
+                    <figure class="i2">
+                        <img src="assets/images/chicken-salad-walsh-large-1024x650px.jpg" 
+                        alt="Chicken on top of a green salad with several other vegetables."
+                        srcset="assets/images/chicken-salad-walsh-large-1024x650px.jpg 1024w, assets/images/chicken-salad-walsh-medium-512x325px.jpeg 512w, assets/images/chicken-salad-walsh-small-256x163px.jpeg 256w"
+                        width="1024"
+                        height="650"
+                        class="chicken-salad">
+                    </figure>
+                    <p>
+                        All you need for this recipe are fresh vegetables, salad, chicken, and a dressing of your choice. I like to add rice and hummus into my salad as well to add a little extra flavor!
+                    </p>
+                    <ul>
+                        <li>
+                            Prepare the chicken in whatever way you prefer
+                        </li>
+                        <li>
+                            Cut up the vegetables while the chicken is cooking
+                        </li>
+                        <li>
+                            Add your toppings and enjoy!
+                        </li>
+                    </ul>
+                </div>
+                <div class="h3">
+                    <h3 id="stuffed-chicken-breast">
+                        Stuffed chicken Breast
+                    </h3>
+                    <figure class="i3">
+                        <img src="assets/images/stuffed-chicken-walsh-large-1024x683px.jpg" 
+                        alt="Chicken breast stuffed with cheese on a plate with tomatos and potatos"
+                        width="1024"
+                        height="683"
+                        srcset="assets/images/stuffed-chicken-walsh-large-1024x683px.jpg 1024w, assets/images/stuffed-chicken-walsh-medium-512x342px.jpeg 512w, assets/images/stuffed-chicken-walsh-small-256x171px.jpeg 256w"
+                        class="stuffed-chicken">
+                    </figure>
+                    <p>
+                        All you need for this recipe is a chicekn breast, italian seasoning, bell peppers, greek yogurt, an onion, and spinach. You can serve it on a salad or on top of rice. This recipe is for four chicken breasts.
+                    </p>
+                    <ul>
+                        <li>
+                        In a bowl, mix 1/2 cup of greek yogurt, 2 cups of spinach (heated), 1 chopped bell pepper, and 1/4 an onion
+                        </li>
+                        <li>
+                            Make a slit into each of the chicken breast
+                        </li>
+                        <li>
+                            Season the chicken with salt, pepper, and italian seasoning
+                        </li>
+                        <li> Stuff the ingrediants from the bowl into each of the chicken breasts</li>
+                        <li>
+                            Bake at 400 degrees farenhiet for 25 minutes
+                        </li>
+                    </ul>
+                </div>
+                <div class="h4">
+                    <h3 id="turkey-burrito-bowl">
+                        Turkey Burrito Bowl 
+                    </h3>
+                    <figure class="i4">
+                        <img src="assets/images/turkey-burrito-walsh-large-1024x680px.jpg" 
+                        alt="Tasty ground turkey in a burrito" 
+                        width="1024" 
+                        height="680" 
+                        srcset="assets/images/turkey-burrito-walsh-large-1024x680px.jpg 1024w, assets/images/turkey-burrito-walsh-medium-512x340px.jpeg 512w, assets/images/turkey-burrito-walsh-small-256x170px.jpeg 256w"
+                        class="turkey-burrito">
+                        
+                    </figure>
+                    <p>
+                        This recipe is very versitaile. I like to make a lot of it and eat it with several different sides throughout the week. Try putting it on salads, in a tortilla, or plain with a side of vegetables.
+                    </p>
+                    <ul>
+                        <li>
+                            Sautee 1/4 of an onion and 1 bell pepper over medium heat
+                        </li>
+                        <li>
+                            Add in 1 pound of ground turkey and 2 tablespoons of taco seasoning
+                        </li>
+                        <li> Once throughly cooked, add in 1/2 cup of salsa</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
+    <footer role="contentinfo" arria-label="trademark information">
+        <p>
+            (TM) http://127.0.0.1:5500/walsh/workouts.html
+        </p>
+        <a href="https://docs.google.com/document/d/1HmiVRdZnJ_u16XkPWTXoKDdlsI7HLuu2YGyFg8DHaes/edit?usp=sharing">Priority Guide</a>
+    </footer>
 </body>
-<footer role="contentinfo" arria-label="copyright information">
-    <p>
-        &copy;College is Hard, I can Help!
-    </p>
-</footer>
 </html>
+
+
+
+
+
+
