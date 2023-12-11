@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kalnia&display=swap');
 /*viewports?*/
 
+body{
+    margin:auto;
+}
+
 .main-flex {
     display:flex;
     flex-wrap: wrap;
