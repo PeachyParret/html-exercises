@@ -1,0 +1,59 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Libre+Franklin:wght@600&family=Pathway+Gothic+One&display=swap');
+
+header, footer {
+    background-color: #EEB1D5;
+    
+}
+
+header {
+    font-family: 'Bangers';
+    color: white;
+    min-height: 100vh;
+    font-size: 3vw;
+    text-align: center;
+    
+}
+
+main {
+    background-color: #EFC7E5; 
+ }
+
+.banner {
+    margin: auto;
+    padding: 50px;
+    max-width: 100px;
+    display: block;
+}
+
+.bio {
+    color: white;
+    font-size: 26px;
+    font-family: 'Libre Franklin';
+}
+
+.buttonbox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.skip-to-link {
+    border-radius: 28px;
+    border: 1px solid #2e282ae6;
+    color: #2e282ae6;
+    font-size: 20px;
+    padding: 16px 31px;
+}
+
+.skip-to-link:hover {
+    background-color: #EEB1D5;
+}
+
+.skip-to-link:active {
+    position: relative;
+    top: 1px;
+}
