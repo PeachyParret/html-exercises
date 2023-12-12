@@ -1,6 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+/*
+  When you complete this style guide, you will copy the following scope of the code below starting at the font import until the comment that states "STYLES BELOW ARE SPECIFIC TO THE STYLE GUIDE"
+*/
 
+/*============
+  IMPORT FONTS
+
+  1. Import your own fonts via https://fonts.google.com. Be sure to revise the family names in the CSS and in the HTML
+==============*/
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
 /*============
   COLOR SCHEME
 
@@ -24,45 +32,52 @@
 :root {
   --canvasColor: #f9f9f9;
 
-  --backgroundColor: #fff;
-  --foregroundColor: #111;
+  --backgroundColor: #265232;
+  --foregroundColor: #fad7b0;
 
-  --primaryColor: #630031;
-  --primaryShade1: #efb8d3;
-  --primaryShade2: #b96b92;
-  --primaryShade3: #ab537f;
-  --primaryShade4: #a13d6f;
-  --primaryShade5: #86385f;
+  --primaryColor: #03a9f4;
+  --primaryShade1: #e1f5fe;
+  --primaryShade2: #b3e5fc;
+  --primaryShade3: #4fc3f7;
+  --primaryShade4: #0288d1;
+  --primaryShade5: #0277bd;
 
-  --secondaryColor: #cf4420;
-  --secondaryShade1: #d8a193;
-  --secondaryShade2: #ab6e5e;
-  --secondaryShade3: #9b5644;
-  --secondaryShade4: #a9543f;
-  --secondaryShade5: #972f15;
+  --secondaryColor: #673ab7;
+  --secondaryShade1: #ede7f6;
+  --secondaryShade2: #d1c4e9;
+  --secondaryShade3: #9575cd;
+  --secondaryShade4: #512da8;
+  --secondaryShade5: #311b92;
 
-  --accentColor: #08415c;
-  --accentShade1: #17adf2;
-  --accentShade2: #158ac1;
-  --accentShade3: #0e6d98;
-  --accentShade4: #0b5779;
-  --accentShade5: #041e2b;
+  --accentColor: #009688;
+  --accentShade1: #e0f2f1;
+  --accentShade2: #b2dfdb;
+  --accentShade3: #4db6ac;
+  --accentShade4: #00796b;
+  --accentShade5: #004d40;
 
-  --accent2Color: #8ea8C3;
-  --accent2Shade1: #eaedf0;
-  --accent2Shade2: #b9d6f4;
-  --accent2Shade3: #81b7f1;
-  --accent2Shade4: #4998ed;
-  --accent2Shade5: #338cea;
+  --accent2Color: #8bc34a;
+  --accent2Shade1: #e7f6d5;
+  --accent2Shade2: #c5e1a5;
+  --accent2Shade3: #aed581;
+  --accent2Shade4: #689f38;
+  --accent2Shade5: #558b2f;
 
-  --neutralShade1: #f5D0C5;
-  --neutralShade2: #fdf9f8;
-  --neutralShade3: #f5e0da;
-  --neutralShade4: #fae1d9;
-  --neutralShade5: #f7a58c;
-  --neutralShade6: #f98c6b;
-  --neutralShade7: #fb7249;
-  --neutralShade8: #fc3f06;
+  --accent3Color: #f44336;
+  --accent3Shade1: #ffdde0;
+  --accent3Shade2: #ffcdd2;
+  --accent3Shade3: #ef9a9a;
+  --accent3Shade4: #d32f2f;
+  --accent3Shade5: #b71c1c;
+
+  --neutralShade1: #f2f2f2;
+  --neutralShade2: #e8e9e9;
+  --neutralShade3: #d1d3d4;
+  --neutralShade4: #babdbf;
+  --neutralShade5: #808488;
+  --neutralShade6: #666a6d;
+  --neutralShade7: #4d5052;
+  --neutralShade8: #212122;
 
   --grayColor: #999;
   --lightGrayColor: #ddd;
@@ -72,84 +87,10 @@
   --boxShadow: 0 2px 5px rgba(#333, 0.2);
 
   /* Change default root font size (16px), if desired */
-  font-size: 20px;
+  font-size: 18px;
 }
 
-/* Skip Link */
-a.skip-to-link {
-    position: absolute;
-    left: -999px;
-    width: 1px;
-    height: 1px;
-    top: auto;
-}
 
-a.skip-to-link:focus {
-    color: black;
-    display: inline-block;
-    height: auto;
-    width: auto;
-    position: static;
-    margin: auto;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns:450px 450px;
-  grid-template-rows: 1500px 1500px 1500px 1500px;
-  justify-content:space-around;
-  column-gap: 10px;
-  row-gap: 10px;
-}
-
-.unordered-list {
-  margin: 0px;
-  padding: 0px;
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.home-nav {
-  border:solid;
-  border-color: #0e6d98;
-}
-
-.food-nav{
-  border:solid;
-  border-color:#0e6d98;
-}
-
-.housing-nav {
-  border:solid;
-  border-color:#0e6d98;
-}
-
-.transportation-nav {
-  border:solid;
-  border-color:#0e6d98;
-}
-
-.entertainment-nav {
-  border:solid;
-  border-color:#0e6d98;
-}
-
-.vt-bburg-mc-nav {
-  border:solid;
-  border-color:#0e6d98;
-}
-
-.va-federal-nav {
-border:solid;
-  border-color:#0e6d98;
-}
-
-figure {
-  margin: 0;
-  justify-content: right;
-}
 /*
   After you define your color schemes above, revise the color and typography rulesets below in accordance with your desired new font families, weights, line-heights, etc. You can even modify which variables are being used.
 */
@@ -165,60 +106,51 @@ body {
 ===========*/
 
 /* Font Families */
-body { font-family: "Didact Gothic", sans-serif;}
-h1,h2,h3 { font-family: "Merriweather Sans", sans-serif; }
+body { font-family: "Hedvig Letters; sans-serif"}
+h1,h2,h3 { font-family: "Hedvig Letters", serif; }
 
 /* Emphasis and Bolding */
 strong { font-weight: 500; }
 em { font-style: italic; }
 
 /* Font Weight, Sizing & Spacing */
-
 body {
-  font-weight: 30;
+  font-weight: 300;
   line-height: 1.5;
   transition: all 0.3s ease;
-  color:#000000;
 }
 h1 {
-  font-weight: 100;
-  font-size: 90px;
-  line-height: 2;
+  font-weight: 700;
+  font-size: clamp(2.5rem,3rem,3.5rem);
+  line-height: 1.2;
   text-transform: uppercase;
-  color:#630031;
-  margin: 0;
-
-  
 }
 h2 {
-  font-weight: 75;
-  font-size: 50px;
-  line-height: 1.8;
-  text-transform:none;
-  color:#08415c;
-  margin-top: 25px;
-  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: clamp(1.75rem,2rem,2.5rem);
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 h3 {
-  font-weight: 50;
-  font-size: 30px;
-  line-height: 1.6;
+  font-weight: 500;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
 }
 h4 {
-  font-weight: 25;
-  font-size: 15px;
-  line-height: 1.4;
+  font-weight: 300;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
   font-style: italic;
 }
 h5 {
-  font-weight: 10;
-  font-size: 12px;
+  font-weight: 300;
+  font-size: 1.05rem;
   line-height: 1.2;
 }
 h6 {
   font-weight: 200;
-  font-size: 11px;
-  line-height: 1;
+  font-size: 1.05rem;
+  line-height: 1.2;
 }
 
 a { font-weight: 500; }

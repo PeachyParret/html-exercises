@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Inter&family=Montserrat&family=Young+Serif&display=swap');
 /* Color Scheme */
-  :root {
+:root {
     --canvasColor: #f9f9f9;
   
     --backgroundColor: #fff;
@@ -35,7 +36,7 @@
     --borderRadius: 6px;
     --boxShadow: 0 2px 5px rgba(#333, 0.2);
   
-    /* Fontont Size */
+    /* Font Size */
     font-size: 18px;
   }
 
@@ -305,8 +306,8 @@
     }
     .bullets {
       display: grid;
-      grid-template-columns: repeat(2);
-      grid-template-rows: repeat(3);
+      grid-template-columns: repeat(2, 2fr);
+      grid-template-rows: repeat(3, 2fr);
       row-gap: 10px;
       column-gap: 30px;
       grid-template-areas: 
@@ -325,8 +326,8 @@
       display: grid;
       row-gap: 50px; 
       column-gap: 50px;
-      grid-template-columns: repeat(2);
-      grid-template-rows: repeat(6,);
+      grid-template-columns: repeat(2, 2fr);
+      grid-template-rows: repeat(2, 2fr);
       grid-template-areas: 
       "h1 h2"
       "h3 h4";
@@ -376,7 +377,7 @@
       display: grid;
       row-gap: 50px;
       column-gap: 50px;
-      grid-template-columns: repeat(2);
+      grid-template-columns: repeat(2, 2fr);
       grid-template-rows: 1;
       grid-template-areas: 
       "armday-wo legdaywo";
@@ -385,7 +386,7 @@
       display: grid;
       row-gap: 50px;
       column-gap: 50px;
-      grid-template-columns: repeat(2);
+      grid-template-columns: repeat(2, 2fr);
       grid-template-rows: 1;
       grid-template-areas: 
       "track-wo treadmill-wo";
@@ -402,8 +403,8 @@
       display: grid;
       row-gap: 10px;
       column-gap: 30px;
-      grid-template-columns: repeat(3);
-      grid-template-rows: repeat(4);
+      grid-template-columns: repeat(3, 2fr);
+      grid-template-rows: repeat(2, 2fr);
       grid-template-areas: 
       "b1 b2 b3"
       "b4 b5 b6";
@@ -428,7 +429,7 @@
       display: grid;
       row-gap: 50px;
       column-gap: 50px;
-      grid-template-columns: repeat(2);
+      grid-template-columns: repeat(2, 2fr);
       grid-template-rows: 1;
       grid-template-areas: 
       "only-image ladder-wo";
