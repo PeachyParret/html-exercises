@@ -4,8 +4,6 @@
 
 /*============
   IMPORT FONTS
-
-  1. Import your own fonts via https://fonts.google.com. Be sure to revise the family names in the CSS and in the HTML
 ==============*/
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
@@ -32,43 +30,22 @@
 :root {
   --canvasColor: #f9f9f9;
 
-  --backgroundColor: #265232;
-  --foregroundColor: #fad7b0;
+  --backgroundColor: #008080;
+  --foregroundColor: #f1faff;
 
-  --primaryColor: #03a9f4;
-  --primaryShade1: #e1f5fe;
-  --primaryShade2: #b3e5fc;
-  --primaryShade3: #4fc3f7;
-  --primaryShade4: #0288d1;
-  --primaryShade5: #0277bd;
+  --primaryColor: #f1faff;
+  --primaryShade1: #f1faff;
+  --primaryShade2: #f1faffa0;
+  --primaryShade3: #f1faff6c;
+  --primaryShade4: #f1faff3f;
+  --primaryShade5: #f1faff11;
 
-  --secondaryColor: #673ab7;
-  --secondaryShade1: #ede7f6;
-  --secondaryShade2: #d1c4e9;
-  --secondaryShade3: #9575cd;
-  --secondaryShade4: #512da8;
-  --secondaryShade5: #311b92;
-
-  --accentColor: #009688;
-  --accentShade1: #e0f2f1;
-  --accentShade2: #b2dfdb;
-  --accentShade3: #4db6ac;
-  --accentShade4: #00796b;
-  --accentShade5: #004d40;
-
-  --accent2Color: #8bc34a;
-  --accent2Shade1: #e7f6d5;
-  --accent2Shade2: #c5e1a5;
-  --accent2Shade3: #aed581;
-  --accent2Shade4: #689f38;
-  --accent2Shade5: #558b2f;
-
-  --accent3Color: #f44336;
-  --accent3Shade1: #ffdde0;
-  --accent3Shade2: #ffcdd2;
-  --accent3Shade3: #ef9a9a;
-  --accent3Shade4: #d32f2f;
-  --accent3Shade5: #b71c1c;
+  --secondaryColor: #008080;
+  --secondaryColor1:#0d9e9e;
+  --secondaryShade2: #037171;
+  --secondaryShade3: #026161;
+  --secondaryShade4: #008080;
+  --secondaryShade5: #013535;
 
   --neutralShade1: #f2f2f2;
   --neutralShade2: #e8e9e9;
@@ -87,7 +64,7 @@
   --boxShadow: 0 2px 5px rgba(#333, 0.2);
 
   /* Change default root font size (16px), if desired */
-  font-size: 18px;
+  font-size: 16px;
 }
 
 
@@ -98,7 +75,7 @@
 /* GENERAL COLOR SCHEME */
 body {
   background: var(--backgroundColor);
-  color: var(--neutralShade8);
+  color: var(--foregroundColor);
 }
 
 /*==========
@@ -124,12 +101,12 @@ h1 {
   font-size: clamp(2.5rem,3rem,3.5rem);
   line-height: 1.2;
   text-transform: uppercase;
+  text-align: center;
 }
 h2 {
   font-weight: 500;
   font-size: clamp(1.75rem,2rem,2.5rem);
   line-height: 1.2;
-  text-transform: uppercase;
 }
 h3 {
   font-weight: 500;
@@ -160,7 +137,7 @@ a { font-weight: 500; }
 /* default links */
 a {
   color: var(--neutralShade8);
-  border-bottom: 2px dashed;
+  border-bottom: 2px;
   cursor: pointer;
   transition: 0.4s;
 }
@@ -197,4 +174,16 @@ a.secondary:hover {
   background-color: var(--secondaryShade5);
   border-bottom: 3px solid var(--primaryColor);
   transition: 0.4s;
+}
+
+/* navigations */
+.site_navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.page_navigation {
+  color: #008080;
+  background-color: #f1faff;
+  max-width: max-content;
 }

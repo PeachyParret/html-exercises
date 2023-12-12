@@ -55,13 +55,13 @@ h3 {
     font-size: clamp(1.25rem,1.5rem,1.75rem);
     line-height: 1.2;
     color: var(--secondaryColor);
-    display: flex;
     align-self: first baseline;
 }
 
 img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 a { 
@@ -71,7 +71,7 @@ a {
 }
 
 a:hover {
-    color: var(--neutralShade1);
+    color: var(--accentShade5);
     background-color: var(--primaryColor);
     transition: 0.4s;
 }
@@ -82,7 +82,7 @@ header {
     padding: 10px;
 }
 
-.main-nav {
+#main-nav {
     display: flex;
     justify-content: space-around;
     margin: 1em;
@@ -92,42 +92,35 @@ header {
 }
 
 #banner-image {
-    max-width: 60vw;
-    margin: auto;
-    display: flex;
+    max-width: 85vw;
+    margin: 1em;
 }
 
-.page-nav {
+#page-nav {
     border: solid var(--accentShade4) 4px;
     margin: 1em;
 }
 
-.page-nav ul {
+#page-nav ul {
     list-style-type: none;
     text-align: center;
     margin: 0;
-    padding: 10px;
+    padding: 0;
 }
 
-.page-nav li {
+#page-nav li {
     padding: 10px;
+    border-top: solid var(--primaryShade5) 1px;
 }
 
 #fun-facts-container {
     background-color: var(--secondaryShade2);
-    margin:0;
+    margin:1em;
+    margin-top:2em;
     padding: 1em;
 }
 
-#types-of-bread-container {
-    display: flex;
-    flex-direction: column;
-}
-
 #types-of-bread-container div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 10px;
 }
 
@@ -135,33 +128,46 @@ header {
     max-width: 50vw;
     margin: 1em;
     min-width: 250px;
-    display: flex;
-    justify-content: center;
 }
 
 #types-of-bread-container p,h3 {
     margin: 1em;
 }
 
-#white, #grain, #sourdough {
+.bordered{
     border: solid var(--accentShade4) 4px;
 }
 
-.sidebar {
+aside {
     background-color: var(--secondaryShade2);
     margin: 1em;
     padding: 1em;
 }
+
+footer {
+    background-color: var(--primaryColor);
+    padding: 1em;
+}
+footer a {
+    color: var(--accentShade5); 
+    cursor: pointer;
+    transition: 0.4s;
+}
+footer a:hover {
+    color: var(--accentShade5);
+    background-color: var(--secondaryShade2);
+    transition: 0.4s;
+}
 /* Grid Area Definitions */
-.main-nav {
+#main-nav {
     grid-area: mn;
 }
 
-#banner-image {
+#banner-container {
     grid-area: bi;
 }
 
-.page-nav {
+#page-nav {
     grid-area: pn;
 }
 
@@ -169,8 +175,12 @@ header {
     grid-area: ff;
 }
 
-#types-of-bread {
-    grid-area: bt;
+#types-of-bread-container {
+    grid-area: tc;
+}
+
+#types-intro {
+    grid-area: ti;
 }
 
 #white {
@@ -193,35 +203,93 @@ header {
     grid-area:sd;
 }
 
-#quick-bread {
+#quick {
     grid-area:qb;
 }
 
-.sidebar {
+#sidebar-eat {
+    grid-area: se;
+}
+
+#sidebar {
     grid-area: s;
 }
+
 /*tablet size*/
-@media only screen and (min-width: 768px) {
-    #white, #grain, #sourdough {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .bordered {
         border: none;
     }
-   
-    #types-of-bread-container {
+    #page-nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+       #types-of-bread-container {
         display: grid;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 600px;
+        grid-template-rows: auto;
         grid-template-areas:
+        "ti ti"
         "wte wht"
         "gr fl"
         "sd qb";
     }
-
     #types-of-bread-container img {
         max-width: 30vw;
+    }
+    #types-of-bread-container > * {
+        display: flex;
+        flex-direction: column;
+    }
+    #banner-container {
+        display: flex;
+        justify-content: center;
+    }
+    #wheat, #grain, #quick {
+        background-color: var(--primaryShade1);
+    }
+    #wheat-bread, #whole-grain-bread, #quick-bread {
+        color: var(--accentShade5);
     }
 }
 
 /*desktop size*/
 @media only screen and (min-width: 1280px) {
-
+    #desktop-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 23vw) 30vw;
+        grid-template-rows: 100px 250px auto 700px;
+        grid-template-areas:
+        "mn bi bi bi"
+        "pn bi bi bi"
+        "ff ff ff ff"
+        "tc tc tc se"
+        "tc tc tc s";
+    }
+    #types-of-bread-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "ti ti"
+        "wte wht"
+        "gr fl"
+        "sd qb";
+    }
+    #banner-container {
+        max-width: 70vw;
+    }
+    .bordered {
+        border: none;
+    }
+    #types-of-bread-container > * {
+        display: flex;
+        flex-direction: column;
+    }
+    aside {
+        line-height: 2;
+    }
+    h3 {
+        border-bottom: solid var(--primaryShade5) 2px;
+    }
 }

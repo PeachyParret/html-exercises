@@ -95,19 +95,61 @@ a.skip-to-link:focus {
 
 .grid-container {
   display: grid;
-  grid-template-columns: min-content;
-  grid-template-rows: min-content;
+  grid-template-columns:450px 450px;
+  grid-template-rows: 1500px 1500px 1500px 1500px;
+  justify-content:space-around;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
-.navigation {
-  margin: 0;
-  padding: 0;
+.unordered-list {
+  margin: 0px;
+  padding: 0px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+.home-nav {
+  border:solid;
+  border-color: #0e6d98;
+}
 
+.food-nav{
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.housing-nav {
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.transportation-nav {
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.entertainment-nav {
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.vt-bburg-mc-nav {
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.va-federal-nav {
+border:solid;
+  border-color:#0e6d98;
+}
+
+figure {
+  margin: 0;
+  justify-content: right;
+}
 /*
   After you define your color schemes above, revise the color and typography rulesets below in accordance with your desired new font families, weights, line-heights, etc. You can even modify which variables are being used.
 */
@@ -136,20 +178,26 @@ body {
   font-weight: 30;
   line-height: 1.5;
   transition: all 0.3s ease;
+  color:#000000;
 }
 h1 {
   font-weight: 100;
   font-size: 90px;
   line-height: 2;
   text-transform: uppercase;
-  color:#630031
+  color:#630031;
+  margin: 0;
+
   
 }
 h2 {
   font-weight: 75;
   font-size: 50px;
   line-height: 1.8;
-  text-transform:none
+  text-transform:none;
+  color:#08415c;
+  margin-top: 25px;
+  margin-bottom: 0px;
 }
 h3 {
   font-weight: 50;
