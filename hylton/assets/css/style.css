@@ -7,7 +7,7 @@ html {
 
 header, footer {
     background-color: #EEB1D5;
-    border: solid 10px #7e8d855e;
+    border: double 10px #7e8d855e;
 }
 
 header {
@@ -27,7 +27,7 @@ main {
         "gr boty";
     padding: 30px;
     margin: auto;
-    border: solid 10px #7e8d855e;
+    border: double 10px #7e8d855e;
  }
 
 
@@ -87,9 +87,10 @@ main {
 
 /* formatting for tiktok section */
 .tiktok {
-    border: solid 2px #2e282ae6;
+    border: double 8px #2e282ae6;
+    background-color: #eeb1d5d2;
     grid-area: tt;
-    margin: auto;
+    margin: 20px;
     padding: 1rem;
     text-align: center;
 }
@@ -113,9 +114,10 @@ main {
 
 /* formatting for my top ten section */
 .top-ten {
-    border: solid 2px #2e282ae6;
+    border: double 8px #2e282ae6;
+    background-color: #eeb1d5d2;
     grid-area: t10;
-    margin: auto;
+    margin: 20px;
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -148,9 +150,10 @@ main {
 
 /* formatting for my book of the year section */
 .boty {
-    border: solid 2px #2e282ae6;
+    border: double 8px #2e282ae6;
+    background-color: #eeb1d5d2;
     grid-area: boty;
-    margin: auto;
+    margin: 20px;
     padding: 1rem;
     text-align: center;
 }
@@ -188,9 +191,10 @@ main {
 
 /* formating for my goodreads section */
 .goodreads {
-    border: solid 2px #2e282ae6;
+    border: double 8px #2e282ae6;
+    background-color: #eeb1d5d2;
     grid-area: gr;
-    margin: auto;
+    margin: 20px;
     padding: 1rem;
     text-align: center;
 }
