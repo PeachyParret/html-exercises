@@ -196,6 +196,16 @@ img {
     transition: 0.4s; 
   }
 
+  a:-webkit-any-link {
+    text-decoration: none;
+  }
+
+
+
+  ul {
+    list-style-type: none;
+  }
+
 /* Section 1 */
 .title-pic {
   align-items: center;
@@ -215,7 +225,6 @@ img {
   flex-direction: column;
   flex-wrap: nowrap;
   width: 20%;
-  height: 400px;
   margin: 10px;
 }
 
@@ -248,7 +257,16 @@ a.active {
   height: 100%;
 }
 
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
 
+.the-dos-main {
+  background-color: var(--secondaryShade3);
+}
 
 .the-dos-pics {
   display: flex;
@@ -275,4 +293,5 @@ a.active {
  h2 {
   font-size: 50px;
  }
+
 }

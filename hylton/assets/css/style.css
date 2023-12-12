@@ -14,12 +14,28 @@ header {
     color: white;
     min-height: 100vh;
     font-size: 3vw;
+    font-weight: lighter;
     text-align: center;
     
 }
 
 main {
     background-color: #EFC7E5; 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+        "t10 tt"
+        "boty gr";
+    padding: 30px;
+    margin: auto;
+ }
+
+
+ footer {
+    height: 100%;
+    font-family: 'Libre Franklin';
+    display: flex;
+    align-content: center;
  }
 
 .banner {
@@ -56,4 +72,115 @@ main {
 .skip-to-link:active {
     position: relative;
     top: 1px;
+}
+
+.tiktok {
+    border: solid 2px #2e282ae6;
+    grid-area: tt;
+    margin: auto;
+    padding: 1rem;
+}
+   
+
+.t-head {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bangers';
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.tt-info {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Pathway Gothic';
+    font-size: 20px;
+}
+
+.top-ten {
+    border: solid 2px #2e282ae6;
+    grid-area: t10;
+    margin: auto;
+    padding: 1rem;
+}
+
+.t10-head {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bangers';
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.t10-info {
+    display: flex;
+    justify-self: center;
+    font-family: "Pathway Gothic";
+    font-size: 20px;
+}
+
+.t10-list {
+    display: flex;
+    font-family: "Pathway Gothic";
+    font-size: 20px;
+}
+
+.boty {
+    border: solid 2px #2e282ae6;
+    grid-area: boty;
+    margin: auto;
+    padding: 1rem;
+}
+
+.boty-head1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bangers';
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.boty-head2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bangers';
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.boty-head3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bangers';
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.boty-info {
+    display: flex;
+    justify-self: center;
+    font-family: "Pathway Gothic";
+    font-size: 20px;
+}
+
+.goodreads {
+    border: solid 2px #2e282ae6;
+    grid-area: gr;
+    margin: auto;
+    padding: 1rem;
+}
+
+.gr-head {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bangers';
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.gr-info {
+    display: flex;
+    justify-content: center;
+    font-family: 'Pathway Gothic';
+    font-size: 20px;
 }
