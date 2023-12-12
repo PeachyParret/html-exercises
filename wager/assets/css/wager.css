@@ -193,12 +193,15 @@ header {
 ul {
   display: flex; 
   justify-content: space-around;
-  margin: 5 10rem;
   flex-wrap: wrap;
   list-style-type: none; 
   font-size: 1.3rem;
 }
 
+ul li {
+  background-color: var(--accent3Color);
+  padding: 1rem;
+}
 /* MAIN CONTENT */
 body {
   margin: 0;
@@ -224,7 +227,7 @@ p {
 }
 
 .section-about {
-  text-align: center
+  text-align: center;
 }
 
 .section-about img {
@@ -236,7 +239,10 @@ p {
   padding-top: 1rem;
 }
 
-
+.owner-info-container {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
 /* FOOTER */
 
 
@@ -268,7 +274,7 @@ p {
 }
 
 .section-main-photo-display-pets img {
-  width:100;
+  width: 100%;
   height: auto;
   margin: 0rem;
   display:block;
