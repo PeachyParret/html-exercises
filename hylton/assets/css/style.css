@@ -1,3 +1,4 @@
+/* overall theme stuff*/
 html {
     scroll-behavior: smooth;
 }
@@ -6,7 +7,7 @@ html {
 
 header, footer {
     background-color: #EEB1D5;
-    
+    border: solid 10px #7e8d855e;
 }
 
 header {
@@ -15,8 +16,6 @@ header {
     min-height: 100vh;
     font-size: 3vw;
     font-weight: lighter;
-    text-align: center;
-    
 }
 
 main {
@@ -25,10 +24,12 @@ main {
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
         "t10 tt"
-        "boty gr";
+        "gr boty";
     padding: 30px;
     margin: auto;
+    border: solid 10px #7e8d855e;
  }
+
 
 
  footer {
@@ -37,6 +38,13 @@ main {
     display: flex;
     align-content: center;
  }
+
+/* heading info */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .banner {
     margin: auto;
@@ -49,12 +57,15 @@ main {
     color: white;
     font-size: 26px;
     font-family: 'Libre Franklin';
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttonbox {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .skip-to-link {
@@ -74,13 +85,16 @@ main {
     top: 1px;
 }
 
+/* formatting for tiktok section */
 .tiktok {
     border: solid 2px #2e282ae6;
     grid-area: tt;
     margin: auto;
     padding: 1rem;
+    text-align: center;
 }
    
+
 
 .t-head {
     display: flex;
@@ -91,17 +105,22 @@ main {
 }
 
 .tt-info {
-    display: flex;
+    display: block;
     justify-content: space-between;
     font-family: 'Pathway Gothic';
     font-size: 20px;
 }
 
+/* formatting for my top ten section */
 .top-ten {
     border: solid 2px #2e282ae6;
     grid-area: t10;
     margin: auto;
     padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
 }
 
 .t10-head {
@@ -114,22 +133,26 @@ main {
 
 .t10-info {
     display: flex;
-    justify-self: center;
+    flex: 1 1 30vw;
     font-family: "Pathway Gothic";
     font-size: 20px;
 }
 
 .t10-list {
-    display: flex;
+    display: block;
     font-family: "Pathway Gothic";
     font-size: 20px;
+    justify-content: flex-start;
+    list-style: none;
 }
 
+/* formatting for my book of the year section */
 .boty {
     border: solid 2px #2e282ae6;
     grid-area: boty;
     margin: auto;
     padding: 1rem;
+    text-align: center;
 }
 
 .boty-head1 {
@@ -163,11 +186,13 @@ main {
     font-size: 20px;
 }
 
+/* formating for my goodreads section */
 .goodreads {
     border: solid 2px #2e282ae6;
     grid-area: gr;
     margin: auto;
     padding: 1rem;
+    text-align: center;
 }
 
 .gr-head {
@@ -179,7 +204,7 @@ main {
 }
 
 .gr-info {
-    display: flex;
+    display: block;
     justify-content: center;
     font-family: 'Pathway Gothic';
     font-size: 20px;
