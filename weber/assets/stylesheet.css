@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+/*============
+  COLOR SCHEME
+
+  2. Define the color scheme within the root element by using CSS variables:
+
+    - '--variableName: color_value;'
+    - Use in code later as "color: var(--variableName)"
+
+  The power of CSS variables includes interchangability. For example, when you want to change your color pallette, you only need to change the value defined at the variable.
+
+  For example, if you want to change your background and foreground colors, your primary and secondary colors, etc., locate the variable in the :root, change it, and then that value will be applied anywhere that variable is used in your CSS.
+
+  Define it once, use across your code.
+  Change it in one spot, it changes everywhere it's used in your code!
+
+  - See https://randoma11y.com to establish a basic 2-color scheme: primary and secondary colors.
+  - Note how the colors shades move from 1-5, i.e., lighter shades to darker shades. To produce shades, use VS Code's color picker tool to produce gradiations of the initial color.
+  - If you want //accent// shade(s), feel free to consider additional complimentary colors.
+=============*/
+
+:root {
+  --canvasColor: #f9f9f9;
+
+  --backgroundColor: #fff;
+  --foregroundColor: #111;
+
+  --primaryColor: #630031;
+  --primaryShade1: #efb8d3;
+  --primaryShade2: #b96b92;
+  --primaryShade3: #ab537f;
+  --primaryShade4: #a13d6f;
+  --primaryShade5: #86385f;
+
+  --secondaryColor: #cf4420;
+  --secondaryShade1: #d8a193;
+  --secondaryShade2: #ab6e5e;
+  --secondaryShade3: #9b5644;
+  --secondaryShade4: #a9543f;
+  --secondaryShade5: #972f15;
+
+  --accentColor: #08415c;
+  --accentShade1: #17adf2;
+  --accentShade2: #158ac1;
+  --accentShade3: #0e6d98;
+  --accentShade4: #0b5779;
+  --accentShade5: #041e2b;
+
+  --accent2Color: #8ea8C3;
+  --accent2Shade1: #eaedf0;
+  --accent2Shade2: #b9d6f4;
+  --accent2Shade3: #81b7f1;
+  --accent2Shade4: #4998ed;
+  --accent2Shade5: #338cea;
+
+  --neutralShade1: #f5D0C5;
+  --neutralShade2: #fdf9f8;
+  --neutralShade3: #f5e0da;
+  --neutralShade4: #fae1d9;
+  --neutralShade5: #f7a58c;
+  --neutralShade6: #f98c6b;
+  --neutralShade7: #fb7249;
+  --neutralShade8: #fc3f06;
+
+  --grayColor: #999;
+  --lightGrayColor: #ddd;
+
+  /* You can also use it for generally applied sizing and spacing. */
+  --borderRadius: 6px;
+  --boxShadow: 0 2px 5px rgba(#333, 0.2);
+
+  /* Change default root font size (16px), if desired */
+  font-size: 20px;
+}
+
+/* Skip Link */
+a.skip-to-link {
+    position: absolute;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+}
+
+a.skip-to-link:focus {
+    color: black;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns:450px 450px;
+  grid-template-rows: 1500px 1500px 1500px 1500px;
+  justify-content:space-around;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.unordered-list {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-nav {
+  border:solid;
+  border-color: #0e6d98;
+}
+
+.food-nav{
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.housing-nav {
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.transportation-nav {
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.entertainment-nav {
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.vt-bburg-mc-nav {
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.va-federal-nav {
+border:solid;
+  border-color:#0e6d98;
+}
+
+figure {
+  margin: 0;
+  justify-content: right;
+}
+/*
+  After you define your color schemes above, revise the color and typography rulesets below in accordance with your desired new font families, weights, line-heights, etc. You can even modify which variables are being used.
+*/
+
+/* GENERAL COLOR SCHEME */
+body {
+  background: var(--backgroundColor);
+  color: var(--neutralShade8);
+}
+
+/*==========
+  TYPOGRAPHY
+===========*/
+
+/* Font Families */
+body { font-family: "Didact Gothic", sans-serif;}
+h1,h2,h3 { font-family: "Merriweather Sans", sans-serif; }
+
+/* Emphasis and Bolding */
+strong { font-weight: 500; }
+em { font-style: italic; }
+
+/* Font Weight, Sizing & Spacing */
+
+body {
+  font-weight: 30;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+  color:#000000;
+}
+h1 {
+  font-weight: 100;
+  font-size: 90px;
+  line-height: 2;
+  text-transform: uppercase;
+  color:#630031;
+  margin: 0;
+
+  
+}
+h2 {
+  font-weight: 75;
+  font-size: 50px;
+  line-height: 1.8;
+  text-transform:none;
+  color:#08415c;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+h3 {
+  font-weight: 50;
+  font-size: 30px;
+  line-height: 1.6;
+}
+h4 {
+  font-weight: 25;
+  font-size: 15px;
+  line-height: 1.4;
+  font-style: italic;
+}
+h5 {
+  font-weight: 10;
+  font-size: 12px;
+  line-height: 1.2;
+}
+h6 {
+  font-weight: 200;
+  font-size: 11px;
+  line-height: 1;
+}
+
+a { font-weight: 500; }
+
+/* Default Font Colors & Styling */
+
+/* default links */
+a {
+  color: var(--neutralShade8);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a:hover {
+  color: var(--neutralShade1);
+  background-color: var(--primaryColor);
+  border-bottom: 3px solid var(--primaryShade5);
+  transition: 0.4s;
+}
+
+/* primary color links */
+a.primary {
+  color: var(--primaryColor);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.primary:hover {
+  color: var(--primaryShade1);
+  background-color: var(--primaryShade4);
+  border-bottom: 3px solid var(--secondaryColor);
+  transition: 0.4s;
+}
+
+/* secondary color links */
+a.secondary {
+  color: var(--secondaryShade5);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.secondary:hover {
+  color: var(--secondaryShade1);
+  background-color: var(--secondaryShade5);
+  border-bottom: 3px solid var(--primaryColor);
+  transition: 0.4s;
+}
