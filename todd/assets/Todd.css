@@ -1,0 +1,81 @@
+/* Defines Merriweather font */
+@font-face {
+    font-family: "Merriweather";
+    src: url('https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-eR9U.woff2') format('woff2');
+    /* Add more font formats and sources as needed */
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Defines Josefin Sans font */
+@font-face {
+    font-family: "Josefin Sans";
+    src: url('https://fonts.gstatic.com/s/josefinsans/v21/Qw3aZQNVED7rKGKxtqIqX5NHxzg.woff2') format('woff2');
+    /* Add more font formats and sources as needed */
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Reset margin and padding and give font-family for titles */
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', sans-serif;
+}
+
+/* Give font-family for body, lists, and paragraphs */
+body, li, ul, p {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    background-color:  #dcffc4;
+}
+/* Creates a box sizing to everything */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Style for Header */
+header {
+    background-color:  #c4f9ff;
+    color: #3d27ff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container for text box and images */
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style for text box */
+.text-box {
+    border: 2px solid #333;
+    padding: 20px;
+    width: 100%; /* This is for allowing width adustments*/
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Style for image */
+.img_contain {
+    width: 300px; /* This gives fixed width for the image*/
+    height: auto; /* Maintain the aspect ratio for image */
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.img_respond {
+        max-width: 100%;
+        height: auto;
+}
+
+/* Clears away the float */
+.clear {
+    clear: both;
+}
