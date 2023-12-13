@@ -3,96 +3,167 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Cal Kruse"/>
-    <meta name="description" content="This step-by-step how-to guide will help you create your very own modular desktop to help you organize your to-do lists, files, and more!"/>
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon"/>
-    <title>How to make modular desktops in Canva</title>
+    <meta name="description" content="Take a look at our most beloved companions and get to know them!"/>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="assets/images/favicon.PNG" type="image/x-icon"/>
+    <title>The Kruse Animals</title>
 </head>
 <body>
     <header role="banner" aria-labelledby="title">
-        <h1 id="title">How to make modular desktops in Canva</h1>
+        <h1 id="title">The Kruse Animals</h1>
     </header>
-    <a href="#main-content">Skip to main content</a>
-    <!-- header needs a role, and optionally a label for this one -->
-    <!-- nav menu? -->
+    <a href="#main-content"> <font color="#fcf7f8">Skip to main content</font></a>
     <nav role="navigation">
         <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#getting-started">Getting Started</a></li>
-            <li><a href="#choosing-your-template">Choosing Your Template</a></li>
-            <li><a href="#sections-to-consider">Sections to Consider</a></li>
-            <li><a href="#tips-and-tricks">Tips and Tricks</a></li>
-            <li><a href="#examples">Examples</a></li>
+            <li><a href="#jack-jack">Jack-Jack</a></li>
+            <li><a href="#violet">Violet</a></li>
+            <li><a href="#dash">Dash</a></li>
+            <li><a href="#ozzie">Ozzie</a></li>
         </ul>
     </nav>
     <main id="main-content" role="main">
-        <!--
-            So far a simple pattern below. Needs attention to some issues:
-            - Will this page include much of the content in those sections, or will there be dedicated pages and these are CTAs for those pages? That will dictate what elements you might consider using instead of section here on the home page.
-            - Need roles and labels throughout.
-            - footer? aside?
-            - all attributes should be lowercase
-            - "id" attributes should be lowercase and never have whitespaces. Use hyphens between words, e.g., "Getting Started" can be "getting-started"
-            - Need some images with src, alt, width, height, srcset
-        -->
-        <section role="region" aria-labelledby="introduction">
-            <h2 id="introduction">Introduction</h2>
-            <!-- Recommend the below indentation for paragraphs, so you can close them up when you're done with them. -->
-            <p>
-                Are you looking to keep your workspace more organized? Do you feel overwhelmed by multiple to-do lists?
-            </p>
+        <section class="block" aria-labelledby="jack-jack">
+            <section role="region" aria-labelledby="jack-jack" class="ident">
+                <img
+                src="assets/images/jack-jack/dog-black-jack-jack3024x3024.png"
+                srcset="assets/images/jack-jack/dog-black-jack-jack3024x3024.png 3024w,
+                        assets/images/jack-jack/dog-black-jack-jack960x960.png 960w,
+                        assets/images/jack-jack/dog-black-jack-jack480x480.png 480w"
+                alt="A black Labrador Retriever on a grey couch."
+                class="id-image"
+                width=50vw;
+                height=50vw;
+                >
+                <section class="text">
+                    <h2 id="jack-jack">Jack-Jack</h2>
+                    <p>
+                        <strong>Age: 3 | Height: 4'4" | Weight: 82lb</strong><br> <br>Jack-Jack is the epitome of a quarantine puppy. He is playful and gentle, but definitely prefers having all of us together. His only fears are the dark and small children. He is equal-ish parts Black Lab, German Shepherd, Pit Bull, and mutt. He was fostered by our close friends in 2020 and has been in our family ever since. His favorite color is red.
+                    </p>
+                </section>
+            </section>
+            <section role="region" class="gallery" aria-labelledby="jack-jack">
+                <img
+                    src="assets/images/jack-jack/scenic-dog-black.png"
+                    alt="A black dog smiling at the viewer with scenic mountains in the background."
+                    class="gallery_item">
+                <img 
+                    src="assets/images/jack-jack/smile-pink-jack-jack3024x3024.png"
+                    alt="A black dog smiling at the camera."
+                    class="gallery_item">
+                <img 
+                    src="assets/images/jack-jack/snow-dog-jack-jack-960x960.jpg"
+                    alt="A black dog sitting on a felled log surrounded by snow."
+                    class="gallery_item">
+            </section>
+        </section> 
+        <section class="block-reverse">
+            <section role="region" aria-labelledby="violet" class="ident">
+                <img
+                src="assets/images/violet/christmas-lights-cat-violet.JPG"
+                alt="A black cat lays on a pile of Christmas lights."
+                class="id-image"
+                width=50vw;
+                height=50vw;
+                >
+                <section class="text">
+                    <h2 id="violet">Violet</h2>
+                <p>
+                    <strong>Age: 11 | Height: 2'3" | Weight: 18lb</strong><br> <br>Dash's littermate. She has won medals in being lazy, but didn't feel like getting up to retrieve them. Thinks she rules the world (and does). She has a very sensitive stomach, so she has to have her own special food. She also has a broken meow, which is completely tragic (but totally harmless). But she doesn't let that stop her from squeaking at the top of her little lungs at four in the morning!
+                </p>
+                </section>
+            </section>
+            <section role="region" class="gallery" aria-labelledby="violet">
+                <img
+                    src="assets/images/violet/sleepy-cat-violet.JPG"
+                    alt="A shiny black cat sleeps comfrotably on a grey blanket."
+                    class="gallery_item">
+                <img 
+                    src="assets/images/violet/yawn-black-cat-violet.JPG"
+                    alt="A black cat captured mid-yawn on a white and blue background."
+                    class="gallery_item">
+                <img 
+                    src="assets/images/violet/round-black-cat-violet.jpg"
+                    alt="A black cat sleeps curled into a circle."
+                    class="gallery_item">
+            </section>
         </section>
-        <section aria-labelledby="getting-started" role="region">
-            <h2 id="getting-started">Getting Started</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nemo laudantium! Distinctio eligendi commodi expedita ad ipsa provident natus voluptates recusandae excepturi quae quisquam, architecto maiores deserunt asperiores laudantium omnis.
-            </p>
+        <section class="block">
+            <section role="region" aria-labelledby="dash" class="ident">
+                <img
+                src="assets/images/dash/sleepy-cat-dash.JPG"
+                alt="A black cat sleeps in the sunlight next to a window."
+                class="id-image"
+                width=50vw;
+                height=50vw;
+                >
+                <section role="region" aria-labelledby="dash" class="text">
+                    <h2 id="dash">Dash</h2>
+                    <p> 
+                        <strong>Age: 11 | Height: 2'5" | Weight: 12lb</strong> <br> <br>Violet's littermate. Our most mischevious pet by far. His favorite pastimes include knocking cups off of tables and making a mess with his water bowl. You can usually find him in the corner of whatever room you're in, pretending to not enjoy spending time with you. Complimentary to his name, he can run very fast. His favorite color is white, so he can get his black fur all over it. 
+                    </p>
+                </section>
+            </section>
+            <section role="region" class="gallery" aria-labelledby="dash">
+                <img 
+                    src="assets/images/dash/cat-black-dash.JPG"
+                    alt="a black cat sleeps with one hand over his face."
+                    class="gallery_item">               
+                <img
+                    src="assets/images/dash/black-cat-dash.JPG"
+                    alt="A black cat looks inquisitively off to the side."
+                    class="gallery_item">
+                <img 
+                    src="assets/images/dash/mischevious-cat-dash.jpg"
+                    alt="A black cat looks mischeviously out from under his paw at the viewer."
+                    class="gallery_item">
+            </section>
         </section>
-        <section role="region" aria-labelledby="choosing-your-template">
-            <h2 id="choosing-your-template">Choosing Your Template </h2>
-            <p> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed sit accusantium obcaecati eum dicta quas odio excepturi inventore repellat fugiat quia distinctio id, magni quibusdam architecto consequuntur consectetur laudantium?
-            </p>
+        <section class="block-reverse">
+            <section role="region" aria-labelledby="ozzie" class="ident">
+                <img
+                src="assets/images/ozzie/sweet-cat-ozzie.JPG"
+                alt="A black and white cat gently rests his paw on the photographer's leg."
+                class="id-image"
+                width=50vw;
+                height=50vw;
+                >
+                <section role="region" aria-labelledby="ozzie" class="text">
+                    <h2 id="ozzie">Ozzie</h2>
+                    <p>
+                        <strong>Age: 1 | Height: 1'11" | Weight: 10lb</strong> <br><br>Ozzie is the newest addition to our motely crew. He is very inquisitive and playful, which can get him in trouble. He is a master escape artist, inexplicably escaping out of any room he is put in. We all fear the day he discovers how to get outside. Until then, we're happy to let him wiggle wherever he wants. 
+                    </p>
+                </section>
+            </section>
+            <section role="region" class="gallery" aria-labelledby="ozzie">
+                <img
+                    src="assets/images/ozzie/inquisitive-cat-ozzie.JPG"
+                    alt="A black and white cat flips his head upside down to look at the camera."
+                    class="gallery_item">
+                <img 
+                    src="assets/images/ozzie/silly-cat-ozzie.jpg"
+                    alt="A black and white cat rolls happily on his back."
+                    class="gallery_item">
+                <img 
+                    src="assets/images/ozzie/sleepy-cat-ozzie.JPG"
+                    alt="A sleepy cat looks at the camera with half-open eyes."
+                    class="gallery_item">
+            </section>
         </section>
-        <section role="region" aria-labelledby="sections-to-consider">
-            <h2 id="sections-to-consider">Sections to Consider</h2>
-            <ul>
-                <li>To-do lists</li>
-                <ul>
-                    <li>School</li>
-                    <li>Chores</li>
-                    <li>Work</li>
-                </ul>
-                <li>Affirmations</li>
-                <li>Project timelines</li>
-                <li>Calendar</li>
-                <li>Space for important documents</li>
+        </section>
+        <nav role="navigation">
+            <ul id="end-nav">
+                <li><a href="#main-content">Back to top</a></li>
+                <li><a href="#jack-jack">Jack-Jack</a></li>
+                <li><a href="#violet">Violet</a></li>
+                <li><a href="#dash">Dash</a></li>
+                <li><a href="#ozzie">Ozzie</a></li>
             </ul>
-        </section>
-        <section role="region" aria-labelledby="tips-and-tricks">
-            <h2 id="tips-and-tricks">Tips and Tricks</h2>
-            <p>
-                Canva has a premium subscription service where you can pay money for "better" or "more aesthetic" elements and templates. However, you shouldn't have to pay to create the designs you want. The best thing about Canva is that you have the tools to create whatever you want.
-            </p>
-        </section>
-        <section role="region" aria-labelledby="examples">
-            <h2 id="examples">Examples</h2>
-            <img 
-                src="assets/images/basic-desktop-hand-watercolor1920x1080.png"
-                alt=""
-                width="1920px"
-                height="1080px"
-                srcset=
-                    "assets/images/basic-desktop-hand-watercolor1920x1080.png 1920w,
-                    assets/images/basic-desktop-hand-watercolor1080x608.jpg 1080w, 
-                    assets/images/basic-desktop-hand-watercolor920x518.jpg 920w"
-            />
-        </section>
+        </nav>
     </main>
 </body>
 <footer role="contentinfo">
      <p>
-         Created by Cal Kruse :&rpar;
+         Created by Cal Kruse :&rpar; <a href="https://docs.google.com/document/d/1wd0PxfQa_bA2nrd__uNLExJSA5VUESpyilU_d8o2OOo/edit?usp=sharing">PG</a>
      </p>
 </footer>
-
 </html>

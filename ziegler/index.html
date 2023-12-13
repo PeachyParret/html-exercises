@@ -3,91 +3,85 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            Chloe's Cool Jams!
-        </title>
+        <title>Chloe's Cool Jams</title>
         <link rel="site icon" href="./assets/images/main/flower.ico">
+        <link rel="stylesheet" href="./assets/ziegler.css">
     </head>
-   
-    <body style="background-color:#F995C5;">
 
-        <header>
-            <div>
+    <body class="grid-layout" >
+        <header class="float_center" role="header-area" aria-labelledby="header-section">
+            <section id="header-section" role="region" aria-labelledby="header-section">
                 <a href="index.html">
-                    <img src="./assets/images/homepage/headersmall.png"
-                    alt="Chloes Cool Jams logo, orange and yellow gradient background">
+                    <img class="header-image" src=src="./assets/images/homepage/headersmall.png" 
+                    alt="Chloes Cool Jams logo, orange and yellow gradient background"
+                    srcset="./assets/images/homepage/headersmall.png 400w,
+                            ./assets/images/homepage/headermedium.png 800w
+                            ./assets/images/homepage/headerlarge.png 1200w"
+                    >
                 </a>
-            </div>
-            <div>
-                <h1>
-                        <font color="#FFFAA0" >Find Great Tunes :P ! </font>
+                <nav class = "nav_ugh">
+                    <ul>
+                        <li><a href=#albums->Albums</a></li>
+                        <li><a href=#songs>Songs</a></li>
+                        <li><a href=#about-the-creator>Me</a></li>
+                    </ul>
+                </nav>
+                <h1 id="header-section">
+                    Find Great Tunes :P !
                 </h1>
                 <p>
-                        <font color="white">
-                            you can trust me because i write for a music magazine xoxo
-                        </font>
+                    you can trust me because i write for a music magazine xoxo
                 </p>
-            </div>
+                <a href="#about-me">my references</a>
+            </section>
         </header>
 
-        <!--
-            I highly recommend replacing the figures in the <main> to mirror something like the structure in the header. It seems like a very similar design pattern. Also, all of those inline styles. I promise you're gonna learn how to design your site to your liking. :-)
-         -->
-        <main>
-            <div>
+        <main class="main-flex" id="main-section" role="main" aria-labelledby="Chloes-Music-Collection">
+            <section class="album-selection" class="albumbody" id="albums" role="region" aria-labelledby="albums-of-the-season">
                 <a href="albumreviews.html">
-                    <img src="./assets/images/homepage/albumreviewssmall.jpg" 
-                    width="480px" height="480px" 
+                    <img class="album_img" src="./assets/images/homepage/albumreviewssmall.jpg" 
                     alt="album reviews art with cat"
                     srcset="./assets/images/homepage/albumreviewssmall.jpg 400w,
                             ./assets/images/homepage/albumreviewsmedium.jpg 800w
-                            ./assets/images/homepage/albumreviewslarge.jpg 1200w">>
+                            ./assets/images/homepage/albumreviewslarge.jpg 1200w"
+                    >
+                    `<h2 id="albums-of-the-season">
+                        Albums of the Season!
+                    </h2>
                 </a>
-                <h2>
-                    <a href="albumreviews.html">
-                        <font color="#FFFAA0">
-                            Albums of the Season!
-                        </font>
-                    </a>
-                </h2>
-            </div>
-            <div>
+              
+            </section>
+            <section class="song-collection" id="songs" role="region" aria-labelledby="song-collections">
                 <a href="collective.html">
-                    <img src="./assets/images/homepage/collectivesmall.jpg" 
-                    width="480px" height="480px" 
+                    <img class="song_img" src="./assets/images/homepage/collectivesmall.jpg" 
                     alt="chloe's song collective"
                     srcset="./assets/images/homepage/collectivesmall.jpg 400w,
                             ./assets/images/homepage/collectivemedium.jpg 800w
-                            ./assets/images/homepage/collectivelarge.jpg 1200w">
+                            ./assets/images/homepage/collectivelarge.jpg 1200w"
+                    >
+                    `<h2 id="song-collections">
+                        Chloe's Collection!
+                    </h2>
                 </a>
-                <h2>
-                    <a href="collective.html">
-                        <font color="#FFFAA0">
-                                Chloe's Collection!
-                        </font>
-                    </a>
-                </h2>
-            </div>      
+               
+            </section>
         </main>
+
+        <footer id="about-the-creator" role="contentinfo" aria-labelledby="about-me">
+            <section class="ab-me-grid" id="about-me" role="region" aria-labelledby="about-me">
+                <img class="chloe-image" src="./assets/images/homepage/aboutmesmall.jpg" 
+                alt="picture of chloe"
+                srcset="./assets/images/homepage/aboutmesmall.jpg 400w,
+                                ./assets/images/homepage/aboutmedium.jpg 800w
+                                ./assets/images/homepage/aboutmelarge.jpg 1200w"
+                >
+                <h2 class="abme" id="about-me">
+                    About me!    
+                </h2>
+                <p class="final">
+                    Hiiiiii! My name is Chloe Ziegler and I am a junior at Virginia Tech. I am a psychology major with a minor in professional and technical writing, which is the reason I am taking this class. Believe it or not, I came to Tech as a computer science major as a freshman, but I changed my mind. This class was really hard for me.
+                </p>
+            </section>
+        </footer>
     </body>
-    <footer>
-            <img src="./assets/images/homepage/aboutmesmall.jpg" 
-            width="480px" height="480px" 
-            alt="picture of chloe"
-            srcset="./assets/images/homepage/aboutmesmall.jpg 400w,
-                            ./assets/images/homepage/aboutmedium.jpg 800w
-                            ./assets/images/homepage/aboutmelarge.jpg 1200w">
-            <h2>                    
-                <figcaption>
-                    <font color="#FFFAA0">
-                        About me!
-                    </font>
-                </figcaption>
-            </h2>
-        <p>
-            <font color="#FFFAA0">
-                 Hiiiiii<!--little bit of here n there--> 
-            </font>
-        </p>
-    </footer>
 </html>
