@@ -23,11 +23,8 @@
   
   --grayColor: #9a909c;
   --lightGrayColor: #bfc8bf;
-   /* You can also use it for generally applied sizing and spacing. */
   --borderRadius: 6px;
   --boxShadow: 0 2px 5px rgba(#333, 0.2);
-  
-    /* Change default root font size (16px), if desired */
   font-size: 16pt;
   }
 /* Fonts */
@@ -178,6 +175,7 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
   }
   .gallery{
     display:flex;
@@ -185,11 +183,12 @@ ul {
   }
   .gallery_item {
     width: 15vw;
-    height: 15vw
+    height: 15vw;
   }
   .block-reverse {
     display:flex;
     flex-direction: row-reverse;
+    justify-content: space-around;
   }
   .block-reverse > .ident {
     flex-direction: row-reverse;
