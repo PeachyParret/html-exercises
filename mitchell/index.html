@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Info on Web Serials">
+    <meta name="keywords" content="Serial, Fiction, Books">
+    <meta name="author" content="Alex Mitchell"> 
     <title>Web Serials: A New (And Free) Way To Read!</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
-<nav class="site_navigation" id="top_page">
-    <div>
-        <a href="index.html">
-            <button class="button main_page">Main Page</button>
-        </a>
-    </div>
-    <div>
-        <a href="serial.html">
-            <button class="button page_two">Page Two</button>
-        </a>
-    </div>
-</nav>
-<body class="body_page_one" role="main">
-    <header role="banner">
-        <h1>A New (And Free) Way To Read!</h1>
-        <img src="assets/images/book-laptop-fusion-mitchell-large-1200x630.jpg" alt="" srcset="assets/images/book-laptop-fusion-mitchell-small-300x158.jpg 300w, assets/images/book-laptop-fusion-mitchell-medium-600x315.jpg 600w, assets/images/book-laptop-fusion-mitchell-large-1200x630.jpg 1200w">
+<body class="body_page_one">
+    <a href="#main" class="skip" aria-label="Skip to main content">Skip to content</a>
+    <header role="banner" aria-labelledby="main-heading">
+        <nav class="site_navigation" id="top_page" role="navigation" aria-label="Site navigation">
+            <div>
+                <a href="index.html" aria-current="page">
+                    <button class="button main_page" role="button">Main Page</button>
+                </a>
+            </div>
+            <div>
+                <a href="serial.html">
+                    <button class="button page_two" role="button">Page Two</button>
+                </a>
+            </div>
+        </nav>
+        <h1 id="main-heading">A New (And Free) Way To Read!</h1>
+        <img src="assets/images/book-laptop-fusion-mitchell-large-1200x630.jpg" alt="Book and laptop merging together" srcset="assets/images/book-laptop-fusion-mitchell-small-300x158.jpg 300w, assets/images/book-laptop-fusion-mitchell-medium-600x315.jpg 600w, assets/images/book-laptop-fusion-mitchell-large-1200x630.jpg 1200w">
     </header>
-    <nav class="page_navigation" role="navigation">
-        <h2>Page Navigation</h2>
+    <nav class="page_navigation" role="navigation" aria-labelledby="page-nav">
+        <h2 id="page-nav">Page Navigation</h2>
         <ol>
             <li>
                 <a href="#sales_pitch">The Sales Pitch</a>
@@ -41,58 +45,59 @@
             </li>
         </ol>
     </nav>
-    <section class="pitch" id="sales_pitch">
-        <h2>The Sales Pitch</h2>
-        <p>
-            Interested in reading as much as you used to a kid but not finding the time or the money to constantly purchase new books online or venture out to a library or bookstore? Wishing that you could try new books without paying 15 dollars just to find you hate it on chapter three? Finding your friends' or bookclub's recommendations are not hitting home?
-        </p>
-        <p>Well, then I have a solution to your troubles: The Web Serial!</p>
-    </section>
-    <section class="highlight" id="highlight_reel">
-        <h2>The Highlight Reel</h2>
-        <h3>Tip: click the arrows to scroll!</h3>
-        <div class="story_a">
-            <img src="assets/images/mol-cover-story-200x300.jpg" alt="">
-            <h4>Mother of Learning</h4>
+    <main id="main" role="main">
+        <section class="pitch" id="sales_pitch" role="region" aria-labelledby="sales-pitch">
+            <h2 id="sales-pitch">The Sales Pitch</h2>
             <p>
-                A groundhog day scenario where a young mage is stuck in a time loop.
+                Interested in reading as much as you used to a kid but not finding the time or the money to constantly purchase new books online or venture out to a library or bookstore? Wishing that you could try new books without paying 15 dollars just to find you hate it on chapter three? Finding your friends' or bookclub's recommendations are not hitting home?
             </p>
-        </div>
-        <div class="story_b">
-            <img src="assets/images/supsup-cover-story-200x300.png" alt="">
-            <h4>Super Supportive</h4>
-            <p>
-                A story about young superheroes with powers granted by aliens that have video game mechanics built in.
-            </p>
-        </div> 
-        <div class="story_c">
-            <img src="assets/images/journey-cover-story-200x300.png" alt="">
-            <h4>A Journey of Black and Red</h4>
-            <p>
-                A vampire story set in the 19th century Deep South, featuring a female lead protagonist.
-            </p>
-        </div> 
-        <div class="story_d">
-            <img src="assets/images/chicken-cover-story-200x300.jpg" alt="">
-            <h4>Beware of Chicken</h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nobis culpa suscipit iste dolorem dolor sapiente illum maxime aperiam maiores at voluptate enim omnis dolores, iusto quod laboriosam, reiciendis ducimus?
-            </p>
-        </div>
-        <button class="button arrowleft">←</button>
-        <button class="button arrowright">→</button>
-    </section>
-    <section class="links" id="highlight_links" role="complementary">
-        <h2>Highlight Links</h2>
-        <ul>
-            <li><a href="https://www.royalroad.com/fiction/21220/mother-of-learning">Mother of Learning</a></li>
-            <li><a href="https://www.royalroad.com/fiction/63759/super-supportive">Super Supportive</a></li>
-            <li><a href="https://www.royalroad.com/fiction/26675/a-journey-of-black-and-red">A Journey of Black and Red</a></li>
-            <li><a href="https://www.royalroad.com/fiction/39408/beware-of-chicken">Beware of Chicken</a></li>
-        </ul>
-    </section>
-    
-    <footer class="footer" id="next_page">
+            <p>Well, then I have a solution to your troubles: The Web Serial!</p>
+        </section>
+        <section class="highlight" id="highlight_reel" role="region" aria-labelledby="high-reel">
+            <h2 id="high-reel">The Highlight Reel</h2>
+            <h3>Tip: click the arrows to scroll!</h3>
+            <div class="story_a">
+                <img src="assets/images/mol-cover-story-200x300.jpg" alt="Cover for Mother of Learning, a mage casting a spell">
+                <h4>Mother of Learning</h4>
+                <p>
+                    A groundhog day scenario where a young mage is stuck in a time loop.
+                </p>
+            </div>
+            <div class="story_b">
+                <img src="assets/images/supsup-cover-story-200x300.png" alt="Cover for Super Supportive, a character stands before outlines of buildings">
+                <h4>Super Supportive</h4>
+                <p>
+                    A story about young superheroes with powers granted by aliens that have video game mechanics built in.
+                </p>
+            </div> 
+            <div class="story_c">
+                <img src="assets/images/journey-cover-story-200x300.png" alt="Cover for A Journey of Black and Red, a female vampire held by ghosts">
+                <h4>A Journey of Black and Red</h4>
+                <p>
+                    A vampire story set in the 19th century Deep South, featuring a female lead protagonist.
+                </p>
+            </div> 
+            <div class="story_d">
+                <img src="assets/images/chicken-cover-story-200x300.jpg" alt="Cover for Beware of Chicken, a photorealistic chicken">
+                <h4>Beware of Chicken</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nobis culpa suscipit iste dolorem dolor sapiente illum maxime aperiam maiores at voluptate enim omnis dolores, iusto quod laboriosam, reiciendis ducimus?
+                </p>
+            </div>
+            <button class="button arrowleft" role="button" aria-label="Previous">←</button>
+            <button class="button arrowright" role="button" aria-label="Next">→</button>
+        </section>
+        <aside class="links" id="highlight_links" role="complementary">
+            <h2>Highlight Links</h2>
+            <ul>
+                <li><a href="https://www.royalroad.com/fiction/21220/mother-of-learning">Mother of Learning</a></li>
+                <li><a href="https://www.royalroad.com/fiction/63759/super-supportive">Super Supportive</a></li>
+                <li><a href="https://www.royalroad.com/fiction/26675/a-journey-of-black-and-red">A Journey of Black and Red</a></li>
+                <li><a href="https://www.royalroad.com/fiction/39408/beware-of-chicken">Beware of Chicken</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer class="footer" id="next_page" role="contentinfo">
         <div>
             <a href="serial.html">
                 <button class="next_page_button">Next Page</button>

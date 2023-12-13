@@ -1,0 +1,196 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Playpen+Sans:wght@300;400;500;600;700&display=swap');
+/* Colors */
+:root {
+  --canvasColor: #f9f9f9;
+  --backgroundColor: #fcf7f8;
+  --foregroundColor: #81a14e;
+  
+  --primaryColor: #81a14e;
+  --secondaryColor: #375d07;
+  --accentColor: #b71b27;
+  --accent2Color: #3b3a4c;
+  --accent3Color: #9a909c;
+  
+  --neutralShade1: #bfc8cb;
+  --neutralShade2: #c4b2a2;
+  --neutralShade3: #514b45;
+  --neutralShade4: #9a909c;
+  --neutralShade5: #797978;
+  --neutralShade6: #2b2c2d;
+  --neutralShade7: #181113;
+  --neutralShade8: #13110c;
+  
+  --grayColor: #9a909c;
+  --lightGrayColor: #bfc8bf;
+  --borderRadius: 6px;
+  --boxShadow: 0 2px 5px rgba(#333, 0.2);
+  font-size: 16pt;
+  }
+/* Fonts */
+  body {
+  background: var(--backgroundColor);
+  color: var(--neutralShade8);
+}
+
+body {font-family: 'Playpen Sans', cursive;}
+h1,h2,h3 {font-family: 'Darumadrop One', sans-serif;}
+strong { font-weight: 500; color:var(--secondaryColor)}
+em { font-style: italic; }
+
+body {
+  font-weight: 300;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+h1 {
+  font-weight: 700;
+  font-size: clamp(3.5rem,4rem,4.5rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--primaryColor);
+  text-align: center;
+}
+h2 {
+  font-weight: 500;
+  font-size: clamp(2rem,2.5rem,3rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--accentColor)
+}
+h3 {
+  font-weight: 500;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
+  color: var(--secondaryColor)
+}
+h4 {
+  font-weight: 300;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
+  font-style: italic;
+  color: var(--accent2Color)
+}
+h5 {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  color: var(--accent3Color)
+}
+h6 {
+  font-weight: 200;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+/* Links */  
+a { font-weight: 500; }
+a {
+  color: var(--accentColor);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a:hover {
+  color: var(--primaryColor);
+  background-color: var(--backgroundColor);
+  border-bottom: 3px solid var(--primaryShade5);
+  transition: 0.4s;
+}
+  
+a.primary {
+  color: var(--primaryColor);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.primary:hover {
+  color: var(--secondaryColor);
+  background-color: var(--primaryShade4);
+  border-bottom: 3px solid var(--secondaryColor);
+  transition: 0.4s;
+}
+a.secondary {
+  color: var(--secondaryColor);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.secondary:hover {
+  color: var(--primaryColor);
+  background-color: var(--secondaryShade5);
+  border-bottom: 3px solid var(--primaryColor);
+  transition: 0.4s;
+}
+/* Structure/Layout*/
+ul {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+  list-style-type: none;
+}
+.id-image{
+  width:90vw;
+  height:90vw;
+  border-radius:50%;
+  align-items: center;
+}
+.gallery {
+  display:flex;
+  justify-content: space-around;
+}
+.gallery_item{
+  width: 30vw;
+}
+.text {
+  padding: 20px;
+}
+/* Media Inqueries */
+@media screen and (min-width: 768px){
+    .ident {
+      display: flex;
+      width: 90vw;
+      align-items: center;
+    }
+    .id-image {
+      width:50vw;
+      height:50vw;
+      padding: 10px;
+    }
+    .gallery {
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .gallery_item{
+      width: 30vw;
+    }
+}
+@media screen and (min-width: 1280px){
+  .id-image {
+    width:45vw;
+    height:45vw;
+    padding: 10px;
+  } 
+  .block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .gallery{
+    display:flex;
+    flex-direction: column;
+  }
+  .gallery_item {
+    width: 15vw;
+    height: 15vw;
+  }
+  .block-reverse {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .block-reverse > .ident {
+    flex-direction: row-reverse;
+  }
+}
