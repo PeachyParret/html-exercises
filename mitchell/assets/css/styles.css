@@ -176,27 +176,273 @@ a.secondary:hover {
   transition: 0.4s;
 }
 
-/* navigations */
-.site_navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100vw;
-  background-color: #013535;
-}
-.page_navigation {
-  background-color: var(--secondaryShade5);
-  border: 1px solid var(--foregroundColor);
-  min-width: fit-content;
-  max-width: 300px;
-}
-.page_navigation > h2 {
-  text-align: center;
-  border-bottom: 1px solid var(--foregroundColor);
+/*---------------------MOBILE DESIGN---------------- */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-weight: 500;
+    font-size: clamp(1.75rem,2rem,2.5rem);
+    line-height: 1.2;
+    text-transform: none;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: clamp(1.25rem,1.5rem,1.75rem);
+    line-height: 1.2;
+  }
+  h3 {
+    font-weight: 300;
+    font-size: clamp(1.25rem,1.5rem,1.75rem);
+    line-height: 1.2;
+  }
+  h4 {
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.2;
+    font-style: italic;
+  }
+  h5 {
+    font-weight: 200;
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  a { font-weight: 300; }
+  p { font-size: 14px; }
+
+  /* Mobile's flex starts here */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* header */
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  /* page navigations */
+  .page_navigation {
+    position:fixed;
+    align-self: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .page_navigation {
+    background-color: var(--secondaryShade5);
+    border: 1px solid var(--foregroundColor);
+    margin-bottom: 5px;
+  }
+  .page_navigation > h2 {
+    text-align: center;
+  }
+  .page_navigation > div {
+    display: flex;
+    flex-direction: row;
+  }
+  .page_navigation > div > div {
+    flex-shrink: 1;
+    flex-grow: 1;
+  }
+  
+  /*grid main*/
+  .high_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .high_container > div {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  .high_container img {
+      max-width: 100%;
+      height: auto;
+  }
+  section {
+      max-width: 800px;
+      margin: 0 auto;
+  }
+
+  /*links*/
+  .links {background-color: var(--secondaryShade5);
+    border: 1px solid var(--foregroundColor);
+    margin: 5px;
+  }
+  
+  /*footer*/
+  .footer_up {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    background-color: #013535;
+    border: 0.05rem solid var(--foregroundColor);
+  }
+  .page_navigation > h2 {
+    text-align: center;
+  }
+  .footer_up > div {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+  }
 }
 
-/* skiplink hidden */
-.skip {
-  background-color: #013535;
-  width: 100vw;
+/*---------------------Tablet DESIGN---------------- */
+
+@media only screen and (min-width:481px) and (max-width:719px) {
+
+  /* CSS rules within scope query */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* header */
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  /* page navigations */
+  .page_navigation {
+    background-color: var(--secondaryShade5);
+    border: 1px solid var(--foregroundColor);
+    min-width: 50vw;
+    max-height: fit-content;
+    margin-top: 5px;
+    align-self: center;
+  }
+  .page_navigation > h2 {
+    text-align: center;
+    border-bottom: 1px solid var(--foregroundColor);
+  }
+  /*grid main*/
+  .high_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .high_container > div {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  .high_container img {
+      max-width: 100%;
+      height: auto;
+  }
+  section {
+      max-width: 800px;
+      margin: 0 auto;
+  }
+  .high_container > div {
+    background-color: #013535;
+  }
+
+  /*links*/
+  .links {background-color: var(--secondaryShade5);
+    border: 1px solid var(--foregroundColor);
+    margin: 5px;
+  }
+  
+  /*footer*/
+  .footer_up {
+    background-color: #013535;
+    border: 0.05rem solid var(--foregroundColor);
+  }
+  .footer_up > div {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+  }
 }
+/* End tablet */
+
+
+/*---------------------Computer Screen DESIGN---------------- */
+/* min-width → At a minimum width of 720px or more, 
+   apply these rules */
+@media only screen and (min-width: 720px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    /* header */
+    header {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* page navigations */
+    .page_navigation {
+      background-color: var(--secondaryShade5);
+      border: 1px solid var(--foregroundColor);
+      min-width: fit-content;
+      max-width: 300px;
+      margin-top: 5px;
+      align-self: flex-start;
+      position: fixed;
+    }
+    .page_navigation > h2 {
+      text-align: center;
+      border-bottom: 1px solid var(--foregroundColor);
+    }
+    
+    
+    /*flex main content*/
+    .pitch {
+      align-self: flex-end;
+    }
+    .high_container > div {
+      background-color: #013535;
+    }
+    /*links*/
+  .links {background-color: var(--secondaryShade5);
+    border: 1px solid var(--foregroundColor);
+    margin: 5px;
+    }
+    /*footer*/
+    .footer_up {
+      width: fit-content;
+      height: fit-content;
+      background-color: #013535;
+      border: 0.05rem solid var(--foregroundColor);
+    }
+    /*grid main*/
+    .high_container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .high_container > div {
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    .high_container img {
+        max-width: 100%;
+        height: auto;
+    }
+    section {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}  
+  

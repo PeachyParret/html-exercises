@@ -1,0 +1,163 @@
+/* A bunch of typography stuff first*/
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body { font-family: "Poppins", sans-serif;}
+h1,h2,h3 { font-family: "Exo 2", serif; }
+
+/* Background Color*/
+body {
+    background-color: #00537cda;
+    font-size: 20px;
+}
+/* Emphasis and Bolding*/
+strong { font-weight: 500; }
+em { font-style: italic; }
+
+/* Font Weight, Sizing, Color, & Spacing */
+body {
+  font-weight: 300;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+  color: rgb(255, 255, 255);
+  margin: 50px;
+}
+h1 {
+  font-weight: 700;
+  font-size: clamp(3rem,3.5rem,4rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #56E39F;
+
+}
+h2 {
+  font-weight: 500;
+  font-size: clamp(2rem,2.5rem,3rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #f89079;
+}
+h3 {
+  font-weight: 500;
+  font-size: clamp(1.75rem,2rem,2.5rem);
+  line-height: 1.2;
+  color: #2bffe3;
+}
+/* anchor stuff */
+a { font-weight: 500; }
+
+a {
+  color: #ffb5ff;
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a:hover {
+  color: #000000;
+  background-color: #ffb5ff;
+  transition: 0.4s;
+}
+
+/* Banner Sizing */
+.banner-img {
+    display: flex;
+    align-items: center;
+    width: 92vw;
+    height: "auto";
+}
+/* Bread Section*/
+.box_bread {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.bread_img {
+    flex: 1 1 auto;
+    max-width: 600px;
+    height: auto;
+}
+.bread_p {
+    flex: 1 1 750px;
+    height: auto;
+}
+/* Pasta Section*/
+.box_pasta {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.pasta_img {
+    flex: 1 1 auto;
+    max-width: 600px;
+    height: auto;
+}
+.pasta_p {
+    flex: 1 1 750px;
+    height: auto;
+}
+/* Meat Section */
+.box_meat {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.meat_img {
+    flex: 1 1 auto;
+    max-width: 700px;
+    height: auto;
+}
+.meat_p {
+    flex: 1 1 750px;
+    height: auto;
+}
+/* Breakfast Section */
+.box_breakfast {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.breakfast_img {
+    flex: 1 1 auto;
+    max-width: 600px;
+    height: auto;
+}
+.beakfast_p {
+    flex: 1 1 750px;
+    height: auto;
+}
+/* Dessert Section*/
+.box_dessert {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.dessert_img {
+    flex: 1 1 auto;
+    max-width: 600px;
+    height: auto;
+}
+.dessert_p {
+    flex: 1 1 750px;
+    height: auto;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+/* Recipes Page */
+.recipe_img {
+    max-width: 350px;
+}
