@@ -30,8 +30,8 @@
 :root {
   --canvasColor: #f9f9f9;
 
-  --backgroundColor: #008080;
-  --foregroundColor: #f1faff;
+  --backgroundColor: #017171;
+  --foregroundColor: #fcfdfe;
 
   --primaryColor: #f1faff;
   --primaryShade1: #f1faff;
@@ -136,7 +136,7 @@ a { font-weight: 500; }
 
 /* default links */
 a {
-  color: var(--neutralShade8);
+  color: var(--foregroundColor);
   border-bottom: 2px;
   cursor: pointer;
   transition: 0.4s;
@@ -181,9 +181,22 @@ a.secondary:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100vw;
+  background-color: #013535;
 }
 .page_navigation {
-  color: #008080;
-  background-color: #f1faff;
-  max-width: max-content;
+  background-color: var(--secondaryShade5);
+  border: 1px solid var(--foregroundColor);
+  min-width: fit-content;
+  max-width: 300px;
+}
+.page_navigation > h2 {
+  text-align: center;
+  border-bottom: 1px solid var(--foregroundColor);
+}
+
+/* skiplink hidden */
+.skip {
+  background-color: #013535;
+  width: 100vw;
 }
