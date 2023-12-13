@@ -11,7 +11,6 @@
 img {
   max-width: 100%;
   height: auto;
-  display: block;
   margin: auto;
   width: 50%;
 }
@@ -118,11 +117,13 @@ img {
     font-size: 2vw;
     line-height: 1.2;
     text-transform: uppercase;
+    text-shadow: 0 2px green;
   }
   h2 {
     font-weight: 500;
     line-height: 1.2;
     text-transform: uppercase;
+    text-decoration: underline;
   }
   h3 {
     font-weight: 500;
@@ -200,13 +201,15 @@ img {
     text-decoration: none;
   }
 
-
+  li {
+    font-family: "Pixelify Sans";
+  }
 
   ul {
     list-style-type: none;
   }
 
-/* Section 1 */
+/* title */
 .title-pic {
   align-items: center;
   width: 100%;
@@ -215,6 +218,32 @@ img {
 
 .intro-sent {
   text-align: center;
+}
+
+/* welcome+nav */
+.welcome-main {
+  display: block;
+  margin: 30px;
+  text-shadow: 0 2px darkgoldenrod;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  text-shadow: 0 2px black;
+}
+
+a.active {
+  color: white;
+}
+
+.wiki-link {
+  background-color: var(--secondaryShade3);
+  width: 32%;
+  box-shadow: 2px 2px darkcyan;
+  text-shadow: 0 2px var(--backgroundColor);
 }
 
 .nav-main {
@@ -226,6 +255,7 @@ img {
   flex-wrap: nowrap;
   width: 20%;
   margin: 10px;
+  box-shadow: 2px 2px darkgoldenrod;
 }
 
 .main-navigation {
@@ -238,60 +268,140 @@ img {
   background-color: var(--accent2Color);
 }
 
-a.active {
-  color: white;
-}
-
-.welcome-main {
-  display: block;
-  margin: 30px;
-}
-
 .intro-pics {
   display: flex;
-  margin: 10px;
-  object-fit: contain;
+  justify-content: space-evenly;
+  background-color: var(--accent2Color);
+  padding-bottom: 15px;
 }
 
 .map-pic {
   height: 100%;
-}
-
-.nav-bar {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  padding: 10px;
-}
-
-.the-dos-main {
-  background-color: var(--secondaryShade3);
-}
-
-.the-dos-pics {
-  display: flex;
-}
-
-.the-donts-pics {
-  display: flex;
-}
-
-.items-pics {
-  display: flex;
+  width: 40%;
+  box-shadow: 2px 2px darkgoldenrod;
 }
 
 .saloon-pic {
   height: 50%;
+  width: 40%;
+  box-shadow: 2px 2px darkgoldenrod;
 }
 
+/* the do's list */
+.the-dos-main {
+  background-color: var(--secondaryShade5);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-shadow: 0 2px black;
+}
 
+.the-dos-pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: var(--secondaryShade5);
+  padding-bottom: 15px;
+}
+
+.bundle-pic {
+  height: 100%;
+  width: 40%;
+  box-shadow: 2px 2px rgb(21, 80, 105);
+}
+
+.mine-pic {
+  height: 50%;
+  width: 40%;
+  box-shadow: 2px 2px rgb(21, 80, 105);
+}
+
+/* the don'ts list */
+.the-donts-main {
+  background-color: var(--accentShade1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-shadow: 0 1px darkmagenta;
+}
+
+.the-donts-pics {
+  display: flex;
+  background-color: var(--accentShade1);
+  padding-bottom: 15px;
+}
+
+.barn-pic {
+  height: 100%;
+  width: 40%;
+  box-shadow: 2px 2px rgb(139, 73, 119);
+}
+
+.foraging-pic {
+  height: 50%;
+  width: 40%;
+  box-shadow: 2px 2px rgb(139, 73, 119);
+}
+
+/* items list */
+.items-main {
+  background-color: var(--primaryShade5);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-shadow: 0 2px black;
+}
+
+.items-pics {
+  background-color: var(--primaryShade5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.prism-shard-pic {
+  height: 100%;
+  width: 40%;
+  box-shadow: 2px 2px rgb(3, 48, 4);
+}
+
+.dino-pic {
+  height: 100%;
+  width: 40%;
+  box-shadow: 2px 2px rgb(3, 48, 4);
+}
+ 
+/* @media stuff */
 @media screen and (min-width: 600px) {
  p {
   font-size: 30px;
  }
 
  h2 {
-  font-size: 50px;
+  font-size: 70px;
  }
 
+ .saloon-pic {
+  height: 490px;
+ }
+
+ .foraging-pic {
+  height: 470px;
+ }
+
+ .barn-pic {
+  height: 490px;
+ }
+
+ .prism-shard-pic {
+  height: 490px;
+ }
+
+ .dino-pic {
+  height: 490px;
+
+ }
 }
