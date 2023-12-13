@@ -72,7 +72,7 @@
   --boxShadow: 0 2px 5px rgba(#333, 0.2);
 
   /* Change default root font size (16px), if desired */
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* Skip Link */
@@ -91,6 +91,65 @@ a.skip-to-link:focus {
     width: auto;
     position: static;
     margin: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: 1550px 1050px 970px 890px 890px;
+  justify-content:space-around;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.unordered-list {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-nav {
+  border:solid;
+  border-color: #0e6d98;
+}
+
+.food-nav{
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.housing-nav {
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.transportation-nav {
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.entertainment-nav {
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.vt-bburg-mc-nav {
+  border:solid;
+  border-color:#0e6d98;
+}
+
+.va-federal-nav {
+border:solid;
+  border-color:#0e6d98;
+}
+
+figure {
+  margin: 0;
+  display:grid;
+  justify-content:center;
 }
 
 /*
@@ -116,42 +175,51 @@ strong { font-weight: 500; }
 em { font-style: italic; }
 
 /* Font Weight, Sizing & Spacing */
+
 body {
-  font-weight: 300;
+  font-weight: 30;
   line-height: 1.5;
   transition: all 0.3s ease;
+  color:#000000;
 }
 h1 {
-  font-weight: 700;
-  font-size: clamp(2.5rem,3rem,3.5rem);
+  font-weight: 100;
+  font-size: 40px;
   line-height: 2;
   text-transform: uppercase;
+  color:#630031;
+  margin: 0;
+
+  
 }
 h2 {
-  font-weight: 500;
-  font-size: clamp(1.75rem,2rem,2.5rem);
+  font-weight: 75;
+  font-size: 30px;
   line-height: 1.8;
-  text-transform: uppercase;
+  text-transform:none;
+  color:#08415c;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 h3 {
-  font-weight: 500;
-  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  font-weight: 50;
+  font-size: 20px;
   line-height: 1.6;
 }
 h4 {
-  font-weight: 300;
-  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  font-weight: 25;
+  font-size: 15px;
   line-height: 1.4;
   font-style: italic;
 }
 h5 {
-  font-weight: 300;
-  font-size: 1.05rem;
+  font-weight: 10;
+  font-size: 12px;
   line-height: 1.2;
 }
 h6 {
   font-weight: 200;
-  font-size: 1.05rem;
+  font-size: 11px;
   line-height: 1;
 }
 
@@ -201,81 +269,45 @@ a.secondary:hover {
   transition: 0.4s;
 }
 
+/*Media Queries*/
 
-/*##########################################
+/*Mobile*/
+@media screen and (min-width: 400px) {.grid-container
+  {
+    grid-template-columns: 300px ;
+    grid-template-rows: 1400px 1400px 1170px 1550px;
+    justify-content: space-around;
+    column-gap: 10px;
+    row-gap: 10px;
+  
+     }
+    
+  }
 
-  !!!!IGNORE!!!!
-  STYLES BELOW ARE SPECIFIC TO THE STYLE GUIDE
-  DO NOT COPY-PASTE THESE STYLES
+/*Tablet*/
+@media screen and (min-width: 900px) {.grid-container
+{
+  grid-template-columns: 300px 300px ;
+  grid-template-rows: 1500px 1600px 2000px;
+  justify-content: space-around;
+  column-gap: 10px;
+  row-gap: 10px;
 
-###########################################*/
-
-/*==============
-  LAYOUT STYLES
-  DO NOT CHANGE!
-===============*/
-
-.main_banner h1 {
-  text-align: center;
+   }
+  
 }
 
-/*Large Screen Layout*/
-main {
-  width: 90%;
-  margin: 3em auto;
-  display: default;
-  grid-template-columns: 30ch repeat(5, minmax(50px,1fr));
-  grid-template-areas:
-  "colors typography typography typography headlines headlines"
-  "colors bodyex bodyex bodyex links links";
-  color: var(--foregroundColor);
-  text-align: left;
-}
 
-main > section:not(:first-child) {
-  box-shadow: 1px 1px 2px 0px var(--primaryColor);
-}
+/*Laptop*/
+@media screen and (min-width: 1200px) {.grid-container
+   {
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 1300px 1300px 1300px;
+    justify-content:space-around;
+    column-gap: 10px;
+    row-gap: 10px;
 
-/* Grid Areas */
-.colors { grid-area: colors; background-color: var(--secondaryShade1); box-shadow: 2px 2px 3px -1px var(--secondaryShade2);}
-.typography { grid-area: typography; }
-.headlines { grid-area: headlines; }
-.body_text_example { grid-area: bodyex; }
-.links { grid-area: links; }
 
-.colors,.typography,.headlines,.body_text_example,.links {
-  padding: 1rem;
 }
-.links > div { margin: 2rem 0; }
-
-/* Font Family Cases */
-.font-family {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
-}
-.font-family > div {
-  flex: 1 1 30%;
-  min-width: 10em;
-}
-
-.font__second-level { font-family: "Poppins", sans-serif;}
-.font__first-level { font-family: "Exo 2", serif; }
-.font__first-level > span { font-size: 1rem; }
-.font__second-level > span { font-size: 0.8rem; }
-.font-family-bold > * { font-weight: 900; }
-.font-family-medium > * { font-weight: 500; }
-.font-family-light > * { font-weight: 300; }
-
-.font-example {
-  display: flex;
-  flex-wrap: wrap;
-}
-.font-example > div {
-  flex: 1 1 45%;
-  min-width: 16em;
-}
-.font-example p {
-  margin-bottom: 15px;
+  
 }

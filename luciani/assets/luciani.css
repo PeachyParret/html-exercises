@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Raleway:wght@300;500;700&display=swap');
+
+:root {
+  --canvasColor: #f9f9f9;
+
+  --backgroundColor: #fff;
+  --foregroundColor: #111;
+
+  --primaryColor: #ffffff;
+  --primaryShade1: #cff0ff;
+  --primaryShade2: #b1e6ff;
+  --primaryShade3: #89daff;
+  --primaryShade4: #63c9ff;
+  --primaryShade5: #28b0ff;
+
+  --secondaryColor: #2cbd49;
+  --secondaryShade1: #ecf6e7;
+  --secondaryShade2: #b0e4aa;
+  --secondaryShade3: #8ed592;
+  --secondaryShade4: #66c178;
+  --secondaryShade5: #26aa3a;
+
+  --neutralShade1: #f2f2f2;
+  --neutralShade2: #e8e9e9;
+  --neutralShade3: #d1d3d4;
+  --neutralShade4: #babdbf;
+  --neutralShade5: #808488;
+  --neutralShade6: #666a6d;
+  --neutralShade7: #4d5052;
+  --neutralShade8: #212122;
+
+  --grayColor: #999;
+  --lightGrayColor: #ddd;
+
+  /* You can also use it for generally applied sizing and spacing. */
+  --borderRadius: 6px;
+  --boxShadow: 0 2px 5px rgba(#333, 0.2);
+
+  /* Change default root font size (16px), if desired */
+  font-size: 16px;
+}
+
+
+/*
+  After you define your color schemes above, revise the color and typography rulesets below in accordance with your desired new font families, weights, line-heights, etc. You can even modify which variables are being used.
+*/
+
+/* GENERAL COLOR SCHEME */
+body {
+  background: var(--backgroundColor);
+  color: var(--neutralShade8);
+}
+
+/*==========
+  TYPOGRAPHY
+===========*/
+
+/* Font Families */
+body { font-family: "Raleway", sans-serif;}
+h1,h2,h3 { font-family: "Playfair Display", serif; }
+
+/* Emphasis and Bolding */
+strong { font-weight: 500; }
+em { font-style: italic; }
+
+/* Font Weight, Sizing & Spacing */
+body {
+  font-weight: 300;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+h1 {
+  font-weight: 700;
+  font-size: clamp(2.5rem,3rem,3.5rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: 500;
+  font-size: clamp(1.75rem,2rem,2.5rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+h3 {
+  font-weight: 500;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
+}
+h4 {
+  font-weight: 300;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
+  font-style: italic;
+}
+
+a { font-weight: 500; }
+
+/* Default Font Colors & Styling */
+
+/* default links */
+a {
+  color: var(--neutralShade8);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a:hover {
+  color: var(--neutralShade1);
+  background-color: var(--primaryColor);
+  border-bottom: 3px solid var(--primaryShade5);
+  transition: 0.4s;
+}
+
+/* primary color links */
+a.primary {
+  color: var(--primaryColor);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.primary:hover {
+  color: var(--primaryShade1);
+  background-color: var(--primaryShade4);
+  border-bottom: 3px solid var(--secondaryColor);
+  transition: 0.4s;
+}
+
+/* secondary color links */
+a.secondary {
+  color: var(--secondaryShade5);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.secondary:hover {
+  color: var(--secondaryShade1);
+  background-color: var(--secondaryShade5);
+  border-bottom: 3px solid var(--primaryColor);
+  transition: 0.4s;
+}
+
+img {
+    display: block;
+    height: 50%;
+    width: 50%;
+}
+
+/* Grid Dfns */
+.ecoternatives {
+    grid-area: eco;
+}
+.earthhero {
+    grid-area: eh;
+}
+.ecoroots {
+    grid-area: er;
+}
+.publicgoods {
+    grid-area: pg;
+}
+.grove {
+    grid-area: grv;
+}
+.dryerballs {
+    grid-area: db;
+}
+.detergent {
+    grid-area: dt;
+}
+.odorpods {
+    grid-area: op;
+}
+.laundrydetergent {
+    grid-area: ld;
+}
+.softener {
+    grid-area: sf;
+}
+.stainremover {
+    grid-area: sr;
+}
+.bathroomcleaner {
+    grid-area: bc;
+}
+.soap {
+    grid-area: sp;
+}
+.toiletcleaner {
+    grid-area: tc;
+}
+.soapconcentrate {
+    grid-area: hwc;
+}
+.dishwasherpods {
+    grid-area: dsp;
+}
+.dishsoap {
+    grid-area: ds;
+}
+.sponge {
+    grid-area: spg;
+}
+.sandwichbags {
+    grid-area: swb;
+}
+.garbagebags {
+    grid-area: gbb;
+}
+.producebag {
+    grid-area: pdb;
+}
+.veganwraps {
+    grid-area: vgw;
+}
+.dishbrush {
+    grid-area: dbr;
+}
+
+/* Tablet Grid */
+@media screen and (min-width: 775px) {
+    .where-to-shop {
+        display: grid;
+        grid-template-rows: repeat(3, 2fr);
+        grid-template-areas: 
+        "eco eh"
+        "pg grv"
+        "er . ";
+        grid-gap: 1rem;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        place-items: center;
+    }
+    .laundry {
+        display: grid;
+        grid-template-rows: repeat(3, 2fr);
+        grid-template-areas: 
+        "db dt"
+        "ld sf"
+        "op sr";
+        grid-gap: 1rem;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        place-items: center;
+    }
+    .bathroom {
+        display: grid;
+        grid-template-rows: repeat(2, 2fr);
+        grid-template-areas:
+        "bc sp"
+        "hwc tc";
+        grid-gap: 1rem;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        place-items: center;
+    }
+    .kitchen {
+        display: grid;
+        grid-template-rows: repeat(3, 2fr);
+        grid-template-areas:
+        "dsp ds"
+        "swb gbb"
+        "vgw dbr"
+        "spg pdb";
+        grid-gap: 1rem;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        place-items: center;
+    }
+}
+
+/* Desktop Grid */
+@media screen and (min-width: 1125px) {
+    .where-to-shop {
+        display: grid;
+        grid-template-rows: repeat(2, 3fr);
+        grid-template-areas: 
+        "eco eh grv"
+        "pg grv er";
+        grid-gap: 3rem;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        place-items: center;
+    }
+    .laundry {
+        display: grid;
+        grid-template-rows: repeat(2, 3fr);
+        grid-template-areas: 
+        "db dt op"
+        "ld sf sr";
+        grid-gap: 3rem;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        place-items: center;
+    }
+    .bathroom {
+        display: grid;
+        grid-template-rows: repeat(2, 3fr);
+        grid-template-areas:
+        "bc sp hwc"
+        " . tc . ";
+        grid-gap: 3rem;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        place-items: center;
+    }
+    .kitchen {
+        display: grid;
+        grid-template-rows: repeat(2, 3fr);
+        grid-template-areas:
+        "dsp ds spg"
+        "swb gbb pdb"
+        " . vgw dbr";
+        grid-gap: 1rem;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        place-items: center;
+    }
+}

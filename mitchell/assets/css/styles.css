@@ -1,0 +1,448 @@
+/*
+  When you complete this style guide, you will copy the following scope of the code below starting at the font import until the comment that states "STYLES BELOW ARE SPECIFIC TO THE STYLE GUIDE"
+*/
+
+/*============
+  IMPORT FONTS
+==============*/
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
+/*============
+  COLOR SCHEME
+
+  2. Define the color scheme within the root element by using CSS variables:
+
+    - '--variableName: color_value;'
+    - Use in code later as "color: var(--variableName)"
+
+  The power of CSS variables includes interchangability. For example, when you want to change your color pallette, you only need to change the value defined at the variable.
+
+  For example, if you want to change your background and foreground colors, your primary and secondary colors, etc., locate the variable in the :root, change it, and then that value will be applied anywhere that variable is used in your CSS.
+
+  Define it once, use across your code.
+  Change it in one spot, it changes everywhere it's used in your code!
+
+  - See https://randoma11y.com to establish a basic 2-color scheme: primary and secondary colors.
+  - Note how the colors shades move from 1-5, i.e., lighter shades to darker shades. To produce shades, use VS Code's color picker tool to produce gradiations of the initial color.
+  - If you want //accent// shade(s), feel free to consider additional complimentary colors.
+=============*/
+
+:root {
+  --canvasColor: #f9f9f9;
+
+  --backgroundColor: #017171;
+  --foregroundColor: #fcfdfe;
+
+  --primaryColor: #f1faff;
+  --primaryShade1: #f1faff;
+  --primaryShade2: #f1faffa0;
+  --primaryShade3: #f1faff6c;
+  --primaryShade4: #f1faff3f;
+  --primaryShade5: #f1faff11;
+
+  --secondaryColor: #008080;
+  --secondaryColor1:#0d9e9e;
+  --secondaryShade2: #037171;
+  --secondaryShade3: #026161;
+  --secondaryShade4: #008080;
+  --secondaryShade5: #013535;
+
+  --neutralShade1: #f2f2f2;
+  --neutralShade2: #e8e9e9;
+  --neutralShade3: #d1d3d4;
+  --neutralShade4: #babdbf;
+  --neutralShade5: #808488;
+  --neutralShade6: #666a6d;
+  --neutralShade7: #4d5052;
+  --neutralShade8: #212122;
+
+  --grayColor: #999;
+  --lightGrayColor: #ddd;
+
+  /* You can also use it for generally applied sizing and spacing. */
+  --borderRadius: 6px;
+  --boxShadow: 0 2px 5px rgba(#333, 0.2);
+
+  /* Change default root font size (16px), if desired */
+  font-size: 16px;
+}
+
+
+/*
+  After you define your color schemes above, revise the color and typography rulesets below in accordance with your desired new font families, weights, line-heights, etc. You can even modify which variables are being used.
+*/
+
+/* GENERAL COLOR SCHEME */
+body {
+  background: var(--backgroundColor);
+  color: var(--foregroundColor);
+}
+
+/*==========
+  TYPOGRAPHY
+===========*/
+
+/* Font Families */
+body { font-family: "Hedvig Letters; sans-serif"}
+h1,h2,h3 { font-family: "Hedvig Letters", serif; }
+
+/* Emphasis and Bolding */
+strong { font-weight: 500; }
+em { font-style: italic; }
+
+/* Font Weight, Sizing & Spacing */
+body {
+  font-weight: 300;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+h1 {
+  font-weight: 700;
+  font-size: clamp(2.5rem,3rem,3.5rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 {
+  font-weight: 500;
+  font-size: clamp(1.75rem,2rem,2.5rem);
+  line-height: 1.2;
+}
+h3 {
+  font-weight: 500;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
+}
+h4 {
+  font-weight: 300;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
+  font-style: italic;
+}
+h5 {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+h6 {
+  font-weight: 200;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+a { font-weight: 500; }
+
+/* Default Font Colors & Styling */
+
+/* default links */
+a {
+  color: var(--foregroundColor);
+  border-bottom: 2px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a:hover {
+  color: var(--neutralShade1);
+  background-color: var(--primaryColor);
+  border-bottom: 3px solid var(--primaryShade5);
+  transition: 0.4s;
+}
+
+/* primary color links */
+a.primary {
+  color: var(--primaryColor);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.primary:hover {
+  color: var(--primaryShade1);
+  background-color: var(--primaryShade4);
+  border-bottom: 3px solid var(--secondaryColor);
+  transition: 0.4s;
+}
+
+/* secondary color links */
+a.secondary {
+  color: var(--secondaryShade5);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.secondary:hover {
+  color: var(--secondaryShade1);
+  background-color: var(--secondaryShade5);
+  border-bottom: 3px solid var(--primaryColor);
+  transition: 0.4s;
+}
+
+/*---------------------MOBILE DESIGN---------------- */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-weight: 500;
+    font-size: clamp(1.75rem,2rem,2.5rem);
+    line-height: 1.2;
+    text-transform: none;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: clamp(1.25rem,1.5rem,1.75rem);
+    line-height: 1.2;
+  }
+  h3 {
+    font-weight: 300;
+    font-size: clamp(1.25rem,1.5rem,1.75rem);
+    line-height: 1.2;
+  }
+  h4 {
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.2;
+    font-style: italic;
+  }
+  h5 {
+    font-weight: 200;
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  a { font-weight: 300; }
+  p { font-size: 14px; }
+
+  /* Mobile's flex starts here */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* header */
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  /* page navigations */
+  .page_navigation {
+    position:fixed;
+    align-self: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .page_navigation {
+    background-color: var(--secondaryShade5);
+    border: 1px solid var(--foregroundColor);
+    margin-bottom: 5px;
+  }
+  .page_navigation > h2 {
+    text-align: center;
+  }
+  .page_navigation > div {
+    display: flex;
+    flex-direction: row;
+  }
+  .page_navigation > div > div {
+    flex-shrink: 1;
+    flex-grow: 1;
+  }
+  
+  /*grid main*/
+  .high_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .high_container > div {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  .high_container img {
+      max-width: 100%;
+      height: auto;
+  }
+  section {
+      max-width: 800px;
+      margin: 0 auto;
+  }
+
+  /*links*/
+  .links {background-color: var(--secondaryShade5);
+    border: 1px solid var(--foregroundColor);
+    margin: 5px;
+  }
+  
+  /*footer*/
+  .footer_up {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    background-color: #013535;
+    border: 0.05rem solid var(--foregroundColor);
+  }
+  .page_navigation > h2 {
+    text-align: center;
+  }
+  .footer_up > div {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+  }
+}
+
+/*---------------------Tablet DESIGN---------------- */
+
+@media only screen and (min-width:481px) and (max-width:719px) {
+
+  /* CSS rules within scope query */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* header */
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  /* page navigations */
+  .page_navigation {
+    background-color: var(--secondaryShade5);
+    border: 1px solid var(--foregroundColor);
+    min-width: 50vw;
+    max-height: fit-content;
+    margin-top: 5px;
+    align-self: center;
+  }
+  .page_navigation > h2 {
+    text-align: center;
+    border-bottom: 1px solid var(--foregroundColor);
+  }
+  /*grid main*/
+  .high_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .high_container > div {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  .high_container img {
+      max-width: 100%;
+      height: auto;
+  }
+  section {
+      max-width: 800px;
+      margin: 0 auto;
+  }
+  .high_container > div {
+    background-color: #013535;
+  }
+
+  /*links*/
+  .links {background-color: var(--secondaryShade5);
+    border: 1px solid var(--foregroundColor);
+    margin: 5px;
+  }
+  
+  /*footer*/
+  .footer_up {
+    background-color: #013535;
+    border: 0.05rem solid var(--foregroundColor);
+  }
+  .footer_up > div {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+  }
+}
+/* End tablet */
+
+
+/*---------------------Computer Screen DESIGN---------------- */
+/* min-width → At a minimum width of 720px or more, 
+   apply these rules */
+@media only screen and (min-width: 720px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    /* header */
+    header {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* page navigations */
+    .page_navigation {
+      background-color: var(--secondaryShade5);
+      border: 1px solid var(--foregroundColor);
+      min-width: fit-content;
+      max-width: 300px;
+      margin-top: 5px;
+      align-self: flex-start;
+      position: fixed;
+    }
+    .page_navigation > h2 {
+      text-align: center;
+      border-bottom: 1px solid var(--foregroundColor);
+    }
+    
+    
+    /*flex main content*/
+    .pitch {
+      align-self: flex-end;
+    }
+    .high_container > div {
+      background-color: #013535;
+    }
+    /*links*/
+  .links {background-color: var(--secondaryShade5);
+    border: 1px solid var(--foregroundColor);
+    margin: 5px;
+    }
+    /*footer*/
+    .footer_up {
+      width: fit-content;
+      height: fit-content;
+      background-color: #013535;
+      border: 0.05rem solid var(--foregroundColor);
+    }
+    /*grid main*/
+    .high_container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .high_container > div {
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    .high_container img {
+        max-width: 100%;
+        height: auto;
+    }
+    section {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}  
+  
