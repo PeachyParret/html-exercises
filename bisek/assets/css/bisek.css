@@ -11,7 +11,6 @@
 img {
   max-width: 100%;
   height: auto;
-  display: block;
   margin: auto;
   width: 50%;
 }
@@ -123,6 +122,7 @@ img {
     font-weight: 500;
     line-height: 1.2;
     text-transform: uppercase;
+    text-decoration: underline;
   }
   h3 {
     font-weight: 500;
@@ -200,7 +200,9 @@ img {
     text-decoration: none;
   }
 
-
+  li {
+    font-family: "Pixelify Sans";
+  }
 
   ul {
     list-style-type: none;
@@ -247,16 +249,6 @@ a.active {
   margin: 30px;
 }
 
-.intro-pics {
-  display: flex;
-  margin: 10px;
-  object-fit: contain;
-}
-
-.map-pic {
-  height: 100%;
-}
-
 .nav-bar {
   display: flex;
   flex-direction: column;
@@ -264,26 +256,96 @@ a.active {
   padding: 10px;
 }
 
-.the-dos-main {
-  background-color: var(--secondaryShade3);
+.intro-pics {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--accent2Color);
+  padding-bottom: 15px;
 }
 
-.the-dos-pics {
-  display: flex;
-}
-
-.the-donts-pics {
-  display: flex;
-}
-
-.items-pics {
-  display: flex;
+.map-pic {
+  height: 100%;
+  width: 40%;
 }
 
 .saloon-pic {
   height: 50%;
+  width: 40%;
 }
 
+
+.the-dos-main {
+  background-color: var(--secondaryShade3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.the-dos-pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: var(--secondaryShade3);
+  padding-bottom: 15px;
+}
+
+.bundle-pic {
+  height: 100%;
+  width: 40%;
+}
+
+.mine-pic {
+  height: 50%;
+  width: 40%;
+}
+
+.the-donts-main {
+  background-color: var(--accentShade1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.the-donts-pics {
+  display: flex;
+  background-color: var(--accentShade1);
+  padding-bottom: 15px;
+}
+
+.barn-pic {
+  height: 100%;
+  width: 40%;
+}
+
+.foraging-pic {
+  height: 50%;
+  width: 40%;
+}
+
+.items-main {
+  background-color: var(--accent2Shade2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.items-pics {
+  background-color: var(--accent2Shade2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.prism-shard-pic {
+  height: 100%;
+  width: 40%;
+}
+
+.dino-pic {
+  height: 100%;
+  width: 40%;
+}
 
 @media screen and (min-width: 600px) {
  p {
@@ -291,7 +353,27 @@ a.active {
  }
 
  h2 {
-  font-size: 50px;
+  font-size: 70px;
  }
 
+ .saloon-pic {
+  height: 490px;
+ }
+
+ .foraging-pic {
+  height: 470px;
+ }
+
+ .barn-pic {
+  height: 490px;
+ }
+
+ .prism-shard-pic {
+  height: 490px;
+ }
+
+ .dino-pic {
+  height: 490px;
+
+ }
 }
