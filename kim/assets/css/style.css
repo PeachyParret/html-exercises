@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url("https://fonts.googleapis.com/css?family=Trirong");
+
+:root {
+    --canvasColor: #524c63;
+  
+    --backgroundColor: #42a76e;
+    --foregroundColor: #111;
+  
+    --primaryColor: #524c63;
+    --primaryShade1: #524c63;
+    --primaryShade2: #524c63;
+    --primaryShade3: #524c63;
+    --primaryShade4: #524c63;
+    --primaryShade5: #524c63;
+  
+    --secondaryColor: #42a76e;
+    --secondaryShade1: #76cf9d;
+    --secondaryShade2: #42a76e;
+    --secondaryShade3: #1e5234;
+    --secondaryShade4: #42a76e;
+    --secondaryShade5: #163624;
+
+    --neutralShade1: #f2f2f2;
+    --neutralShade2: #e8e9e9;
+    --neutralShade3: #d1d3d4;
+    --neutralShade4: #babdbf;
+    --neutralShade5: #808488;
+    --neutralShade6: #666a6d;
+    --neutralShade7: #4d5052;
+    --neutralShade8: #212122;
+
+    --grayColor: #999;
+    --lightGrayColor: #ddd;
+
+    /* You can also use it for generally applied sizing and spacing. */
+    --borderRadius: 6px;
+    --boxShadow: 0 2px 5px rgba(#333, 0.2);
+
+    /* Change default root font size (16px), if desired */
+    font-size: 18px;
+}
+
+body {
+    background: var(--backgroundColor);
+    color: var(--foregroundColor);
+  }
+
+  /*==========
+  TYPOGRAPHY
+===========*/
+
+/* Font Families */
+body { font-family: "trirong", sans-serif;}
+h1,h2,h3 { font-family: "Audiowide", serif; }
+
+/* Emphasis and Bolding */
+strong { font-weight: 500; }
+em { font-style: italic; }
+
+/* Font Weight, Sizing & Spacing */
+body {
+  font-weight: 300;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+h1 {
+  font-weight: 700;
+  font-size: clamp(2.5rem,3rem,3.5rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: 500;
+  font-size: clamp(1.75rem,2rem,2.5rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+h3 {
+  font-weight: 500;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
+}
+h4 {
+  font-weight: 300;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
+  font-style: italic;
+}
+h5 {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+h6 {
+  font-weight: 200;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+a { font-weight: 500; }
+
+/* Default Font Colors & Styling */
+
+/* default links */
+a {
+  color: var(--neutralShade8);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a:hover {
+  color: var(--neutralShade1);
+  background-color: var(--primaryColor);
+  border-bottom: 3px solid var(--primaryShade5);
+  transition: 0.4s;
+}
+
+/* primary color links */
+a.primary {
+  color: var(--primaryColor);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.primary:hover {
+  color: var(--primaryShade1);
+  background-color: var(--primaryShade4);
+  border-bottom: 3px solid var(--secondaryColor);
+  transition: 0.4s;
+}
+
+/* secondary color links */
+a.secondary {
+  color: var(--secondaryShade5);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.secondary:hover {
+  color: var(--secondaryShade1);
+  background-color: var(--secondaryShade5);
+  border-bottom: 3px solid var(--primaryColor);
+  transition: 0.4s;
+}
+
+/*------starter css------*/
+.img {
+object-fit: cover;
+max-width: 100%;
+max-height: auto;
+align-content: center;
+}
+
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: justify;
+padding-left: 5vw;
+padding-right: 5vw;
+}
+
+/*------mobile------*/
+@media only screen and (max-width: 480px) {
+    .img {
+        object-fit: cover;
+        max-width: 100%;
+        max-height: auto;
+        align-content: center;
+        }
+                
+        body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        padding-left: 35vw;
+        padding-right: auto;
+        }
+        
+        .jargon {
+            height: 100%;
+            width: 25vw;
+            position: fixed;
+            z-index: 1;
+            top: 0; 
+            left: 5vw;
+            overflow-x: hidden;
+            padding-top: 10vw;
+            padding-right: 2vw;
+            text-align: left;
+          }
+        
+}
+
+/*------tablet------*/
+@media only screen and (min-width: 481px) and (max-width: 719px) {
+    body {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: justify;
+padding-left: 20vw;
+padding-right: auto;
+}
+.img {
+    object-fit: cover;
+    max-width: 80%;
+    max-height: auto;
+    align-content: center;
+    }
+
+.jargon {
+    height: 100%;
+    width: 20vw;
+    position: fixed;
+    z-index: 1;
+    top: 0; 
+    left: 5vw;
+    overflow-x: hidden;
+    padding-top: 5vw;
+    padding-right:1vw;
+    max-width: auto;
+    text-align: left;
+  }
+}
+
+/*------desktop------*/
+@media only screen and (min-width: 720px) {
+.img {
+object-fit: cover;
+max-width: 75%;
+max-height: auto;
+align-content: center;
+}
+        
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: justify;
+padding-left: 35vw;
+padding-right: auto;
+}
+
+.jargon {
+    height: 100%;
+    width: 25vw;
+    position: fixed;
+    z-index: 1;
+    top: 0; 
+    left: 5vw;
+    overflow-x: hidden;
+    padding-top: 10vw;
+    padding-right: 2vw;
+    text-align: left;
+  }
+}

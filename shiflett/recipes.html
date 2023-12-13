@@ -4,60 +4,151 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Gluten Free Cooking</title>
-  
+      <link rel="stylesheet" href="./assets/notlate.css">
+
       <!-- Resources -->
       <link rel="shortcut icon" href="assets/images/wheatx.png">
-      <header role="banner" aria-labelledby="a11y-title">
-        <img
+      <a href="#main" class="skip-to-link">
+        Skip to Content
+      </a>
+      <header role="banner" aria-labelledby="a11y-banner">
+        <img class="banner-img"
+          src="./assets/images/banner_D1_1519.jpg" 
+          alt="Your guide to Gluten Free Cooking"
           srcset="assets/images/banner_D1_1519.jpg 1519w,
           assets/images/banner_D1_760.jpg 760w,
-          assets/images/banner_D1_380.jpg 380w" 
-          width="1519px"
-          alt="Your guide to Gluten Free Cooking" 
-          style="margin: 0px -100px;"
-          >
-          <h1 id="a11y-title">
-            Intro to Gluten Free Cooking
-        </h1>
+          assets/images/banner_D1_380.jpg 380w">
+          <h1 id="a11y-banner">Intro to Gluten Free Cooking</h1>
       </header>
   </head>
-  <body style="margin: 0vw 100px;">
-        <a href="#main" class="skip-to-link" style="text-decoration: none; color: inherit;">
-          Skip to Content
-        </a>
-      <nav role="navigation" aria-label="Main Navigation" style="background-color: #00c65c; text-align: center">
-        <ul style="list-style: none; margin: 0; padding: 0;">
-          <li style="display: inline; margin: 20px;" aria-label="Home">
-            <a href="index.html" style="text-decoration: none; color: #fff;"><strong>Home</strong></a>
+  <body>
+      <nav role="navigation" aria-label="Navigation Menu">
+        <ul>
+          <li aria-label="Home Page">
+            <a href="index.html"><strong>Home</strong></a>
           </li>
-          <li style="display: inline; margin: 20px;" aria-label="Recipes">
-            <a href="recipes.html" style="text-decoration: none; color: #fff;">
+          <li aria-label="Recipes">
+            <a href="recipes.html">
               <strong>Recipes</strong>
             </a>
           </li>
         </ul>
       </nav>
     </header>
-<body style="margin: 0px 100px;">
-  
-  <section id="Nav">
+  <body class="recipes_body">
+    </header>
     <nav role="navigation" aria-labelledby="a11y-recipes"> 
       <ul>
-        <h3 id="a11y-recipes">
-          Family Recipes
-        </h3>
-          <a href="#Basic_Pasta" style="text-decoration: none; color: inherit"><strong>Basic Pasta</strong></a>
+        <h3 id="a11y-recipes">Family Recipes</h3>
+          <a href="#Cookies"><strong>Cookies</strong></a>
           <br>
-          <a href = "#Lasagna" style="text-decoration: none; color: inherit"><strong>Lasagna</strong></a>
+          <a href = "#Pasta"><strong>Pasta</strong></a>
           <br>
-          <a href = "#Cookies" style="text-decoration: none; color: inherit"><strong>Cookies</strong></a>
+          <a href = "#Stroganoff"><strong>Beef Stroganoff</strong></a>
       </ul>
     </nav>
-  </section>
     <main>
-    <p>
-      Recipes will go here eventually.
-    </p>
+      <div id="Cookies" class="box_cookies" role="region" aria-labelledby="a11y-cookies">
+        <h2 id="a11y-cookies">Gluten-Free Chocolate Chip Cookies</h2>
+        <img src="./assets/images/choccychip.jpg"
+        class="recipe_img"
+        width="50%"
+        height="auto"
+        alt="Chocolate Chip cookies laying on a wire rack">
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>2 cups gluten-free all-purpose flour (I use <a href="https://www.cup4cup.com/">Cup4Cup</a>)</li>
+            <li>1 teaspoon baking soda</li>
+            <li>1/2 teaspoon salt</li>
+            <li>1 cup unsalted butter, softened</li>
+            <li>1 cup granulated sugar</li>
+            <li>1 cup brown sugar, packed</li>
+            <li>2 large eggs</li>
+            <li>2 teaspoons vanilla extract</li>
+            <li>2 cups chocolate chips</li>
+        </ul>
+
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Preheat the oven to 350°F (175°C).</li>
+            <li>In a medium bowl, whisk together the gluten-free flour, baking soda, and salt.</li>
+            <li>In a large bowl, cream together the softened butter, granulated sugar, and brown sugar until smooth.</li>
+            <li>Beat in the eggs one at a time, then stir in the vanilla extract.</li>
+            <li>Gradually add the dry ingredients to the wet ingredients and mix until well combined.</li>
+            <li>Fold in the gluten-free chocolate chips.</li>
+            <li>Drop rounded tablespoons of dough onto a parchment-lined baking sheet.</li>
+            <li>Bake for 10-12 minutes or until the edges are golden brown.</li>
+            <li>Allow the cookies to cool on the baking sheet for a few minutes before transferring them to a wire rack to cool completely.</li>
+        </ol>
+      </div>
+      <div id="Pasta" class="box_recipe_pasta" role="region" aria-labelledby="a11y-gfpasta">
+        <h2 id="a11y-gfpasta">Gluten-Free Pasta Recipe</h2>
+        <img src="./assets/images/pasta.jpg"
+        class="recipe_img"
+        width="50%"
+        height="auto"
+        alt="Somebody rolling out pasta on a table">
+        <h3>Ingredients:</h3>
+        <ul>
+            <p>Pasta dough is finnicky so these amounts are just guidelines</p>
+            <li>2 cups gluten-free all-purpose flour</li>
+            <li>3 large eggs (About 1 egg per person)</li>
+            <li>1/2 teaspoon salt</li>
+        </ul>
+
+        <h3>Instructions:</h3>
+        <ol>
+            <li>In a large mixing bowl, combine the gluten-free all-purpose flour and salt.</li>
+            <li>Make a well in the center of the flour mixture and crack the eggs into it. You'll see people on the internet do this on the table with a mound of flour, they're making life so much harder on themselves.</li>
+            <li>Using a fork, gradually incorporate the flour into the eggs until a dough starts to form.</li>
+            <li>Knead the dough on a lightly floured surface for about 5-8 minutes. Keep working until the dough starts sticking to your hand too much. Then add more flour. Repeat this until the dough only slighlty sticks to your hand.</li>
+            <li>Cover the dough with plastic wrap and let it rest for at least 30 minutes at room temperature. This allows the flour to fully hydrate.</li>
+            <li>After resting, cut the dough into smaller portions. Take one portion and roll it out with a rolling pin until it reaches your desired thickness.</li>
+            <li>As you roll the dough, it should feel smooth and elastic. If it's too sticky, add a bit more flour. If it's too dry and crumbly, add a touch of water.</li>
+            <li>Once rolled out, you can cut the pasta into your preferred shape.</li>
+            <li>Cook the gluten-free pasta in a pot of salted boiling water for 2-4 minutes, or until it reaches your desired level of doneness.</li>
+            <li>Drain the pasta and serve with your favorite gluten-free sauce (Like the one we're about to make next)!</li>
+        </ol>
+      </div>
+      <div id="Stroganoff" role="region" aria-labelledby="a11y-stroganoff">
+      <h2 id="a11y-stroganoff">Gluten-Free Beef Stroganoff</h2>
+      <img src="./assets/images/stroggy.jpg"
+      class="recipe_img"
+      width="50%"
+      height="auto"
+      alt="Some great looking beef stroganoff">
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>1 pound London Broil, thinly sliced</li>
+            <li>2 tablespoons olive oil</li>
+            <li>1 onion, finely chopped</li>
+            <li>2 cloves garlic, minced</li>
+            <li>8 oz gluten-free pasta (I'd use the pasta recipe above)</li>
+            <li>1 cup beef broth</li>
+            <li>1 tablespoon gluten-free Worcestershire sauce</li>
+            <li>1 tablespoon Dijon mustard</li>
+            <li>1/2 cup sour cream</li>
+            <li>Salt and pepper to taste</li>
+            <li>Fresh parsley for garnish</li>
+        </ul>
+
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Cook the gluten-free pasta according to the instructions. Drain and set aside.</li>
+            <li>Heat olive oil in a large skillet over medium-high heat. Add the sliced London Broil and cook until browned. Remove from the skillet and set aside.</li>
+            <li>In the same skillet, sauté the chopped onion until translucent. Add minced garlic and cook for an additional minute.</li>
+            <li>Pour in the beef broth, Worcestershire sauce, and Dijon mustard. Stir to combine.</li>
+            <li>Bring the mixture to a simmer, then add the cooked London Broil back to the skillet. Simmer for 5-7 minutes until the beef is cooked through.</li>
+            <li>Stir in sour cream and season with salt and pepper to taste. Cook for an additional 2-3 minutes.</li>
+            <li>Serve the beef stroganoff over the cooked gluten-free pasta.</li>
+            <li>Garnish with fresh parsley and enjoy your delicious gluten-free beef stroganoff!</li>
+        </ol>
+      </div>
     </main>
 </body>
+<footer>
+  <h3>
+    By: Christopher Shiflett | 2023 | 4AM Productions
+  </h3>
+</footer>
 </html>
